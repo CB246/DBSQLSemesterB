@@ -10,9 +10,9 @@ using System.Web;
 public class DBConnection
 {
     private static SqlConnection KGConnection;
-    private static String connString = "Data Source=(LocalDB)\\MSSQLLocalDB;" +
-        "AttachDbFilename=\"C:\\Program Files\\Microsoft SQL Server\\MSSQL13.SQLEXPRESS" +
-        "\\MSSQL\\DATA\\KindergardenSolution.mdf\";Integrated Security=True;Connect Timeout=30";
+    private static String connString = "Data Source=kindergardens.database.windows.net;Initial Catalog=kindergardens;" +
+        "Integrated Security=False;User ID=arkiniet;Password=GranitNov10@;Connect Timeout=15;Encrypt=True;TrustServerCertificate=False;" +
+        "ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
     private static DBConnection instance = null;
 
@@ -37,7 +37,7 @@ public class DBConnection
         comm.CommandType = System.Data.CommandType.StoredProcedure;
         comm.Connection = KGConnection;
         comm.Parameters.AddWithValue("@kgID", 13);
-        //comm.Parameters.AddWithValue("@classID", 1);
+        comm.Parameters.AddWithValue("@classID", 1);
         try
         {
             KGConnection.Open();
