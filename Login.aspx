@@ -28,32 +28,31 @@
 </head>
 <body runat="server" class="login-page">
     <div class="login-box">
-        <div class="logo">
-            <a href="javascript:void(0);">Admin<b>BSB</b></a>
-            <small>Admin BootStrap Based - Material Design</small>
+        <div class="logo" style="font-size: 30px;">
+            <small>Kindergardens of Haifa</small>
         </div>
         <div class="card">
             <div class="body">
-                <form id="sign_in" method="POST">
-                    <div class="msg">Sign in to start your session</div>
-                    <div class="input-group">
+                <form id="sign_in" method="POST" runat="server">
+                    <div class="msg" style="margin-bottom: 15px">Sign in to start your session</div>
+                    <div class="input-group" style="margin-bottom: 15px;">
                         <span class="input-group-addon">
                             <i class="material-icons">person</i>
                         </span>
                         <div class="form-line">
-                            <input type="text" class="form-control" name="username" placeholder="Username" required autofocus>
+                            <asp:TextBox ID="tbLogin" runat="server" placeholder="User ID (9 digits)" class="form-control" required autofocus></asp:TextBox>
                         </div>
                     </div>
-                    <div class="input-group">
+                    <div class="input-group" style="margin-bottom: 15px;">
                         <span class="input-group-addon">
                             <i class="material-icons">lock</i>
                         </span>
                         <div class="form-line">
-                            <input type="password" class="form-control" name="password" placeholder="Password" required>
+                            <asp:TextBox ID="tbPassword" runat="server" type="password" placeholder="Password" class="form-control" required></asp:TextBox>
                         </div>
                     </div>
-                    <button class="btn btn-block btn-lg bg-pink waves-effect" type="submit">SIGN IN</button>
-                    <div class="m-t-25 m-b--5 align-center">
+                    <asp:Button ID="btnLogin" runat="server" Text="SIGN IN" class="btn btn-block btn-lg bg-pink"/>
+                    <div class="m-t-15 m-b--5 align-center">
                         <a href="SignUp.aspx">Register Now!</a>
                     </div>
                 </form>
