@@ -1,92 +1,80 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Login" %>
 
 <!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta charset="UTF-8"/>
-    <title>Login/Sign-In</title>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+    <title>Sign In | Bootstrap Based Admin Template - Material Design</title>
+    <!-- Favicon-->
+    <link rel="icon" href="../../favicon.ico" type="image/x-icon" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />
 
-    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'/>
+    <!-- Bootstrap Core Css -->
+    <link href="../../plugins/bootstrap/css/bootstrap.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/loginStyle.css"/>
+    <!-- Waves Effect Css -->
+    <link href="../../plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="../../css/style.css" rel="stylesheet" />
 </head>
-
-<body>
-    <div class="logmod">
-        <div class="logmod__wrapper">
-            <div class="logmod__container">
-                <ul class="logmod__tabs">
-                    <li data-tabtar="lgm-2"><a href="#">Login</a></li>
-                    <li data-tabtar="lgm-1"><a href="#">Sign Up</a></li>
-                </ul>
-                <div class="logmod__tab-wrapper">
-                    <div class="logmod__tab lgm-1">
-                        <div class="logmod__heading">
-                            <span class="logmod__heading-subtitle">Enter your personal details <strong>to create an acount</strong></span>
-                        </div>
-                        <div class="logmod__form">
-                            <form accept-charset="utf-8" action="#" class="simform">
-                                <div class="sminputs">
-                                    <div class="input full">
-                                        <label class="string optional" for="user-name">Email*</label>
-                                        <input class="string optional" maxlength="255" id="user-email" placeholder="Email" type="email" size="50" />
-                                    </div>
-                                </div>
-                                <div class="sminputs">
-                                    <div class="input string optional">
-                                        <label class="string optional" for="user-pw">Password *</label>
-                                        <input class="string optional" maxlength="255" id="user-pw" placeholder="Password" type="text" size="50" />
-                                    </div>
-                                    <div class="input string optional">
-                                        <label class="string optional" for="user-pw-repeat">Repeat password *</label>
-                                        <input class="string optional" maxlength="255" id="user-pw-repeat" placeholder="Repeat password" type="text" size="50" />
-                                    </div>
-                                </div>
-                                <div class="simform__actions">
-                                    <input class="sumbit" name="commit" type="sumbit" value="Create Account" />
-                                    <span class="simform__actions-sidetext">By creating an account you agree to our <a class="special" href="#" target="_blank" role="link">Terms & Privacy</a></span>
-                                </div>
-                                <div class="u-form-group">
-                                    <button>Log in</button>
-                                  </div>
-                            </form>
+<body runat="server" class="login-page">
+    <div class="login-box">
+        <div class="logo">
+            <a href="javascript:void(0);">Admin<b>BSB</b></a>
+            <small>Admin BootStrap Based - Material Design</small>
+        </div>
+        <div class="card">
+            <div class="body">
+                <form id="sign_in" method="POST">
+                    <div class="msg">Sign in to start your session</div>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="material-icons">person</i>
+                        </span>
+                        <div class="form-line">
+                            <input type="text" class="form-control" name="username" placeholder="Username" required autofocus>
                         </div>
                     </div>
-                    <div class="logmod__tab lgm-2">
-                        <div class="logmod__heading">
-                            <span class="logmod__heading-subtitle">Enter your email and password <strong>to sign in</strong></span>
-                        </div>
-                        <div class="logmod__form">
-                            <form accept-charset="utf-8" action="#" class="simform">
-                                <div class="sminputs">
-                                    <div class="input full">
-                                        <label class="string optional" for="user-name">Email*</label>
-                                        <input class="string optional" maxlength="255" id="user-email" placeholder="Email" type="email" size="50" />
-                                    </div>
-                                </div>
-                                <div class="sminputs">
-                                    <div class="input full">
-                                        <label class="string optional" for="user-pw">Password *</label>
-                                        <input class="string optional" maxlength="255" id="user-pw" placeholder="Password" type="password" size="50" />
-                                        <span class="hide-password">Show</span>
-                                    </div>
-                                </div>
-                                <div class="simform__actions">
-                                    <input class="sumbit" name="commit" type="sumbit" value="Log In" />
-                                    <span class="simform__actions-sidetext"><a class="special" role="link" href="#">Forgot your password?<br>
-                                        Click here</a></span>
-                                </div>
-                            </form>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="material-icons">lock</i>
+                        </span>
+                        <div class="form-line">
+                            <input type="password" class="form-control" name="password" placeholder="Password" required>
                         </div>
                     </div>
-                </div>
+                    <button class="btn btn-block btn-lg bg-pink waves-effect" type="submit">SIGN IN</button>
+                    <div class="m-t-25 m-b--5 align-center">
+                        <a href="SignUp.aspx">Register Now!</a>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-    <script src="js/login.js"></script>
+    <!-- Jquery Core Js -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="../../plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="../../plugins/node-waves/waves.js"></script>
+
+    <!-- Validation Plugin Js -->
+    <script src="../../plugins/jquery-validation/jquery.validate.js"></script>
+
+    <!-- Custom Js -->
+    <script src="../../js/admin.js"></script>
+    <script src="../../js/pages/examples/sign-in.js"></script>
 </body>
 </html>
