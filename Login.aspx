@@ -40,7 +40,7 @@
                             <i class="material-icons">person</i>
                         </span>
                         <div class="form-line">
-                            <asp:TextBox ID="tbLogin" runat="server" placeholder="User ID (9 digits)" class="form-control" required></asp:TextBox>
+                            <asp:TextBox ID="tbLogin" runat="server" EnableViewState="false" placeholder="User ID (9 digits)" class="form-control" required></asp:TextBox>
                         </div>
                     </div>
                     <div class="input-group" style="margin-bottom: 15px;">
@@ -48,7 +48,7 @@
                             <i class="material-icons">lock</i>
                         </span>
                         <div class="form-line">
-                            <asp:TextBox ID="tbPassword" runat="server" type="password" placeholder="Password" class="form-control" required></asp:TextBox>
+                            <asp:TextBox ID="tbPassword" runat="server" EnableViewState="false" type="password" placeholder="Password" class="form-control" required></asp:TextBox>
                         </div>
                     </div>
                     <asp:Button ID="btnLogin" runat="server" CausesValidation="false" UseSubmitBehavior="false" OnClick="btnLogin_Click" Text="SIGN IN" class="btn btn-block btn-lg bg-pink"/>

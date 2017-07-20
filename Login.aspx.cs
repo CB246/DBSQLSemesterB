@@ -18,7 +18,9 @@ public partial class Login : System.Web.UI.Page
         if (tbLogin.Text.Equals("Admin") && tbPassword.Text.Equals("Admin"))
         {
             System.Diagnostics.Debug.WriteLine("Trying to redirect to default page");
-            Response.Redirect("SignUp.aspx", false);
+            KGManager.userLogin = "Admin";
+            KGManager.userPassword = "Admin";
+            Response.Redirect("Default.aspx");
             Context.ApplicationInstance.CompleteRequest();
             System.Diagnostics.Debug.WriteLine("Redirected");
         }
