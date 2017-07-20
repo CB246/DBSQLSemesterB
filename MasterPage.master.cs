@@ -12,12 +12,8 @@ public partial class MasterPage : System.Web.UI.MasterPage
     {
         if (KGManager.userLogin.Equals("") && KGManager.userPassword.Equals(""))
         {
-            Response.Redirect("Login.aspx", false);
+            Response.Redirect("/aspx/Login.aspx");
             Context.ApplicationInstance.CompleteRequest();
-        }
-        else
-        {
-            //Server.Transfer("Default.aspx", true);
         }
     }
 }

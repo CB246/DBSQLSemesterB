@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="SignUp.aspx.cs" Inherits="SignUp" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="SignUp.aspx.cs" Inherits="aspx_SignUp" %>
 
 <!DOCTYPE html>
 
@@ -92,7 +92,7 @@
                     </div>
                     <asp:Button ID="btnSignUp" runat="server" UseSubmitBehavior="false" Text="SIGN UP" class="btn btn-block btn-lg bg-pink" />
                     <div class="m-t-15 m-b--5 align-center">
-                        <a href="Login.aspx">You already have a membership?</a>
+                        <a href="/aspx/Login.aspx">You already have a membership?</a>
                     </div>
                 </form>
             </div>
