@@ -30,7 +30,7 @@
     <link href="../../css/style.css" rel="stylesheet" />
 
 </head>
-<body runat="server" class="signup-page">
+<body runat="server" class="signup-page" style="margin-top: 3%">
     <div class="signup-box">
         <div class="logo" style="font-size: 30px;">
             <small>Kindergardens of Haifa</small>
@@ -44,7 +44,7 @@
                             <i class="material-icons">person</i>
                         </span>
                         <div class="form-line">
-                            <asp:TextBox ID="tbLogin" runat="server" placeholder="User ID (9 digits)" class="form-control" required autofocus></asp:TextBox>
+                            <asp:TextBox ID="tbLogin" runat="server" placeholder="User ID (9 digits)" class="form-control" required></asp:TextBox>
                         </div>
                     </div>
                     <div class="input-group" style="margin-bottom: 15px;">
@@ -90,7 +90,7 @@
                             <asp:TextBox ID="tbPasswordConfirm" runat="server" type="password" placeholder="Confirm Password" class="form-control" minlenght="6" required></asp:TextBox>
                         </div>
                     </div>
-                    <asp:Button ID="btnSignUp" runat="server" Text="SIGN UP" class="btn btn-block btn-lg bg-pink" />
+                    <asp:Button ID="btnSignUp" runat="server" UseSubmitBehavior="false" Text="SIGN UP" class="btn btn-block btn-lg bg-pink" />
                     <div class="m-t-15 m-b--5 align-center">
                         <a href="Login.aspx">You already have a membership?</a>
                     </div>

@@ -26,7 +26,7 @@
     <!-- Custom Css -->
     <link href="../../css/style.css" rel="stylesheet" />
 </head>
-<body runat="server" class="login-page">
+<body runat="server" class="login-page" style="margin-top: 3%">
     <div class="login-box">
         <div class="logo" style="font-size: 30px;">
             <small>Kindergardens of Haifa</small>
@@ -40,7 +40,7 @@
                             <i class="material-icons">person</i>
                         </span>
                         <div class="form-line">
-                            <asp:TextBox ID="tbLogin" runat="server" placeholder="User ID (9 digits)" class="form-control" required autofocus></asp:TextBox>
+                            <asp:TextBox ID="tbLogin" runat="server" placeholder="User ID (9 digits)" class="form-control" required></asp:TextBox>
                         </div>
                     </div>
                     <div class="input-group" style="margin-bottom: 15px;">
@@ -51,7 +51,7 @@
                             <asp:TextBox ID="tbPassword" runat="server" type="password" placeholder="Password" class="form-control" required></asp:TextBox>
                         </div>
                     </div>
-                    <asp:Button ID="btnLogin" runat="server" Text="SIGN IN" class="btn btn-block btn-lg bg-pink"/>
+                    <asp:Button ID="btnLogin" runat="server" CausesValidation="false" UseSubmitBehavior="false" OnClick="btnLogin_Click" Text="SIGN IN" class="btn btn-block btn-lg bg-pink"/>
                     <div class="m-t-15 m-b--5 align-center">
                         <a href="SignUp.aspx">Register Now!</a>
                     </div>

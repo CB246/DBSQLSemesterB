@@ -8,14 +8,15 @@ using System.Web.UI.WebControls;
 public partial class MasterPage : System.Web.UI.MasterPage
 {
 
-    public static String userLogin = "1";
+    public static String userLogin = "";
     public static String userPassword = "";
 
     protected void Page_Load(object sender, EventArgs e)
     {
         if (userLogin.Equals("") && userPassword.Equals(""))
         {
-            Server.Transfer("Login.aspx", true);
+            Response.Redirect("Login.aspx", false);
+            Context.ApplicationInstance.CompleteRequest();
         }
         else
         {
