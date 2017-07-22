@@ -1,0 +1,61 @@
+22-07 : 11-59-21 - Starting
+22-07 : 12-33-08 - Starting
+22-07 : 12-33-51 - Sugn Up button was clicked
+22-07 : 12-33-51 - ID isn'n number
+22-07 : 12-33-51 - ID isn't 9 digits
+22-07 : 12-33-51 - Gender wasn't chose 0
+22-07 : 12-35-44 - Sugn Up button was clicked
+22-07 : 12-35-44 - ID isn'n number
+22-07 : 12-35-44 - ID isn't 9 digits
+22-07 : 12-35-44 - Gender wasn't chose 0
+22-07 : 12-41-31 - Sugn Up button was clicked
+22-07 : 12-41-31 - Gender wasn't chose 0
+22-07 : 12-41-38 - Sugn Up button was clicked
+22-07 : 12-41-38 - Gender wasn't chose 0
+22-07 : 12-41-47 - Sugn Up button was clicked
+22-07 : 12-41-47 - Gender wasn't chose 0
+22-07 : 12-41-48 - Sugn Up button was clicked
+22-07 : 12-41-48 - Gender wasn't chose 0
+22-07 : 12-41-49 - Sugn Up button was clicked
+22-07 : 12-41-49 - Gender wasn't chose 0
+22-07 : 12-42-06 - Sugn Up button was clicked
+22-07 : 12-42-06 - Gender wasn't chose 0
+22-07 : 12-42-20 - Sugn Up button was clicked
+22-07 : 12-42-20 - Gender wasn't chose 0
+22-07 : 12-42-21 - Sugn Up button was clicked
+22-07 : 12-42-21 - Gender wasn't chose 0
+22-07 : 12-42-29 - Sugn Up button was clicked
+22-07 : 12-42-29 - Gender wasn't chose 0
+22-07 : 12-42-30 - Sugn Up button was clicked
+22-07 : 12-42-30 - Gender wasn't chose 0
+22-07 : 12-42-31 - Sugn Up button was clicked
+22-07 : 12-42-31 - Gender wasn't chose 0
+22-07 : 12-42-32 - Sugn Up button was clicked
+22-07 : 12-42-32 - Gender wasn't chose 0
+22-07 : 12-42-33 - Sugn Up button was clicked
+22-07 : 12-42-33 - Gender wasn't chose 0
+22-07 : 12-42-33 - Sugn Up button was clicked
+22-07 : 12-42-33 - Gender wasn't chose 0
+22-07 : 12-42-33 - Sugn Up button was clicked
+22-07 : 12-42-33 - Gender wasn't chose 0
+22-07 : 12-42-33 - Sugn Up button was clicked
+22-07 : 12-42-33 - Gender wasn't chose 0
+22-07 : 12-42-34 - Sugn Up button was clicked
+22-07 : 12-42-34 - Gender wasn't chose 0
+22-07 : 12-42-35 - Sugn Up button was clicked
+22-07 : 12-42-35 - Gender wasn't chose 0
+22-07 : 12-42-35 - Sugn Up button was clicked
+22-07 : 12-42-35 - Gender wasn't chose 0
+22-07 : 12-43-20 - Sugn Up button was clicked
+22-07 : 12-43-20 - Gender wasn't chose 0
+22-07 : 12-43-33 - Sugn Up button was clicked
+22-07 : 12-43-33 - Gender wasn't chose -1
+22-07 : 12-44-01 - Sugn Up button was clicked
+22-07 : 12-44-01 - Gender wasn't chose
+22-07 : 12-44-10 - Sugn Up button was clicked
+22-07 : 12-44-11 - Sugn Up button was clicked
+22-07 : 12-44-12 - Sugn Up button was clicked
+22-07 : 12-44-12 - Sugn Up button was clicked
+22-07 : 12-44-13 - Sugn Up button was clicked
+22-07 : 12-44-13 - Sugn Up button was clicked
+22-07 : 12-44-13 - Sugn Up button was clicked
