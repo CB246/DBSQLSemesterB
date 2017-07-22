@@ -1,17 +1,9 @@
-22-07 : 16-45-04 - Starting
-22-07 : 16-46-44 - Page_Load happened
-22-07 : 16-47-01 - Page_Load happened
-22-07 : 16-47-02 - Page_Load happened
-22-07 : 16-47-08 - Page_Load happened
-22-07 : 16-47-20 - Page_Load happened
-22-07 : 16-47-20 - Sugn Up button was clicked
-22-07 : 17-11-22 - Page_Load happened
-22-07 : 17-11-22 - Sugn Up button was clicked
-22-07 : 17-11-22 - Received instruction to run procedure checkIfIDExists
-22-07 : 17-11-22 - Adding parameter @@parentID=123123123
-22-07 : 17-11-23 - Opened KGConnection
-22-07 : 17-11-23 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-22-07 : 17-11-23 - !!!Exception Occured!!!
+23-07 : 00-06-49 - Login button was clicked
+23-07 : 00-06-49 - Received instruction to run procedure checkIfIDExists
+23-07 : 00-06-49 - Adding parameter @userID=100000000
+23-07 : 00-06-50 - Opened KGConnection
+23-07 : 00-06-50 - Sending SQL Statement: checkIfIDExists with 1 parameters.
+23-07 : 00-06-50 - !!!Exception Occured!!!
 Procedure or function 'checkIfIDExists' expects parameter '@parentID', which was not supplied.
    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
    at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
@@ -29,71 +21,125 @@ Procedure or function 'checkIfIDExists' expects parameter '@parentID', which was
    at System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
    at System.Data.Common.DbDataAdapter.Fill(DataTable[] dataTables, Int32 startRecord, Int32 maxRecords, IDbCommand command, CommandBehavior behavior)
    at System.Data.Common.DbDataAdapter.Fill(DataTable dataTable)
-   at DBConnection.runProcWithResults(String procName, Dictionary`2 valMap) in c:\Users\aPaXuC\Documents\GitHub\DBBonus\App_Code\DBConnection.cs:line 40
-22-07 : 17-11-23 - Closing connection
-22-07 : 17-11-54 - Page_Load happened
-22-07 : 17-11-54 - Sugn Up button was clicked
-22-07 : 17-11-54 - Received instruction to run procedure checkIfIDExists
-22-07 : 17-11-54 - Adding parameter @parentID=123123123
-22-07 : 17-11-54 - Opened KGConnection
-22-07 : 17-11-54 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-22-07 : 17-11-54 - Returned #0 rows!!
-22-07 : 17-11-54 - Closing connection
-22-07 : 17-14-20 - Page_Load happened
-22-07 : 17-14-20 - Sugn Up button was clicked
-22-07 : 17-14-20 - Received instruction to run procedure checkIfIDExists
-22-07 : 17-14-20 - Adding parameter @parentID=100000000
-22-07 : 17-14-20 - Opened KGConnection
-22-07 : 17-14-20 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-22-07 : 17-14-20 - Returned #1 rows!!
-22-07 : 17-14-20 - Closing connection
-22-07 : 17-14-23 - Page_Load happened
-22-07 : 17-14-23 - Sugn Up button was clicked
-22-07 : 17-14-23 - Received instruction to run procedure checkIfIDExists
-22-07 : 17-14-23 - Adding parameter @parentID=100000000
-22-07 : 17-14-23 - Opened KGConnection
-22-07 : 17-14-23 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-22-07 : 17-14-23 - Returned #1 rows!!
-22-07 : 17-14-23 - Closing connection
-22-07 : 17-14-53 - Page_Load happened
-22-07 : 17-14-53 - Sugn Up button was clicked
-22-07 : 17-14-53 - Received instruction to run procedure checkIfIDExists
-22-07 : 17-14-53 - Adding parameter @parentID=100000000
-22-07 : 17-14-53 - Opened KGConnection
-22-07 : 17-14-53 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-22-07 : 17-14-53 - Returned #1 rows!!
-22-07 : 17-14-53 - Closing connection
-22-07 : 17-16-00 - Page_Load happened
-22-07 : 17-16-00 - Sugn Up button was clicked
-22-07 : 17-16-00 - Received instruction to run procedure checkIfIDExists
-22-07 : 17-16-00 - Adding parameter @parentID=100000001
-22-07 : 17-16-00 - Opened KGConnection
-22-07 : 17-16-00 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-22-07 : 17-16-00 - Returned #0 rows!!
-22-07 : 17-16-00 - Closing connection
-22-07 : 17-16-07 - Page_Load happened
-22-07 : 17-16-07 - Sugn Up button was clicked
-22-07 : 17-16-07 - Received instruction to run procedure checkIfIDExists
-22-07 : 17-16-07 - Adding parameter @parentID=100000500
-22-07 : 17-16-07 - Opened KGConnection
-22-07 : 17-16-07 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-22-07 : 17-16-07 - Returned #1 rows!!
-22-07 : 17-16-07 - Closing connection
-22-07 : 17-25-09 - Page_Load happened
-22-07 : 17-25-09 - Sugn Up button was clicked
-22-07 : 17-25-09 - Received instruction to run procedure checkIfIDExists
-22-07 : 17-25-09 - Adding parameter @parentID=100000500
-22-07 : 17-25-10 - Opened KGConnection
-22-07 : 17-25-10 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-22-07 : 17-25-10 - Returned #1 rows!!
-22-07 : 17-25-10 - Closing connection
-22-07 : 17-25-10 - signUp after check -> 1
-22-07 : 17-25-20 - Page_Load happened
-22-07 : 17-25-20 - Sugn Up button was clicked
-22-07 : 17-25-20 - Received instruction to run procedure checkIfIDExists
-22-07 : 17-25-20 - Adding parameter @parentID=100000501
-22-07 : 17-25-20 - Opened KGConnection
-22-07 : 17-25-20 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-22-07 : 17-25-20 - Returned #0 rows!!
-22-07 : 17-25-20 - Closing connection
-22-07 : 17-25-20 - signUp after check -> 0
+   at DBConnection.runProcWithResults(String procName, Dictionary`2 valMap) in g:\GitHub\DBBonus\App_Code\DBConnection.cs:line 40
+23-07 : 00-06-50 - Closing connection
+23-07 : 00-09-34 - Login button was clicked
+23-07 : 00-09-34 - Received instruction to run procedure checkIfIDExists
+23-07 : 00-09-34 - Adding parameter @parentID=100000000
+23-07 : 00-09-34 - Opened KGConnection
+23-07 : 00-09-34 - Sending SQL Statement: checkIfIDExists with 1 parameters.
+23-07 : 00-09-34 - Returned #1 rows!!
+23-07 : 00-09-34 - Closing connection
+23-07 : 00-09-34 - Received instruction to run procedure checkLoginData
+23-07 : 00-09-34 - Adding parameter @parentID=100000000
+23-07 : 00-09-34 - Adding parameter @parentPass=1
+23-07 : 00-09-34 - Opened KGConnection
+23-07 : 00-09-34 - Sending SQL Statement: checkLoginData with 2 parameters.
+23-07 : 00-09-34 - Returned #0 rows!!
+23-07 : 00-09-34 - Closing connection
+23-07 : 00-09-45 - Login button was clicked
+23-07 : 00-09-45 - Received instruction to run procedure checkIfIDExists
+23-07 : 00-09-45 - Adding parameter @parentID=100000000
+23-07 : 00-09-45 - Opened KGConnection
+23-07 : 00-09-45 - Sending SQL Statement: checkIfIDExists with 1 parameters.
+23-07 : 00-09-45 - Returned #1 rows!!
+23-07 : 00-09-45 - Closing connection
+23-07 : 00-09-45 - Received instruction to run procedure checkLoginData
+23-07 : 00-09-45 - Adding parameter @parentID=100000000
+23-07 : 00-09-45 - Adding parameter @parentPass=1
+23-07 : 00-09-45 - Opened KGConnection
+23-07 : 00-09-45 - Sending SQL Statement: checkLoginData with 2 parameters.
+23-07 : 00-09-45 - Returned #0 rows!!
+23-07 : 00-09-45 - Closing connection
+23-07 : 00-12-17 - Login button was clicked
+23-07 : 00-12-17 - Received instruction to run procedure checkIfParentExists
+23-07 : 00-12-17 - Adding parameter @parentID=100000000
+23-07 : 00-12-17 - Opened KGConnection
+23-07 : 00-12-17 - Sending SQL Statement: checkIfParentExists with 1 parameters.
+23-07 : 00-12-17 - Returned #0 rows!!
+23-07 : 00-12-17 - Closing connection
+23-07 : 00-13-30 - Login button was clicked
+23-07 : 00-13-30 - Received instruction to run procedure checkIfParentExists
+23-07 : 00-13-30 - Adding parameter @parentID=100000000
+23-07 : 00-13-30 - Opened KGConnection
+23-07 : 00-13-30 - Sending SQL Statement: checkIfParentExists with 1 parameters.
+23-07 : 00-13-30 - Returned #0 rows!!
+23-07 : 00-13-30 - Closing connection
+23-07 : 00-13-52 - Login button was clicked
+23-07 : 00-13-52 - Received instruction to run procedure checkIfParentExists
+23-07 : 00-13-52 - Adding parameter @parentID=789789789
+23-07 : 00-13-52 - Opened KGConnection
+23-07 : 00-13-52 - Sending SQL Statement: checkIfParentExists with 1 parameters.
+23-07 : 00-13-52 - Returned #1 rows!!
+23-07 : 00-13-52 - Closing connection
+23-07 : 00-13-52 - Received instruction to run procedure checkLoginData
+23-07 : 00-13-52 - Adding parameter @parentID=789789789
+23-07 : 00-13-52 - Adding parameter @parentPass=1
+23-07 : 00-13-52 - Opened KGConnection
+23-07 : 00-13-52 - Sending SQL Statement: checkLoginData with 2 parameters.
+23-07 : 00-13-52 - Returned #0 rows!!
+23-07 : 00-13-52 - Closing connection
+23-07 : 00-14-28 - Login button was clicked
+23-07 : 00-14-28 - Received instruction to run procedure checkIfParentExists
+23-07 : 00-14-28 - Adding parameter @parentID=789789789
+23-07 : 00-14-28 - Opened KGConnection
+23-07 : 00-14-28 - Sending SQL Statement: checkIfParentExists with 1 parameters.
+23-07 : 00-14-28 - Returned #1 rows!!
+23-07 : 00-14-28 - Closing connection
+23-07 : 00-14-28 - Received instruction to run procedure checkLoginData
+23-07 : 00-14-28 - Adding parameter @parentID=789789789
+23-07 : 00-14-28 - Adding parameter @parentPass=qwerty
+23-07 : 00-14-28 - Opened KGConnection
+23-07 : 00-14-28 - Sending SQL Statement: checkLoginData with 2 parameters.
+23-07 : 00-14-28 - Returned #1 rows!!
+23-07 : 00-14-28 - Closing connection
+23-07 : 00-14-28 - Starting
+23-07 : 00-14-44 - Login button was clicked
+23-07 : 00-14-44 - Received instruction to run procedure checkIfParentExists
+23-07 : 00-14-44 - Adding parameter @parentID=100000000
+23-07 : 00-14-44 - Opened KGConnection
+23-07 : 00-14-44 - Sending SQL Statement: checkIfParentExists with 1 parameters.
+23-07 : 00-14-44 - Returned #0 rows!!
+23-07 : 00-14-44 - Closing connection
+23-07 : 00-28-27 - Login button was clicked
+23-07 : 00-28-27 - Received instruction to run procedure checkIfParentExists
+23-07 : 00-28-27 - Adding parameter @parentID=100000000
+23-07 : 00-28-28 - Opened KGConnection
+23-07 : 00-28-28 - Sending SQL Statement: checkIfParentExists with 1 parameters.
+23-07 : 00-28-28 - Returned #0 rows!!
+23-07 : 00-28-28 - Closing connection
+23-07 : 00-29-04 - Login button was clicked
+23-07 : 00-29-04 - Received instruction to run procedure checkIfParentExists
+23-07 : 00-29-04 - Adding parameter @parentID=100000000
+23-07 : 00-29-04 - Opened KGConnection
+23-07 : 00-29-04 - Sending SQL Statement: checkIfParentExists with 1 parameters.
+23-07 : 00-29-04 - Returned #0 rows!!
+23-07 : 00-29-04 - Closing connection
+23-07 : 00-30-05 - Login button was clicked
+23-07 : 00-30-05 - Received instruction to run procedure checkIfParentExists
+23-07 : 00-30-05 - Adding parameter @parentID=100000000
+23-07 : 00-30-05 - Opened KGConnection
+23-07 : 00-30-05 - Sending SQL Statement: checkIfParentExists with 1 parameters.
+23-07 : 00-30-06 - Returned #0 rows!!
+23-07 : 00-30-06 - Closing connection
+23-07 : 00-30-48 - Login button was clicked
+23-07 : 00-30-48 - Received instruction to run procedure checkIfParentExists
+23-07 : 00-30-48 - Adding parameter @parentID=100000000
+23-07 : 00-30-48 - Opened KGConnection
+23-07 : 00-30-48 - Sending SQL Statement: checkIfParentExists with 1 parameters.
+23-07 : 00-30-49 - Returned #0 rows!!
+23-07 : 00-30-49 - Closing connection
+23-07 : 00-32-18 - Login button was clicked
+23-07 : 00-32-18 - Received instruction to run procedure checkIfParentExists
+23-07 : 00-32-18 - Adding parameter @parentID=100000000
+23-07 : 00-32-18 - Opened KGConnection
+23-07 : 00-32-18 - Sending SQL Statement: checkIfParentExists with 1 parameters.
+23-07 : 00-32-18 - Returned #0 rows!!
+23-07 : 00-32-18 - Closing connection
+23-07 : 00-32-48 - Login button was clicked
+23-07 : 00-32-48 - Received instruction to run procedure checkIfParentExists
+23-07 : 00-32-48 - Adding parameter @parentID=100000000
+23-07 : 00-32-48 - Opened KGConnection
+23-07 : 00-32-48 - Sending SQL Statement: checkIfParentExists with 1 parameters.
+23-07 : 00-32-49 - Returned #0 rows!!
+23-07 : 00-32-49 - Closing connection

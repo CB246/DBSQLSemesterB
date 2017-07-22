@@ -25,6 +25,15 @@
 
     <!-- Custom Css -->
     <link href="../../css/style.css" rel="stylesheet" />
+
+    <style>
+        .val-err-msg {
+            color: red;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    </style>
+
 </head>
 <body runat="server" class="login-page" style="margin-top: 3%">
     <div class="login-box">
@@ -40,7 +49,11 @@
                             <i class="material-icons">person</i>
                         </span>
                         <div class="form-line">
-                            <asp:TextBox ID="tbLogin" runat="server" EnableViewState="false" placeholder="User ID (9 digits)" class="form-control" required></asp:TextBox>
+                            <asp:TextBox ID="tbLogin" runat="server" EnableViewState="false" placeholder="User ID (9 digits)" class="form-control"></asp:TextBox>
+                        </div>
+                        <asp:RequiredFieldValidator ID="loginVal" Display="Dynamic" runat="server" ErrorMessage="Login is empty" ValidationGroup="logining" class="val-err-msg" ControlToValidate="tbLogin"></asp:RequiredFieldValidator>
+                        <div class="val-err-msg">
+                            <asp:Literal runat="server" Text="" ID="litLogin"></asp:Literal>
                         </div>
                     </div>
                     <div class="input-group" style="margin-bottom: 15px;">
@@ -48,10 +61,14 @@
                             <i class="material-icons">lock</i>
                         </span>
                         <div class="form-line">
-                            <asp:TextBox ID="tbPassword" runat="server" EnableViewState="false" type="password" placeholder="Password" class="form-control" required></asp:TextBox>
+                            <asp:TextBox ID="tbPassword" runat="server" EnableViewState="false" type="password" placeholder="Password" class="form-control"></asp:TextBox>
+                        </div>
+                        <asp:RequiredFieldValidator ID="passVal" Display="Dynamic" runat="server" ErrorMessage="Password is empty" ValidationGroup="logining" class="val-err-msg" ControlToValidate="tbPassword"></asp:RequiredFieldValidator>
+                        <div class="val-err-msg">
+                            <asp:Literal runat="server" Text="" ID="litPass"></asp:Literal>
                         </div>
                     </div>
-                    <asp:Button ID="btnLogin" runat="server" CausesValidation="false" UseSubmitBehavior="false" OnClick="btnLogin_Click" Text="SIGN IN" class="btn btn-block btn-lg bg-pink"/>
+                    <asp:Button ID="btnLogin" runat="server" ValidationGroup="logining" OnClick="btnLogin_Click" Text="SIGN IN" class="btn btn-block btn-lg bg-pink" />
                     <div class="m-t-15 m-b--5 align-center">
                         <a href="SignUp.aspx">Register Now!</a>
                     </div>

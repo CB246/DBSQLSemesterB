@@ -56,6 +56,9 @@
                         </div>
                         <asp:RequiredFieldValidator ID="loginVal" Display="Dynamic" class="val-err-msg" ValidationGroup="signingUp" ErrorMessage="ID Field is empty" runat="server" ControlToValidate="tbLogin"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="loginRegExVal" runat="server" Display="Dynamic" class="val-err-msg" ValidationGroup="signingUp" ErrorMessage="Please enter 9 digits ID" ControlToValidate="tbLogin" ValidationExpression="[0-9]{9}"></asp:RegularExpressionValidator>
+                        <div class="val-err-msg">
+                            <asp:Literal runat="server" Text="" ID="litLogin"></asp:Literal>
+                        </div>
                     </div>
                     <div class="input-group" style="margin-bottom: 15px;">
                         <span class="input-group-addon">
@@ -71,7 +74,7 @@
                         <asp:RequiredFieldValidator ID="fnVal" class="val-err-msg m-r-10" runat="server" Display="Dynamic" ErrorMessage="First Name is empty" ValidationGroup="signingUp" ControlToValidate="tbFirstName"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="fnRegExVal" runat="server" Display="Dynamic" class="val-err-msg m-r-10" ValidationGroup="signingUp" ErrorMessage="Fisrt Name isn't correct" ControlToValidate="tbFirstName" ValidationExpression="[a-zA-Z]+"></asp:RegularExpressionValidator>
                         <asp:RequiredFieldValidator ID="lsVal" class="val-err-msg" runat="server" Display="Dynamic" ErrorMessage="Last Name is empty" ValidationGroup="signingUp" ControlToValidate="tbLastName"></asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="lnRegExVal" runat="server" Display="Dynamic" class="val-err-msg" ValidationGroup="signingUp" ErrorMessage="LAst Name isn't correct" ControlToValidate="tbLastName" ValidationExpression="[a-zA-Z]+"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="lnRegExVal" runat="server" Display="Dynamic" class="val-err-msg" ValidationGroup="signingUp" ErrorMessage="Last Name isn't correct" ControlToValidate="tbLastName" ValidationExpression="[a-zA-Z]+"></asp:RegularExpressionValidator>
                     </div>
                     <div class="input-group" style="margin-bottom: 15px;">
                         <span class="input-group-addon">
@@ -102,6 +105,7 @@
                             <asp:TextBox ID="tbPassword" runat="server" type="password" placeholder="Password" class="form-control"></asp:TextBox>
                         </div>
                         <asp:RequiredFieldValidator ID="passVal" Display="Dynamic" runat="server" ErrorMessage="Password is empty" ValidationGroup="signingUp" class="val-err-msg" ControlToValidate="tbPassword"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="passRegExVal" runat="server" Display="Dynamic" class="val-err-msg" ValidationGroup="signingUp" ErrorMessage="Password lendth: 6-20 symbols" ControlToValidate="tbPassword" ValidationExpression="[a-zA-Z0-9~!@#$%^&*]{6,20}"></asp:RegularExpressionValidator>                    
                     </div>
                     <div class="input-group" style="margin-bottom: 15px;">
                         <span class="input-group-addon">
@@ -113,7 +117,7 @@
                         <asp:RequiredFieldValidator ID="passConfVal" Display="Dynamic" runat="server" ErrorMessage="Password Confirmation is empty" ValidationGroup="signingUp" class="val-err-msg" ControlToValidate="tbPasswordConfirm"></asp:RequiredFieldValidator>
                         <asp:CompareValidator ID="passCompVal" runat="server" ValidationGroup="signingUp" class="val-err-msg" Display="Dynamic" ErrorMessage="Wrong confirmation" ControlToValidate="tbPasswordConfirm" ControlToCompare="tbPassword"></asp:CompareValidator>
                     </div>
-                    <asp:Button ID="btnSignUp" runat="server" ValidationGroup="signingUp" UseSubmitBehavior="false" OnClick="btnSignUp_Click" Text="SIGN UP" class="btn btn-block btn-lg bg-pink" />
+                    <asp:Button ID="btnSignUp" runat="server" ValidationGroup="signingUp" OnClick="btnSignUp_Click" Text="SIGN UP" class="btn btn-block btn-lg bg-pink" />
                     <div class="m-t-15 m-b--5 align-center">
                         <a href="/aspx/Login.aspx">You already have a membership?</a>
                     </div>

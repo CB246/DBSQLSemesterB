@@ -11,7 +11,7 @@ public partial class MasterPage : System.Web.UI.MasterPage
     protected void Page_Load(object sender, EventArgs e)
     {
         KGManager.log("Starting");
-        if (KGManager.userLogin.Equals("") && KGManager.userPassword.Equals(""))
+        if (KGManager.userLogin.Equals(""))
         {
             Response.Redirect("/aspx/Login.aspx");
             Context.ApplicationInstance.CompleteRequest();
