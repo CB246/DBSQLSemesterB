@@ -7,12 +7,14 @@ public static class KGManager
 {
     //Logged In user Information
     public static String userLogin = "";
+    public static String userName = "";
     //Logger file
     public static System.IO.StreamWriter file = new System.IO.StreamWriter(AppDomain.CurrentDomain.BaseDirectory + "Log.txt");
 
     public static void logOut()
     {
         userLogin = "";
+        userName = "";
     }
     
     public static void log(String msg)

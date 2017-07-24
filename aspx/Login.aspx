@@ -52,6 +52,7 @@
                             <asp:TextBox ID="tbLogin" runat="server" EnableViewState="false" placeholder="User ID (9 digits)" class="form-control"></asp:TextBox>
                         </div>
                         <asp:RequiredFieldValidator ID="loginVal" Display="Dynamic" runat="server" ErrorMessage="Login is empty" ValidationGroup="logining" class="val-err-msg" ControlToValidate="tbLogin"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="loginRegExVal" runat="server" Display="Dynamic" class="val-err-msg" ValidationGroup="logining" ErrorMessage="Please enter 9 digits ID" ControlToValidate="tbLogin" ValidationExpression="[0-9]{9}|Admin"></asp:RegularExpressionValidator>                        
                         <div class="val-err-msg">
                             <asp:Literal runat="server" Text="" ID="litLogin"></asp:Literal>
                         </div>

@@ -64,7 +64,6 @@
                         <span class="input-group-addon">
                             <i class="material-icons">person</i>
                         </span>
-
                         <div class="form-line" style="width: 50%">
                             <asp:TextBox ID="tbFirstName" runat="server" type="text" placeholder="First Name" class="form-control"></asp:TextBox>
                         </div>
@@ -105,7 +104,7 @@
                             <asp:TextBox ID="tbPassword" runat="server" type="password" placeholder="Password" class="form-control"></asp:TextBox>
                         </div>
                         <asp:RequiredFieldValidator ID="passVal" Display="Dynamic" runat="server" ErrorMessage="Password is empty" ValidationGroup="signingUp" class="val-err-msg" ControlToValidate="tbPassword"></asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="passRegExVal" runat="server" Display="Dynamic" class="val-err-msg" ValidationGroup="signingUp" ErrorMessage="Password lendth: 6-20 symbols" ControlToValidate="tbPassword" ValidationExpression="[a-zA-Z0-9~!@#$%^&*]{6,20}"></asp:RegularExpressionValidator>                    
+                        <asp:RegularExpressionValidator ID="passRegExVal" runat="server" Display="Dynamic" class="val-err-msg" ValidationGroup="signingUp" ErrorMessage="Password lendth: 6-20 symbols" ControlToValidate="tbPassword" ValidationExpression="[a-zA-Z0-9~!@#$%^&*]{6,20}"></asp:RegularExpressionValidator>
                     </div>
                     <div class="input-group" style="margin-bottom: 15px;">
                         <span class="input-group-addon">

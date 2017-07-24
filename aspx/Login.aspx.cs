@@ -15,12 +15,15 @@ public partial class aspx_Login : System.Web.UI.Page
     protected void btnLogin_Click(object sender, EventArgs e)
     {
         KGManager.log("Login button was clicked");
+        //Log In as ADMIN
         if (tbLogin.Text.Equals("Admin") && tbPassword.Text.Equals("Admin"))
         {
             KGManager.userLogin = "Admin";
+            KGManager.userName = "Admin";
             Response.Redirect("/Default.aspx");
             Context.ApplicationInstance.CompleteRequest();
         }
+        //Log In as Parent
         else
         {
             Dictionary<string, object> data = new Dictionary<string, object>();
@@ -39,6 +42,16 @@ public partial class aspx_Login : System.Web.UI.Page
                     //password is correct
                     litPass.Text = "";
                     KGManager.userLogin = tbLogin.Text;
+                    KGManager.userName = "";
+                    if (dt.Rows[0]["gender"].ToString().Equals("M"))
+                    {
+                        KGManager.userName += "Mr ";
+                    }
+                    else
+                    {
+                        KGManager.userName += "Ms ";
+                    }
+                    KGManager.userName += dt.Rows[0]["surName"].ToString() + " " + dt.Rows[0]["firstName"].ToString();
                     Response.Redirect("/Default.aspx");
                     Context.ApplicationInstance.CompleteRequest();
                 }

@@ -17,13 +17,13 @@
                                 <div class="col-xs-12 col-lg-12">
                                     <!-- Nav tabs -->
                                     <div class="nav-tabs btn-group btn-group-justified" role="group" aria-label="Justified button group">
-                                        <a href="#home_animation_2" class="btn bg-cyan waves-effect" role="presentation" data-toggle="tab">ADD</a>
-                                        <a href="#profile_animation_2" class="btn bg-cyan waves-effect" data-toggle="tab">CHANGE</a>
-                                        <a href="#messages_animation_2" class="btn bg-cyan waves-effect" data-toggle="tab">REMOVE</a>
+                                        <a href="#add" class="btn bg-cyan waves-effect" role="presentation" data-toggle="tab">ADD</a>
+                                        <a href="#change" class="btn bg-cyan waves-effect" data-toggle="tab">CHANGE</a>
+                                        <a href="#remove" class="btn bg-cyan waves-effect" data-toggle="tab">REMOVE</a>
                                     </div>
                                     <!-- Tab panes -->
                                     <div class="tab-content">
-                                        <div role="tabpanel" class="tab-pane animated fadeInRight active" id="home_animation_2">
+                                        <div role="tabpanel" class="tab-pane animated fadeInRight active" id="add">
                                             <b>Home Content</b>
                                             <p>
                                                 Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
@@ -32,7 +32,7 @@
                                                 gubergren sadipscing mel.
                                             </p>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane animated fadeInRight" id="profile_animation_2">
+                                        <div role="tabpanel" class="tab-pane animated fadeInRight" id="change">
                                             <b>Profile Content</b>
                                             <p>
                                                 Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
@@ -41,17 +41,8 @@
                                                 gubergren sadipscing mel.
                                             </p>
                                         </div>
-                                        <div role="tabpanel" class="tab-pane animated fadeInRight" id="messages_animation_2">
+                                        <div role="tabpanel" class="tab-pane animated fadeInRight" id="remove">
                                             <b>Message Content</b>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
-                                                Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent
-                                                aliquid pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere
-                                                gubergren sadipscing mel.
-                                            </p>
-                                        </div>
-                                        <div role="tabpanel" class="tab-pane animated fadeInRight" id="settings_animation_2">
-                                            <b>Settings Content</b>
                                             <p>
                                                 Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
                                                 Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent
