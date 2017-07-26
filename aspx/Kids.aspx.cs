@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 public partial class aspx_Kids : System.Web.UI.Page
 {
+    private static double MIN_LATITUDE = 29.55805;
+    private static double MAX_LATITUDE = 33.20733;
+    private static double MIN_LONGITUDE = 34.57149;
+    private static double MAX_LONGITUDE = 35.57212;
+
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!KGManager.userLogin.Equals("Admin"))
@@ -29,9 +30,18 @@ public partial class aspx_Kids : System.Web.UI.Page
         // use your table instead of GetData() to pouplate the radio list.
         rblKids.DataSource = DBConnection.runProcWithResults("getAllKidsOfParent", data);
         rblKids.DataBind();
+    }
+
+    private void setLongAndLat()
+    {
+        Random rand = new Random();
+        tbLatitude.Text = (MIN_LATITUDE + rand.NextDouble() * (MAX_LATITUDE - MIN_LATITUDE)).ToString().Substring(0, 8);
+        tbLongitude.Text = (MIN_LONGITUDE + rand.NextDouble() * (MAX_LONGITUDE - MIN_LONGITUDE)).ToString().Substring(0, 8);
+    }
 
 
-        // This will select the radio with value 1
-        rblKids.SelectedValue = "1";
+    protected void btnGetLongAndLat_Click(object sender, EventArgs e)
+    {
+        setLongAndLat();
     }
 }

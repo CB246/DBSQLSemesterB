@@ -3,9 +3,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 
     <style>
-        .form-group .form-line .form-label{
+        .form-group .form-line .form-label {
             right: 0;
             text-align: right;
+        }
+
+        .val-err-msg {
+            color: red;
+            font-size: 12px;
+            font-weight: bold;
         }
     </style>
 
@@ -20,20 +26,111 @@
                                 <small>Here you can add to or remove from a system your kid, or change his information</small>
                             </h2>
                         </div>
-                        <div class="body">
-                            <div class="row clearfix">
-                                <div class="col-xs-12 col-lg-12" style="margin-bottom: 0px;">
-                                    <!-- Nav tabs -->
-                                    <div class="nav-tabs btn-group btn-group-justified" role="group" aria-label="Justified button group">
-                                        <a href="#add" class="btn bg-cyan waves-effect" role="presentation" data-toggle="tab">ADD</a>
-                                        <a href="#change" class="btn bg-cyan waves-effect" data-toggle="tab">CHANGE</a>
-                                        <a href="#remove" class="btn bg-cyan waves-effect" data-toggle="tab">REMOVE</a>
-                                    </div>
-                                    <!-- Tab panes -->
-                                    <div class="tab-content">
-                                        <div role="tabpanel" class="tab-pane animated fadeInRight active" id="add">
-                                            <b>Home Content</b>
-                                            <div class="row clearfix">
+                        <form runat="server">
+                            <div class="body">
+                                <div class="row clearfix">
+                                    <div class="col-xs-12 col-lg-12" style="margin-bottom: 0px;">
+                                        <!-- Nav tabs -->
+                                        <div class="nav-tabs btn-group btn-group-justified" role="group" aria-label="Justified button group">
+                                            <a href="#add" class="btn bg-cyan waves-effect" role="presentation" data-toggle="tab">ADD</a>
+                                            <a href="#change" class="btn bg-cyan waves-effect" data-toggle="tab">CHANGE</a>
+                                            <a href="#remove" class="btn bg-cyan waves-effect" data-toggle="tab">REMOVE</a>
+                                        </div>
+                                        <!-- Tab panes -->
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane animated fadeInRight active" id="add">
+                                                <b>Home Content</b>
+                                                <div class="row clearfix">
+                                                    <div class="col-sm-3" style="margin-bottom: 0px;">
+                                                        <div class="form-group form-float">
+                                                            <div class="form-line">
+                                                                <asp:TextBox ID="tbID" class="form-control" runat="server"></asp:TextBox>
+                                                                <label class="form-label">ID (9 digits)</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3" style="margin-bottom: 0px;">
+                                                        <div class="form-group form-float">
+                                                            <div class="form-line">
+                                                                <asp:TextBox ID="tbLastName" class="form-control" runat="server"></asp:TextBox>
+                                                                <label class="form-label">Last Name</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3" style="margin-bottom: 0px;">
+                                                        <div class="form-group form-float">
+                                                            <div class="form-line">
+                                                                <asp:TextBox ID="tbFirstName" class="form-control" runat="server"></asp:TextBox>
+                                                                <label class="form-label">First Name</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3" style="margin-bottom: 0px;">
+                                                        <div class="form-group form-float">
+                                                            <div class="form-line">
+                                                                <asp:TextBox ID="tbDOB" Width="72%" TextMode="Date" class="form-control" runat="server"></asp:TextBox>
+                                                                <label class="form-label">Date of Birth</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row clearfix">
+                                                    <div class="col-sm-4" style="margin-bottom: 0px;">
+                                                        <div class="form-group form-float">
+                                                            <div class="form-line">
+                                                                <asp:TextBox ID="tbCity" class="form-control" runat="server"></asp:TextBox>
+                                                                <label class="form-label">City</label>
+                                                            </div>
+                                                            <asp:RequiredFieldValidator ID="cityVal" runat="server" ValidationGroup="longLat" Display="Dynamic" ControlToValidate="tbCity" class="val-err-msg" ErrorMessage="City is empty"></asp:RequiredFieldValidator>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4" style="margin-bottom: 0px;">
+                                                        <div class="form-group form-float">
+                                                            <div class="form-line">
+                                                                <asp:TextBox ID="tbStreet" class="form-control" runat="server"></asp:TextBox>
+                                                                <label class="form-label">Street</label>
+                                                            </div>
+                                                            <asp:RequiredFieldValidator ID="streetVal" runat="server" ValidationGroup="longLat" Display="Dynamic" ControlToValidate="tbStreet" class="val-err-msg" ErrorMessage="Street is empty"></asp:RequiredFieldValidator>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4" style="margin-bottom: 0px;">
+                                                        <div class="form-group form-float">
+                                                            <div class="form-line">
+                                                                <asp:TextBox ID="tbHouseNumber" class="form-control" runat="server"></asp:TextBox>
+                                                                <label class="form-label">House Number</label>
+                                                            </div>
+                                                            <asp:RequiredFieldValidator ID="houseNumVal" runat="server" ValidationGroup="longLat" Display="Dynamic" ControlToValidate="tbHouseNumber" class="val-err-msg" ErrorMessage="House Number is empty"></asp:RequiredFieldValidator>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row clearfix">
+                                                    <div class="col-sm-4" style="margin-bottom: 0px;">
+                                                        <asp:Button ID="btnGetLongAndLat" runat="server" OnClick="btnGetLongAndLat_Click" ValidationGroup="longLat" Text="Get Longitude & Latitude" class="btn btn-block btn-lg bg-cyan" />
+                                                    </div>
+                                                    <div class="col-sm-4" style="margin-bottom: 0px;">
+                                                        <div class="form-group form-float">
+                                                            <div class="form-line">
+                                                                <asp:TextBox ID="tbLongitude" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                                <label class="form-label">Longitude</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-4" style="margin-bottom: 0px;">
+                                                        <div class="form-group form-float">
+                                                            <div class="form-line">
+                                                                <asp:TextBox ID="tbLatitude" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                                <label class="form-label">Latitude</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane animated fadeInRight" id="change">
+                                                <b>Profile Content</b>
+                                                <div class="col-sm-12" style="margin-bottom: 0px;">
+                                                    <asp:RadioButtonList ID="rblKids" runat="server" Width="100%" RepeatDirection="Horizontal">
+                                                    </asp:RadioButtonList>
+                                                </div>
                                                 <div class="col-sm-4" style="margin-bottom: 0px;">
                                                     <div class="form-group form-float">
                                                         <div class="form-line">
@@ -58,71 +155,21 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-4" style="margin-bottom: 0px;">
-                                                    <div class="form-group form-float">
-                                                        <div class="form-line">
-                                                            <input type="date" class="form-control">
-                                                            <label class="form-label">Date of Birth</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-4" style="margin-bottom: 0px;">
-                                                    <div class="form-group form-float">
-                                                        <div class="form-line">
-                                                            <asp:TextBox runat="server"></asp:TextBox>
-                                                            <input type="text" class="form-control">
-                                                            <label class="form-label">City</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
                                             </div>
-                                        </div>
-                                        <div role="tabpanel" class="tab-pane animated fadeInRight" id="change">
-                                            <b>Profile Content</b>
-                                            <div class="col-sm-12" style="margin-bottom: 0px;">
-                                                <form runat="server">
-                                                    <asp:RadioButtonList ID="rblKids" runat="server" Width="100%" RepeatDirection="Horizontal">
-                                                    </asp:RadioButtonList>
-                                                </form>
-                                            </div>
-                                            <div class="col-sm-4" style="margin-bottom: 0px;">
-                                                <div class="form-group form-float">
-                                                    <div class="form-line">
-                                                        <input type="text" class="form-control">
-                                                        <label class="form-label">ID (9 digits)</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4" style="margin-bottom: 0px;">
-                                                <div class="form-group form-float">
-                                                    <div class="form-line">
-                                                        <input type="text" class="form-control">
-                                                        <label class="form-label">Last Name</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4" style="margin-bottom: 0px;">
-                                                <div class="form-group form-float">
-                                                    <div class="form-line">
-                                                        <input type="text" class="form-control">
-                                                        <label class="form-label">First Name</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div role="tabpanel" class="tab-pane animated fadeInRight" id="remove">
-                                            <b>Message Content</b>
-                                            <p>
-                                                Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
+                                            <div role="tabpanel" class="tab-pane animated fadeInRight" id="remove">
+                                                <b>Message Content</b>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
                                                 Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent
                                                 aliquid pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere
                                                 gubergren sadipscing mel.
-                                            </p>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
