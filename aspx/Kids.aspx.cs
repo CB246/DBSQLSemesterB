@@ -37,11 +37,18 @@ public partial class aspx_Kids : System.Web.UI.Page
         Random rand = new Random();
         tbLatitude.Text = (MIN_LATITUDE + rand.NextDouble() * (MAX_LATITUDE - MIN_LATITUDE)).ToString().Substring(0, 8);
         tbLongitude.Text = (MIN_LONGITUDE + rand.NextDouble() * (MAX_LONGITUDE - MIN_LONGITUDE)).ToString().Substring(0, 8);
+        tgKindergardens.Visible = true;
     }
 
 
     protected void btnGetLongAndLat_Click(object sender, EventArgs e)
     {
         setLongAndLat();
+    }
+
+
+    protected void btnAddKidToPublic_Click(object sender, EventArgs e)
+    {
+        KGManager.log("add to public button");
     }
 }

@@ -47,6 +47,8 @@
                                                                 <asp:TextBox ID="tbID" class="form-control" runat="server"></asp:TextBox>
                                                                 <label class="form-label">ID (9 digits)</label>
                                                             </div>
+                                                            <asp:RegularExpressionValidator ID="IDRegExVal" runat="server" ErrorMessage="ID must be 9 digits" Display="Dynamic" ValidationGroup="longLat" CssClass="val-err-msg" ValidationExpression="[0-9]{9}"></asp:RegularExpressionValidator>
+                                                            <asp:RequiredFieldValidator ID="IDReqVal" runat="server" Display="Dynamic" ErrorMessage="ID is empty" ValidationGroup="longLat" CssClass="val-err-msg"></asp:RequiredFieldValidator>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-3" style="margin-bottom: 0px;">
@@ -103,7 +105,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="row clearfix">
+                                                <div class="row clearfix" style="border-bottom: 1px solid rgba(204, 204, 204, 0.35);">
                                                     <div class="col-sm-4" style="margin-bottom: 0px;">
                                                         <asp:Button ID="btnGetLongAndLat" runat="server" OnClick="btnGetLongAndLat_Click" ValidationGroup="longLat" Text="Get Longitude & Latitude" class="btn btn-block btn-lg bg-cyan" />
                                                     </div>
@@ -121,6 +123,47 @@
                                                                 <asp:TextBox ID="tbLatitude" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
                                                                 <label class="form-label">Latitude</label>
                                                             </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-lg-12" id="tgKindergardens" runat="server" visible="false" style="margin-bottom: 0px; margin-top: 10px;">
+                                                    <!-- Nav Kindergardens tabs -->
+                                                    <div class="nav-tabs btn-group btn-group-justified" role="group" aria-label="Justified button group">
+                                                        <asp:HyperLink ID="hlPublic" runat="server" class="btn bg-cyan waves-effect" NavigateUrl="#public" data-toggle="tab">PUBLIC KINDERGARDEN</asp:HyperLink>
+                                                        <asp:HyperLink ID="hpPrivate" runat="server" class="btn bg-cyan waves-effect" NavigateUrl="#private" data-toggle="tab">PRIVATE KINDERGARDEN</asp:HyperLink>
+                                                    </div>
+                                                    <!-- Kindergardens Tabs content-->
+                                                    <div class="tab-content">
+                                                        <div role="tabpanel" class="tab-pane animated jello" id="public">
+                                                            <div class="row clearfix">
+                                                                <div class="col-sm-6" style="margin-bottom: 0px;">
+                                                                    <div class="form-group form-float">
+                                                                        <div class="form-line">
+                                                                            <asp:TextBox ID="tbKgID" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                                            <label class="form-label">Kindergarden ID</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6" style="margin-bottom: 0px;">
+                                                                    <div class="form-group form-float">
+                                                                        <div class="form-line">
+                                                                            <asp:TextBox ID="tbClassNum" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                                            <label class="form-label">Class num</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row clearfix">
+                                                                <div class="col-sm-12" style="margin-bottom: 0px;">
+                                                                    <asp:Button ID="btnAddKidToPublic" runat="server" OnClick="btnAddKidToPublic_Click" ValidationGroup="add" Text="Add Kid to Kindergarden" class="btn btn-block btn-lg bg-cyan" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane animated jello" id="private">
+                                                            private KG<br />
+                                                            *   get all private kindergardens with available slots in right class<br />
+                                                            *   show all kindergardens & classes<br />
+                                                            *   let parent choose a KG & class
                                                         </div>
                                                     </div>
                                                 </div>

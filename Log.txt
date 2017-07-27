@@ -1,26 +1,46 @@
-26-07 : 21-35-23 - Starting
-26-07 : 21-35-29 - Login button was clicked
-26-07 : 21-35-29 - Starting
-26-07 : 23-24-00 - Starting
-26-07 : 23-24-12 - Starting
-26-07 : 23-24-16 - Starting
-26-07 : 23-24-18 - Starting
-26-07 : 23-24-20 - Starting
-26-07 : 23-24-22 - Starting
-26-07 : 23-24-24 - Starting
-26-07 : 23-24-57 - Starting
-26-07 : 23-25-16 - Starting
-26-07 : 23-25-55 - Starting
-26-07 : 23-25-57 - Starting
-26-07 : 23-25-58 - Starting
-26-07 : 23-25-59 - Starting
-26-07 : 23-27-06 - Starting
-26-07 : 23-27-09 - Starting
-26-07 : 23-28-13 - Starting
-26-07 : 23-28-16 - Starting
-26-07 : 23-28-18 - Starting
-26-07 : 23-28-23 - Starting
-26-07 : 23-28-25 - Starting
-26-07 : 23-28-50 - Starting
-26-07 : 23-28-52 - Starting
-26-07 : 23-28-54 - Starting
+28-07 : 00-04-34 - Received instruction to run procedure getAllKidsOfParent
+28-07 : 00-04-34 - Adding parameter @parentID=
+28-07 : 00-04-34 - Opened KGConnection
+28-07 : 00-04-34 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
+28-07 : 00-04-34 - Returned #5 rows!!
+28-07 : 00-04-34 - Closing connection
+28-07 : 00-04-34 - Starting
+28-07 : 00-04-42 - Login button was clicked
+28-07 : 00-04-42 - Starting
+28-07 : 00-04-43 - Starting
+28-07 : 00-04-48 - Starting
+28-07 : 00-08-15 - Starting
+28-07 : 00-08-19 - Starting
+28-07 : 00-08-24 - Starting
+28-07 : 00-08-29 - Starting
+28-07 : 00-08-30 - Starting
+28-07 : 00-08-34 - Starting
+28-07 : 00-08-35 - Starting
+28-07 : 00-08-36 - Starting
+28-07 : 00-09-13 - Starting
+28-07 : 00-09-18 - Starting
+28-07 : 00-09-20 - Starting
+28-07 : 00-09-26 - Starting
+28-07 : 00-09-40 - Starting
+28-07 : 00-09-42 - Starting
+28-07 : 00-09-45 - Starting
+28-07 : 00-11-14 - Starting
+28-07 : 00-11-18 - Starting
+28-07 : 00-11-43 - Starting
+28-07 : 00-14-09 - Starting
+28-07 : 00-14-11 - Starting
+28-07 : 00-14-15 - Starting
+28-07 : 00-14-55 - Starting
+28-07 : 00-15-01 - Starting
+28-07 : 00-15-17 - Starting
+28-07 : 00-15-17 - Starting
+28-07 : 00-15-20 - Starting
+28-07 : 00-15-22 - Starting
+28-07 : 00-17-41 - Starting
+28-07 : 00-17-42 - Starting
+28-07 : 00-17-45 - Starting
+28-07 : 00-18-22 - Starting
+28-07 : 00-18-26 - Starting
+28-07 : 00-18-46 - Starting
+28-07 : 00-18-49 - Starting
+28-07 : 00-18-49 - add to public button
