@@ -13,9 +13,6 @@
     <!-- Animation Css -->
     <link href="/plugins/animate-css/animate.css" rel="stylesheet" />
 
-    <!-- Sweetalert Css -->
-    <link href="/plugins/sweetalert/sweetalert.css" rel="stylesheet" />
-
     <!-- Custom Css -->
     <link href="/css/style.css" rel="stylesheet">
 
@@ -41,9 +38,6 @@
 
     <!-- Waves Effect Plugin Js -->
     <script src="/plugins/node-waves/waves.js"></script>
-
-    <!-- SweetAlert Plugin Js -->
-    <script src="/plugins/sweetalert/sweetalert.min.js"></script>
 
     <!-- Custom Js -->
     <script src="/js/admin.js"></script>
@@ -239,20 +233,9 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="row clearfix js-sweetalert">
+                                                            <div class="row clearfix">
                                                                 <div class="col-sm-12" style="margin-bottom: 0px;">
-                                                                    <asp:Button ID="btnAddKidToPublic" runat="server" OnClick="btnAddKidToPublic_Click" ValidationGroup="add" Text="Add Kid to Kindergarden" class="btn btn-primary waves-effect" data-type="success" />
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                        <div class="body">
-                                                            <div class="row clearfix js-sweetalert">
-                                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                                                                    <p>A success message!</p>
-                                                                    <asp:Button ID="btnCheck" runat="server" OnClick="btnAddKidToPublic_Click" ValidationGroup="add" Text="Add Kid to Kindergarden" class="btn btn-primary waves-effect" data-type="success" />
-
-                                                                    <button class="btn btn-primary waves-effect" onclick="return false" data-type="success">CLICK ME</button>
+                                                                    <asp:Button ID="btnAddKidToPublic" runat="server" OnClick="btnAddKidToPublic_Click" ValidationGroup="add" Text="Add Kid to Kindergarden" class="btn btn-block btn-lg bg-cyan" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -305,6 +288,24 @@
                                                 gubergren sadipscing mel.
                                                 </p>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Default Size -->
+                            <div class="modal fade" runat="server" id="defaultModal" tabindex="-1" role="dialog" style="display: none;">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content" runat="server" id="modalColor">
+                                        <div class="modal-header">
+                                            <h4 class="modal-title" id="defaultModalLabel">Modal title</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-link waves-effect">SAVE CHANGES</button>
+                                            <asp:Button class="btn btn-link waves-effect" runat="server" ID="cancelButton" OnClick="cancelButton_Click" Text="CLOSE EPTA" />
+                                            <button type="button" class="btn btn-link waves-effect" data-dismiss="modal">CLOSE</button>
                                         </div>
                                     </div>
                                 </div>

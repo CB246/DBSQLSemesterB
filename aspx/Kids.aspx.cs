@@ -8,17 +8,28 @@ public partial class aspx_Kids : System.Web.UI.Page
     private static double MIN_LONGITUDE = 34.57149;
     private static double MAX_LONGITUDE = 35.57212;
 
-    private static int status = 0;
+    private static TabType tabType = TabType.NONE;
+    private static bool isSuccess = false;
+    private static bool alreadyIn = false;
 
     protected void Page_Load(object sender, EventArgs e)
     {
+        KGManager.log("kids page was loaded");
         if (!KGManager.userLogin.Equals("Admin"))
         {
             PopulateList();
         }
         if (IsPostBack)
         {
+            // page refreshed
             submitData();
+        }
+        else
+        {
+            //page loaded first time
+            tabType = TabType.NONE;
+            isSuccess = false;
+            alreadyIn = false;
         }
     }
 
@@ -93,14 +104,45 @@ public partial class aspx_Kids : System.Web.UI.Page
             tbKGhouseNum.Text = row["houseNumber"].ToString();
         }
     }
+
     protected void submitData()
     {
-        KGManager.log("Submitted");
+        switch (tabType)
+        {
+            case TabType.ADD:
+
+                if (alreadyIn && !isSuccess)
+                {
+                    //ID already in DB - can't add new kid
+                    showMessage("This ID is already in DataBase.", "red", 250);
+                }
+
+                if (isSuccess)
+                {
+                    //Kid was added successfully to DB
+                    showMessage("Kid " + tbID.Text + " was added successfully to DataBase.", "green", 250);
+                }
+                
+                if (!alreadyIn && !isSuccess)
+                {
+                    //Kid wasn't added to DB
+                    showMessage("OOPS... Something went wrong and kid " + tbID.Text + " wasn't added to DataBase.", "red", 250);
+                }
+
+                break;
+            case TabType.CHANGE:
+                break;
+            case TabType.REMOVE:
+                break;
+            case TabType.NONE:
+                break;
+        }
     }
+
     protected void btnAddKidToPublic_Click(object sender, EventArgs e)
     {
-        KGManager.log("Check");
-        /*
+        KGManager.log("Add kid button was clicked");
+        tabType = TabType.ADD;
         KGManager.log("add to public button was clicked");
         //check if ID already exists in DB
         Dictionary<string, object> data = new Dictionary<string, object>();
@@ -109,12 +151,13 @@ public partial class aspx_Kids : System.Web.UI.Page
         if (dt.Rows.Count != 0)
         {
             //ID already in DB
-            KGManager.log("ID " + tbID.Text + " already in DB");
-
+            KGManager.log("ID " + tbID.Text + " already in DB\n\n");
+            alreadyIn = true;
         }
         else
         {
             //ID not in DB
+            alreadyIn = false;
             data = new Dictionary<string, object>();
             data.Add("kidID", tbID.Text);
             data.Add("firstName", tbFirstName.Text);
@@ -133,13 +176,49 @@ public partial class aspx_Kids : System.Web.UI.Page
             {
                 //Kid was added successfully
                 KGManager.log("Kid " + tbID.Text + " was added to parent " + KGManager.userLogin);
-
+                isSuccess = true;
             }
             else
             {
                 //Kid wasn't added
                 KGManager.log("Kid " + tbID.Text + " was NOT added to parent " + KGManager.userLogin);
+                isSuccess = false;
             }
-        }*/
+        }
+        submitData();
+    }
+
+    private enum TabType
+    {
+        ADD,
+        CHANGE,
+        REMOVE,
+        NONE
+    }
+
+    protected void cancelButton_Click(object sender, EventArgs e)
+    {
+        closeMessage();
+    }
+
+    private void closeMessage()
+    {
+        lblMessage.Text = "";
+        defaultModal.Attributes.CssStyle.Value = "display: none;";
+        defaultModal.Attributes.Remove("class");
+        defaultModal.Attributes.Add("class", "modal fade");
+        modalColor.Attributes.Remove("class");
+        modalColor.Attributes.Add("class", "modal-content");
+    }
+
+    private void showMessage(string text, string color, int width)
+    {
+        lblMessage.Text = text;
+        defaultModal.Attributes.CssStyle.Value = "display: block; margin-top: 15%;";
+        defaultModal.Attributes.Remove("class");
+        defaultModal.Attributes.Add("class", "modal fade in");
+        modalColor.Attributes.Remove("class");
+        modalColor.Attributes.Add("class", "modal-content modal-col-" + color);
+        modalColor.Attributes.CssStyle.Value = "width: " + width + "px; margin: auto;";
     }
 }
