@@ -16,6 +16,10 @@ public partial class aspx_Kids : System.Web.UI.Page
         {
             PopulateList();
         }
+        if (IsPostBack)
+        {
+            submitData();
+        }
     }
 
     private void PopulateList()
@@ -89,7 +93,10 @@ public partial class aspx_Kids : System.Web.UI.Page
             tbKGhouseNum.Text = row["houseNumber"].ToString();
         }
     }
-
+    protected void submitData()
+    {
+        KGManager.log("Submitted");
+    }
     protected void btnAddKidToPublic_Click(object sender, EventArgs e)
     {
         KGManager.log("Check");
