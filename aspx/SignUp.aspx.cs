@@ -41,7 +41,7 @@ public partial class aspx_SignUp : System.Web.UI.Page
                 //parent added successfully
                 KGManager.log("Parent was added successfully");
                 KGManager.userLogin = tbLogin.Text;
-                KGManager.userName = rblGender.SelectedIndex == 0 ? "Mr " : "Ms " + tbLastName.Text + " " + tbFirstName.Text;
+                KGManager.userName = (rblGender.SelectedIndex == 0 ? "Mr " : "Ms ") + tbLastName.Text + " " + tbFirstName.Text;
                 Response.Redirect("/Default.aspx");
                 Context.ApplicationInstance.CompleteRequest();
             }

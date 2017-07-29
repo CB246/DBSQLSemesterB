@@ -2,6 +2,58 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
 
+    <!-- ==========START OF CSS================= -->
+
+    <!-- Bootstrap Core Css -->
+    <link href="/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Waves Effect Css -->
+    <link href="/plugins/node-waves/waves.css" rel="stylesheet" />
+
+    <!-- Animation Css -->
+    <link href="/plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Sweetalert Css -->
+    <link href="/plugins/sweetalert/sweetalert.css" rel="stylesheet" />
+
+    <!-- Custom Css -->
+    <link href="/css/style.css" rel="stylesheet">
+
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="/css/themes/all-themes.css" rel="stylesheet" />
+
+    <!-- ===========START OF SCRIPTS============== -->
+
+    <!-- Jquery Core Js -->
+    <script src="/plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="/plugins/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Select Plugin Js -->
+    <script src="/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+
+    <!-- Slimscroll Plugin Js -->
+    <script src="/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+
+    <!-- Bootstrap Notify Plugin Js -->
+    <script src="/plugins/bootstrap-notify/bootstrap-notify.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="/plugins/node-waves/waves.js"></script>
+
+    <!-- SweetAlert Plugin Js -->
+    <script src="/plugins/sweetalert/sweetalert.min.js"></script>
+
+    <!-- Custom Js -->
+    <script src="/js/admin.js"></script>
+    <script src="/js/pages/ui/dialogs.js"></script>
+
+    <!-- Demo Js -->
+    <script src="/js/demo.js"></script>
+
+    <!-- ============END OF SCRIPTS==============-->
+
     <style>
         .form-group .form-line .form-label {
             right: 0;
@@ -47,8 +99,8 @@
                                                                 <asp:TextBox ID="tbID" class="form-control" runat="server"></asp:TextBox>
                                                                 <label class="form-label">ID (9 digits)</label>
                                                             </div>
-                                                            <asp:RegularExpressionValidator ID="IDRegExVal" runat="server" ErrorMessage="ID must be 9 digits" Display="Dynamic" ValidationGroup="longLat" CssClass="val-err-msg" ValidationExpression="[0-9]{9}"></asp:RegularExpressionValidator>
-                                                            <asp:RequiredFieldValidator ID="IDReqVal" runat="server" Display="Dynamic" ErrorMessage="ID is empty" ValidationGroup="longLat" CssClass="val-err-msg"></asp:RequiredFieldValidator>
+                                                            <asp:RegularExpressionValidator ID="IDRegExVal" runat="server" ControlToValidate="tbID" ErrorMessage="ID must be 9 digits" Display="Dynamic" ValidationGroup="longLat" CssClass="val-err-msg" ValidationExpression="[0-9]{9}"></asp:RegularExpressionValidator>
+                                                            <asp:RequiredFieldValidator ID="IDReqVal" runat="server" ControlToValidate="tbID" Display="Dynamic" ErrorMessage="ID is empty" ValidationGroup="longLat" CssClass="val-err-msg"></asp:RequiredFieldValidator>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-3" style="margin-bottom: 0px;">
@@ -136,7 +188,7 @@
                                                     <div class="tab-content">
                                                         <div role="tabpanel" class="tab-pane animated jello" id="public">
                                                             <div class="row clearfix">
-                                                                <div class="col-sm-6" style="margin-bottom: 0px;">
+                                                                <div class="col-sm-3" style="margin-bottom: 0px;">
                                                                     <div class="form-group form-float">
                                                                         <div class="form-line">
                                                                             <asp:TextBox ID="tbKgID" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
@@ -144,18 +196,63 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-6" style="margin-bottom: 0px;">
+                                                                <div class="col-sm-3" style="margin-bottom: 0px;">
                                                                     <div class="form-group form-float">
                                                                         <div class="form-line">
-                                                                            <asp:TextBox ID="tbClassNum" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
-                                                                            <label class="form-label">Class num</label>
+                                                                            <asp:TextBox ID="tbKGname" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                                            <label class="form-label">Kindergarden Name</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-3" style="margin-bottom: 0px;">
+                                                                    <div class="form-group form-float">
+                                                                        <div class="form-line">
+                                                                            <asp:TextBox ID="tbClNum" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                                            <label class="form-label">Class Number</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-3" style="margin-bottom: 0px;">
+                                                                    <div class="form-group form-float">
+                                                                        <div class="form-line">
+                                                                            <asp:TextBox ID="tbClName" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                                            <label class="form-label">Class Name</label>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div class="row clearfix">
+                                                                <div class="col-sm-6" style="margin-bottom: 0px;">
+                                                                    <div class="form-group form-float">
+                                                                        <div class="form-line">
+                                                                            <asp:TextBox ID="tbKGStreet" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                                            <label class="form-label">Street</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6" style="margin-bottom: 0px;">
+                                                                    <div class="form-group form-float">
+                                                                        <div class="form-line">
+                                                                            <asp:TextBox ID="tbKGhouseNum" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                                            <label class="form-label">House Number</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row clearfix js-sweetalert">
                                                                 <div class="col-sm-12" style="margin-bottom: 0px;">
-                                                                    <asp:Button ID="btnAddKidToPublic" runat="server" OnClick="btnAddKidToPublic_Click" ValidationGroup="add" Text="Add Kid to Kindergarden" class="btn btn-block btn-lg bg-cyan" />
+                                                                    <asp:Button ID="btnAddKidToPublic" runat="server" OnClick="btnAddKidToPublic_Click" ValidationGroup="add" Text="Add Kid to Kindergarden" class="btn btn-primary waves-effect" data-type="success" />
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="body">
+                                                            <div class="row clearfix js-sweetalert">
+                                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                                    <p>A success message!</p>
+                                                                    <asp:Button ID="btnCheck" runat="server" OnClick="btnAddKidToPublic_Click" ValidationGroup="add" Text="Add Kid to Kindergarden" class="btn btn-primary waves-effect" data-type="success" />
+
+                                                                    <button class="btn btn-primary waves-effect" onclick="return false" data-type="success">CLICK ME</button>
                                                                 </div>
                                                             </div>
                                                         </div>
