@@ -78,13 +78,14 @@
                                     <div class="col-xs-12 col-lg-12" style="margin-bottom: 0px;">
                                         <!-- Nav tabs -->
                                         <div class="nav-tabs btn-group btn-group-justified" role="group" aria-label="Justified button group">
-                                            <a href="#add" class="btn bg-cyan waves-effect" role="presentation" data-toggle="tab">ADD</a>
-                                            <a href="#change" class="btn bg-cyan waves-effect" data-toggle="tab">CHANGE</a>
-                                            <a href="#remove" class="btn bg-cyan waves-effect" data-toggle="tab">REMOVE</a>
+                                            <a href="#add" runat="server" id="addTabButton" class="btn bg-cyan waves-effect" role="presentation" data-toggle="tab">ADD</a>
+                                            <asp:HyperLink ID="HyperLink1" runat="server" class="btn bg-cyan waves-effect" NavigateUrl="#add" data-toggle="tab">PUBLIC KINDERGARDEN</asp:HyperLink>
+                                            <a href="#change" runat="server" id="changeTabButton" class="btn bg-cyan waves-effect" data-toggle="tab">CHANGE</a>
+                                            <a href="#remove" runat="server" id="removeTabButton" class="btn bg-cyan waves-effect" data-toggle="tab">REMOVE</a>
                                         </div>
                                         <!-- Tab panes -->
                                         <div class="tab-content">
-                                            <div role="tabpanel" class="tab-pane animated fadeInRight active" id="add">
+                                            <div role="tabpanel" class="tab-pane animated fadeInRight" id="add">
                                                 <b>Home Content</b>
                                                 <div class="row clearfix">
                                                     <div class="col-sm-3" style="margin-bottom: 0px;">
@@ -103,6 +104,8 @@
                                                                 <asp:TextBox ID="tbLastName" class="form-control" runat="server"></asp:TextBox>
                                                                 <label class="form-label">Last Name</label>
                                                             </div>
+                                                            <asp:RegularExpressionValidator ID="lastNameRegExVal" runat="server" ControlToValidate="tbLastName" ErrorMessage="Last Name can only contain letters" Display="Dynamic" ValidationGroup="longLat" CssClass="val-err-msg" ValidationExpression="[A-Za-z \-]+"></asp:RegularExpressionValidator>
+                                                            <asp:RequiredFieldValidator ID="lastNameReqVal" runat="server" ControlToValidate="tbLastName" Display="Dynamic" ErrorMessage="Last Name is empty" ValidationGroup="longLat" CssClass="val-err-msg"></asp:RequiredFieldValidator>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-3" style="margin-bottom: 0px;">
@@ -111,14 +114,17 @@
                                                                 <asp:TextBox ID="tbFirstName" class="form-control" runat="server"></asp:TextBox>
                                                                 <label class="form-label">First Name</label>
                                                             </div>
+                                                            <asp:RegularExpressionValidator ID="firstNameRegExVal" runat="server" ControlToValidate="tbFirstName" ErrorMessage="First Name can only contain letters" Display="Dynamic" ValidationGroup="longLat" CssClass="val-err-msg" ValidationExpression="[A-Za-z \-]+"></asp:RegularExpressionValidator>
+                                                            <asp:RequiredFieldValidator ID="firstNameReqVal" runat="server" ControlToValidate="tbFirstName" Display="Dynamic" ErrorMessage="First Name is empty" ValidationGroup="longLat" CssClass="val-err-msg"></asp:RequiredFieldValidator>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-3" style="margin-bottom: 0px;">
                                                         <div class="form-group form-float">
                                                             <div class="form-line">
-                                                                <asp:TextBox ID="tbDOB" Width="72%" TextMode="Date" class="form-control" runat="server"></asp:TextBox>
+                                                                <asp:TextBox ID="tbDOB" Width="72%" TextMode="Date" class="form-control" runat="server" min="2009-09-02" max="2017-09-01"></asp:TextBox>
                                                                 <label class="form-label">Date of Birth</label>
                                                             </div>
+                                                            <asp:RequiredFieldValidator ID="dobReqVal" runat="server" ControlToValidate="tbDOB" Display="Dynamic" ErrorMessage="Date of Birth is empty" ValidationGroup="longLat" CssClass="val-err-msg"></asp:RequiredFieldValidator>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -129,6 +135,7 @@
                                                                 <asp:TextBox ID="tbCity" class="form-control" runat="server"></asp:TextBox>
                                                                 <label class="form-label">City</label>
                                                             </div>
+                                                            <asp:RegularExpressionValidator ID="cityRegExVal" runat="server" ControlToValidate="tbCity" ErrorMessage="City can only contain letters" Display="Dynamic" ValidationGroup="longLat" CssClass="val-err-msg" ValidationExpression="[A-Za-z \-]+"></asp:RegularExpressionValidator>
                                                             <asp:RequiredFieldValidator ID="cityVal" runat="server" ValidationGroup="longLat" Display="Dynamic" ControlToValidate="tbCity" class="val-err-msg" ErrorMessage="City is empty"></asp:RequiredFieldValidator>
                                                         </div>
                                                     </div>
@@ -138,6 +145,7 @@
                                                                 <asp:TextBox ID="tbStreet" class="form-control" runat="server"></asp:TextBox>
                                                                 <label class="form-label">Street</label>
                                                             </div>
+                                                            <asp:RegularExpressionValidator ID="streetRegExVal" runat="server" ControlToValidate="tbStreet" ErrorMessage="Street can only contain letters" Display="Dynamic" ValidationGroup="longLat" CssClass="val-err-msg" ValidationExpression="[A-Za-z \-]+"></asp:RegularExpressionValidator>
                                                             <asp:RequiredFieldValidator ID="streetVal" runat="server" ValidationGroup="longLat" Display="Dynamic" ControlToValidate="tbStreet" class="val-err-msg" ErrorMessage="Street is empty"></asp:RequiredFieldValidator>
                                                         </div>
                                                     </div>
@@ -147,6 +155,7 @@
                                                                 <asp:TextBox ID="tbHouseNumber" class="form-control" runat="server"></asp:TextBox>
                                                                 <label class="form-label">House Number</label>
                                                             </div>
+                                                            <asp:RegularExpressionValidator ID="houseNumRegExVal" runat="server" ControlToValidate="tbHouseNumber" ErrorMessage="House Number can only contain numbers" Display="Dynamic" ValidationGroup="longLat" CssClass="val-err-msg" ValidationExpression="[0-9]+"></asp:RegularExpressionValidator>
                                                             <asp:RequiredFieldValidator ID="houseNumVal" runat="server" ValidationGroup="longLat" Display="Dynamic" ControlToValidate="tbHouseNumber" class="val-err-msg" ErrorMessage="House Number is empty"></asp:RequiredFieldValidator>
                                                         </div>
                                                     </div>
@@ -216,7 +225,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="row clearfix">
-                                                                <div class="col-sm-6" style="margin-bottom: 0px;">
+                                                                <div class="col-sm-4" style="margin-bottom: 0px;">
                                                                     <div class="form-group form-float">
                                                                         <div class="form-line">
                                                                             <asp:TextBox ID="tbKGStreet" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
@@ -224,7 +233,7 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col-sm-6" style="margin-bottom: 0px;">
+                                                                <div class="col-sm-4" style="margin-bottom: 0px;">
                                                                     <div class="form-group form-float">
                                                                         <div class="form-line">
                                                                             <asp:TextBox ID="tbKGhouseNum" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
@@ -232,24 +241,113 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
+                                                                <div class="col-sm-4" style="margin-bottom: 0px;">
+                                                                    <div class="progress p-l-0 m-b-0">
+                                                                        <div id="progressBarDiv" runat="server" class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" style="width: 20%"></div>
+                                                                    </div>
+                                                                    <div class="help-info align-center" style="font-size: 12px; margin-top: 5px; color: #999;">
+                                                                        <asp:Label ID="lblPublicProgressBar" runat="server" Text=""></asp:Label>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                             <div class="row clearfix">
                                                                 <div class="col-sm-12" style="margin-bottom: 0px;">
-                                                                    <asp:Button ID="btnAddKidToPublic" runat="server" OnClick="btnAddKidToPublic_Click" ValidationGroup="add" Text="Add Kid to Kindergarden" class="btn btn-block btn-lg bg-cyan" />
+                                                                    <asp:Button ID="btnAddKidToPublic" runat="server" OnClick="btnAddKidToPublic_Click" ValidationGroup="longLat" Text="Add Kid to Public Kindergarden" class="btn btn-block btn-lg bg-cyan" />
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <!-- PRIVATE KINDERGARDEN -->
                                                         <div role="tabpanel" class="tab-pane animated jello" id="private">
-                                                            private KG<br />
-                                                            *   get all private kindergardens with available slots in right class<br />
-                                                            *   show all kindergardens & classes<br />
-                                                            *   let parent choose a KG & class
+                                                            <div class="row clearfix">
+                                                                <div class="col-sm-3" style="margin-bottom: 0px;">
+                                                                    <div class="form-group form-float">
+                                                                        <div class="form-line">
+                                                                            <asp:TextBox ID="tbKGidPriv" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                                            <label class="form-label">Kindergarden ID</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-3" style="margin-bottom: 0px;">
+                                                                    <div class="form-group form-float">
+                                                                        <div class="form-line">
+                                                                            <asp:TextBox ID="tbKGnamePriv" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                                            <label class="form-label">Kindergarden Name</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-3" style="margin-bottom: 0px;">
+                                                                    <div class="form-group form-float">
+                                                                        <div class="form-line">
+                                                                            <asp:TextBox ID="tbClNumPriv" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                                            <label class="form-label">Class Number</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-3" style="margin-bottom: 0px;">
+                                                                    <div class="form-group form-float">
+                                                                        <div class="form-line">
+                                                                            <asp:TextBox ID="tbClNamePriv" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                                            <label class="form-label">Class Name</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row clearfix">
+                                                                <div class="col-sm-4" style="margin-bottom: 0px;">
+                                                                    <div class="form-group form-float">
+                                                                        <div class="form-line">
+                                                                            <asp:TextBox ID="tbStreetPriv" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                                            <label class="form-label">Street</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4" style="margin-bottom: 0px;">
+                                                                    <div class="form-group form-float">
+                                                                        <div class="form-line">
+                                                                            <asp:TextBox ID="tbHouseNumPriv" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                                            <label class="form-label">House Number</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-4" style="margin-bottom: 0px;">
+                                                                    <div class="progress p-l-0 m-b-0">
+                                                                        <div id="divProgressPrivate" runat="server" class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" style="width: 20%"></div>
+                                                                    </div>
+                                                                    <div class="help-info align-center" style="font-size: 12px; margin-top: 5px; color: #999;">
+                                                                        <asp:Label ID="lblProgressPrivate" runat="server" Text=""></asp:Label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row clearfix">
+                                                                <div class="col-sm-12" style="margin-bottom: 0px;">
+                                                                    <asp:Button ID="btnAddKidToPrivate" runat="server" OnClick="btnAddKidToPrivate_Click" ValidationGroup="longLat" Text="Add Kid to Private Kindergarden" class="btn btn-block btn-lg bg-cyan" />
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div role="tabpanel" class="tab-pane animated fadeInRight" id="change">
                                                 <b>Profile Content</b>
+                                                <div class="demo-radio-button">
+                                                    <input name="group5" type="radio" id="radio_31" class="with-gap radio-col-cyan">
+                                                    <label for="radio_31">PINK</label>
+                                                    <input name="group5" type="radio" id="radio_32" class="with-gap radio-col-cyan">
+                                                    <label for="radio_32">PURPLE</label>
+                                                    <input name="group5" type="radio" id="radio_33" class="with-gap radio-col-cyan">
+                                                    <label for="radio_33">DEEP PURPLE</label>
+                                                    <input name="group5" type="radio" id="radio_34" class="with-gap radio-col-cyan">
+                                                    <label for="radio_34">INDIGO</label>
+                                                    <input name="group5" type="radio" id="radio_35" class="with-gap radio-col-cyan">
+                                                    <label for="radio_35">BLUE</label>
+                                                    <input name="group5" type="radio" id="radio_36" class="with-gap radio-col-cyan">
+                                                    <label for="radio_36">LIGHT BLUE</label>
+                                                    <input name="group5" type="radio" id="radio_37" class="with-gap radio-col-cyan">
+                                                    <label for="radio_37">CYAN</label>
+                                                </div>
+                                            </div>
+                                            <div role="tabpanel" class="tab-pane animated fadeInRight" id="remove">
+                                                <b>Message Content</b>
                                                 <div class="col-sm-12" style="margin-bottom: 0px;">
                                                     <asp:RadioButtonList ID="rblKids" runat="server" Width="100%" RepeatDirection="Horizontal">
                                                     </asp:RadioButtonList>
@@ -279,15 +377,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div role="tabpanel" class="tab-pane animated fadeInRight" id="remove">
-                                                <b>Message Content</b>
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, ut duo atqui exerci dicunt, ius impedit mediocritatem an. Pri ut tation electram moderatius.
-                                                Per te suavitate democritum. Duis nemore probatus ne quo, ad liber essent
-                                                aliquid pro. Et eos nusquam accumsan, vide mentitum fabellas ne est, eu munere
-                                                gubergren sadipscing mel.
-                                                </p>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -299,7 +388,7 @@
                                         <div class="modal-header">
                                             <h4 class="modal-title" id="defaultModalLabel">Modal title</h4>
                                         </div>
-                                        <div class="modal-body">
+                                        <div class="modal-body align-center">
                                             <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
                                         </div>
                                         <div class="modal-footer">

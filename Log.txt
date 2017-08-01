@@ -1,645 +1,251 @@
-30-07 : 01-17-25 - Starting masterPage
-30-07 : 01-17-31 - Login button was clicked
-30-07 : 01-17-31 - Received instruction to run procedure checkIfParentExists
-30-07 : 01-17-31 - Adding parameter @parentID=123123123
-30-07 : 01-17-32 - Opened KGConnection
-30-07 : 01-17-32 - Sending SQL Statement: checkIfParentExists with 1 parameters.
-30-07 : 01-17-32 - Returned #1 rows!!
-30-07 : 01-17-32 - Closing connection
-30-07 : 01-17-32 - Received instruction to run procedure checkLoginData
-30-07 : 01-17-32 - Adding parameter @parentID=123123123
-30-07 : 01-17-32 - Adding parameter @parentPass=qwerty
-30-07 : 01-17-32 - Opened KGConnection
-30-07 : 01-17-32 - Sending SQL Statement: checkLoginData with 2 parameters.
-30-07 : 01-17-32 - Returned #1 rows!!
-30-07 : 01-17-32 - Closing connection
-30-07 : 01-17-32 - Starting masterPage
-30-07 : 01-17-35 - kids page was loaded
-30-07 : 01-17-35 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-17-35 - Adding parameter @parentID=123123123
-30-07 : 01-17-35 - Opened KGConnection
-30-07 : 01-17-35 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-17-35 - Returned #3 rows!!
-30-07 : 01-17-35 - Closing connection
-30-07 : 01-17-35 - 
+01-08 : 23-51-53 - 
 
 
-TRYING TO POPUP MESSAGE
+		add kids page was loaded
+01-08 : 23-51-53 - Starting masterPage
+01-08 : 23-52-34 - Login button was clicked
+01-08 : 23-52-34 - Received instruction to run procedure checkIfParentExists
+01-08 : 23-52-34 - Adding parameter @parentID=123123123
+01-08 : 23-52-35 - Opened KGConnection
+01-08 : 23-52-35 - Sending SQL Statement: checkIfParentExists with 1 parameters.
+01-08 : 23-52-35 - Returned #1 rows!!
+01-08 : 23-52-35 - Closing connection
+01-08 : 23-52-35 - Received instruction to run procedure checkLoginData
+01-08 : 23-52-35 - Adding parameter @parentID=123123123
+01-08 : 23-52-35 - Adding parameter @parentPass=qwerty
+01-08 : 23-52-35 - Opened KGConnection
+01-08 : 23-52-35 - Sending SQL Statement: checkLoginData with 2 parameters.
+01-08 : 23-52-35 - Returned #1 rows!!
+01-08 : 23-52-35 - Closing connection
+01-08 : 23-52-35 - Starting masterPage
+01-08 : 23-52-38 - kids page was loaded
+01-08 : 23-52-38 - Starting masterPage
+01-08 : 23-52-48 - kids page was loaded
+01-08 : 23-52-48 - Starting masterPage
+01-08 : 23-52-50 - 
 
 
-
-30-07 : 01-17-35 - Starting masterPage
-30-07 : 01-17-42 - kids page was loaded
-30-07 : 01-17-42 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-17-42 - Adding parameter @parentID=123123123
-30-07 : 01-17-42 - Opened KGConnection
-30-07 : 01-17-42 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-17-42 - Returned #3 rows!!
-30-07 : 01-17-42 - Closing connection
-30-07 : 01-17-42 - Starting masterPage
-30-07 : 01-25-29 - kids page was loaded
-30-07 : 01-25-29 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-25-29 - Adding parameter @parentID=123123123
-30-07 : 01-25-29 - Opened KGConnection
-30-07 : 01-25-29 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-25-29 - Returned #3 rows!!
-30-07 : 01-25-29 - Closing connection
-30-07 : 01-25-29 - Starting masterPage
-30-07 : 01-25-55 - kids page was loaded
-30-07 : 01-25-55 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-25-55 - Adding parameter @parentID=123123123
-30-07 : 01-25-55 - Opened KGConnection
-30-07 : 01-25-55 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-25-55 - Returned #3 rows!!
-30-07 : 01-25-55 - Closing connection
-30-07 : 01-25-55 - Starting masterPage
-30-07 : 01-26-09 - kids page was loaded
-30-07 : 01-26-09 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-26-09 - Adding parameter @parentID=123123123
-30-07 : 01-26-09 - Opened KGConnection
-30-07 : 01-26-09 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-26-09 - Returned #3 rows!!
-30-07 : 01-26-09 - Closing connection
-30-07 : 01-26-09 - Starting masterPage
-30-07 : 01-26-09 - Received instruction to run procedure findAllPublicKGbyDate
-30-07 : 01-26-09 - Adding parameter @dateOfBirth=2017-01-01
-30-07 : 01-26-09 - Opened KGConnection
-30-07 : 01-26-09 - Sending SQL Statement: findAllPublicKGbyDate with 1 parameters.
-30-07 : 01-26-09 - Returned #2 rows!!
-30-07 : 01-26-09 - Closing connection
-30-07 : 01-26-15 - kids page was loaded
-30-07 : 01-26-15 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-26-15 - Adding parameter @parentID=123123123
-30-07 : 01-26-15 - Opened KGConnection
-30-07 : 01-26-15 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-26-15 - Returned #3 rows!!
-30-07 : 01-26-15 - Closing connection
-30-07 : 01-26-15 - Starting masterPage
-30-07 : 01-26-15 - Add kid button was clicked
-30-07 : 01-26-15 - add to public button was clicked
-30-07 : 01-26-15 - Received instruction to run procedure checkIfIDExists
-30-07 : 01-26-15 - Adding parameter @parentID=100000001
-30-07 : 01-26-15 - Opened KGConnection
-30-07 : 01-26-15 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-30-07 : 01-26-15 - Returned #1 rows!!
-30-07 : 01-26-15 - Closing connection
-30-07 : 01-26-15 - ID 100000001 already in DB
-30-07 : 01-26-33 - kids page was loaded
-30-07 : 01-26-33 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-26-33 - Adding parameter @parentID=123123123
-30-07 : 01-26-33 - Opened KGConnection
-30-07 : 01-26-33 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-26-34 - Returned #3 rows!!
-30-07 : 01-26-34 - Closing connection
-30-07 : 01-26-34 - Starting masterPage
-30-07 : 01-26-34 - Add kid button was clicked
-30-07 : 01-26-34 - add to public button was clicked
-30-07 : 01-26-34 - Received instruction to run procedure checkIfIDExists
-30-07 : 01-26-34 - Adding parameter @parentID=100000001
-30-07 : 01-26-34 - Opened KGConnection
-30-07 : 01-26-34 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-30-07 : 01-26-34 - Returned #1 rows!!
-30-07 : 01-26-34 - Closing connection
-30-07 : 01-26-34 - ID 100000001 already in DB
-30-07 : 01-26-43 - kids page was loaded
-30-07 : 01-26-43 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-26-43 - Adding parameter @parentID=123123123
-30-07 : 01-26-43 - Opened KGConnection
-30-07 : 01-26-43 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-26-43 - Returned #3 rows!!
-30-07 : 01-26-43 - Closing connection
-30-07 : 01-26-43 - Starting masterPage
-30-07 : 01-26-47 - kids page was loaded
-30-07 : 01-26-47 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-26-47 - Adding parameter @parentID=123123123
-30-07 : 01-26-47 - Opened KGConnection
-30-07 : 01-26-47 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-26-47 - Returned #3 rows!!
-30-07 : 01-26-47 - Closing connection
-30-07 : 01-26-47 - Starting masterPage
-30-07 : 01-26-47 - Add kid button was clicked
-30-07 : 01-26-47 - add to public button was clicked
-30-07 : 01-26-47 - Received instruction to run procedure checkIfIDExists
-30-07 : 01-26-47 - Adding parameter @parentID=100000001
-30-07 : 01-26-47 - Opened KGConnection
-30-07 : 01-26-47 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-30-07 : 01-26-47 - Returned #1 rows!!
-30-07 : 01-26-47 - Closing connection
-30-07 : 01-26-47 - ID 100000001 already in DB
-30-07 : 01-26-49 - kids page was loaded
-30-07 : 01-26-49 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-26-49 - Adding parameter @parentID=123123123
-30-07 : 01-26-49 - Opened KGConnection
-30-07 : 01-26-49 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-26-49 - Returned #3 rows!!
-30-07 : 01-26-49 - Closing connection
-30-07 : 01-26-49 - Starting masterPage
-30-07 : 01-26-50 - kids page was loaded
-30-07 : 01-26-50 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-26-50 - Adding parameter @parentID=123123123
-30-07 : 01-26-50 - Opened KGConnection
-30-07 : 01-26-50 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-26-50 - Returned #3 rows!!
-30-07 : 01-26-50 - Closing connection
-30-07 : 01-26-50 - Starting masterPage
-30-07 : 01-27-10 - kids page was loaded
-30-07 : 01-27-10 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-27-10 - Adding parameter @parentID=
-30-07 : 01-27-10 - Opened KGConnection
-30-07 : 01-27-10 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-27-10 - Returned #0 rows!!
-30-07 : 01-27-10 - Closing connection
-30-07 : 01-27-10 - Starting masterPage
-30-07 : 01-27-16 - Login button was clicked
-30-07 : 01-27-16 - Received instruction to run procedure checkIfParentExists
-30-07 : 01-27-16 - Adding parameter @parentID=123123123
-30-07 : 01-27-16 - Opened KGConnection
-30-07 : 01-27-16 - Sending SQL Statement: checkIfParentExists with 1 parameters.
-30-07 : 01-27-16 - Returned #1 rows!!
-30-07 : 01-27-16 - Closing connection
-30-07 : 01-27-16 - Received instruction to run procedure checkLoginData
-30-07 : 01-27-16 - Adding parameter @parentID=123123123
-30-07 : 01-27-16 - Adding parameter @parentPass=qwerty
-30-07 : 01-27-16 - Opened KGConnection
-30-07 : 01-27-16 - Sending SQL Statement: checkLoginData with 2 parameters.
-30-07 : 01-27-16 - Returned #1 rows!!
-30-07 : 01-27-16 - Closing connection
-30-07 : 01-27-16 - Starting masterPage
-30-07 : 01-27-18 - kids page was loaded
-30-07 : 01-27-18 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-27-18 - Adding parameter @parentID=123123123
-30-07 : 01-27-18 - Opened KGConnection
-30-07 : 01-27-18 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-27-18 - Returned #3 rows!!
-30-07 : 01-27-18 - Closing connection
-30-07 : 01-27-18 - Starting masterPage
-30-07 : 01-27-36 - kids page was loaded
-30-07 : 01-27-36 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-27-36 - Adding parameter @parentID=123123123
-30-07 : 01-27-36 - Opened KGConnection
-30-07 : 01-27-36 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-27-36 - Returned #3 rows!!
-30-07 : 01-27-36 - Closing connection
-30-07 : 01-27-36 - Starting masterPage
-30-07 : 01-27-36 - Received instruction to run procedure findAllPublicKGbyDate
-30-07 : 01-27-36 - Adding parameter @dateOfBirth=2017-01-01
-30-07 : 01-27-36 - Opened KGConnection
-30-07 : 01-27-36 - Sending SQL Statement: findAllPublicKGbyDate with 1 parameters.
-30-07 : 01-27-36 - Returned #2 rows!!
-30-07 : 01-27-36 - Closing connection
-30-07 : 01-27-44 - kids page was loaded
-30-07 : 01-27-44 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-27-44 - Adding parameter @parentID=123123123
-30-07 : 01-27-44 - Opened KGConnection
-30-07 : 01-27-44 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-27-44 - Returned #3 rows!!
-30-07 : 01-27-44 - Closing connection
-30-07 : 01-27-44 - Starting masterPage
-30-07 : 01-27-44 - Add kid button was clicked
-30-07 : 01-27-44 - add to public button was clicked
-30-07 : 01-27-44 - Received instruction to run procedure checkIfIDExists
-30-07 : 01-27-44 - Adding parameter @parentID=100000001
-30-07 : 01-27-44 - Opened KGConnection
-30-07 : 01-27-44 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-30-07 : 01-27-44 - Returned #1 rows!!
-30-07 : 01-27-44 - Closing connection
-30-07 : 01-27-44 - ID 100000001 already in DB
-30-07 : 01-29-20 - kids page was loaded
-30-07 : 01-29-20 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-29-20 - Adding parameter @parentID=
-30-07 : 01-29-20 - Opened KGConnection
-30-07 : 01-29-20 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-29-20 - Returned #0 rows!!
-30-07 : 01-29-20 - Closing connection
-30-07 : 01-29-20 - Starting masterPage
-30-07 : 01-29-26 - Login button was clicked
-30-07 : 01-29-26 - Received instruction to run procedure checkIfParentExists
-30-07 : 01-29-26 - Adding parameter @parentID=123123123
-30-07 : 01-29-26 - Opened KGConnection
-30-07 : 01-29-26 - Sending SQL Statement: checkIfParentExists with 1 parameters.
-30-07 : 01-29-26 - Returned #1 rows!!
-30-07 : 01-29-26 - Closing connection
-30-07 : 01-29-26 - Received instruction to run procedure checkLoginData
-30-07 : 01-29-26 - Adding parameter @parentID=123123123
-30-07 : 01-29-26 - Adding parameter @parentPass=qwerty
-30-07 : 01-29-26 - Opened KGConnection
-30-07 : 01-29-26 - Sending SQL Statement: checkLoginData with 2 parameters.
-30-07 : 01-29-26 - Returned #1 rows!!
-30-07 : 01-29-26 - Closing connection
-30-07 : 01-29-27 - Starting masterPage
-30-07 : 01-29-30 - kids page was loaded
-30-07 : 01-29-30 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-29-30 - Adding parameter @parentID=123123123
-30-07 : 01-29-30 - Opened KGConnection
-30-07 : 01-29-30 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-29-30 - Returned #3 rows!!
-30-07 : 01-29-30 - Closing connection
-30-07 : 01-29-30 - Starting masterPage
-30-07 : 01-29-45 - kids page was loaded
-30-07 : 01-29-45 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-29-45 - Adding parameter @parentID=123123123
-30-07 : 01-29-45 - Opened KGConnection
-30-07 : 01-29-45 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-29-46 - Returned #3 rows!!
-30-07 : 01-29-46 - Closing connection
-30-07 : 01-29-46 - Starting masterPage
-30-07 : 01-29-46 - Received instruction to run procedure findAllPublicKGbyDate
-30-07 : 01-29-46 - Adding parameter @dateOfBirth=2017-01-01
-30-07 : 01-29-46 - Opened KGConnection
-30-07 : 01-29-46 - Sending SQL Statement: findAllPublicKGbyDate with 1 parameters.
-30-07 : 01-29-46 - Returned #2 rows!!
-30-07 : 01-29-46 - Closing connection
-30-07 : 01-29-53 - kids page was loaded
-30-07 : 01-29-53 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-29-53 - Adding parameter @parentID=123123123
-30-07 : 01-29-53 - Opened KGConnection
-30-07 : 01-29-53 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-29-53 - Returned #3 rows!!
-30-07 : 01-29-53 - Closing connection
-30-07 : 01-29-53 - Starting masterPage
-30-07 : 01-29-53 - Add kid button was clicked
-30-07 : 01-29-53 - add to public button was clicked
-30-07 : 01-29-53 - Received instruction to run procedure checkIfIDExists
-30-07 : 01-29-53 - Adding parameter @parentID=100000001
-30-07 : 01-29-53 - Opened KGConnection
-30-07 : 01-29-53 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-30-07 : 01-29-53 - Returned #1 rows!!
-30-07 : 01-29-53 - Closing connection
-30-07 : 01-29-53 - ID 100000001 already in DB
+		add kids page was loaded
+01-08 : 23-52-50 - Starting masterPage
+01-08 : 23-52-52 - Starting masterPage
+01-08 : 23-52-54 - 
 
 
-30-07 : 01-30-00 - kids page was loaded
-30-07 : 01-30-00 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-30-00 - Adding parameter @parentID=123123123
-30-07 : 01-30-00 - Opened KGConnection
-30-07 : 01-30-00 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-30-00 - Returned #3 rows!!
-30-07 : 01-30-00 - Closing connection
-30-07 : 01-30-00 - Starting masterPage
-30-07 : 01-30-00 - Add kid button was clicked
-30-07 : 01-30-00 - add to public button was clicked
-30-07 : 01-30-00 - Received instruction to run procedure checkIfIDExists
-30-07 : 01-30-00 - Adding parameter @parentID=100000001
-30-07 : 01-30-00 - Opened KGConnection
-30-07 : 01-30-00 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-30-07 : 01-30-00 - Returned #1 rows!!
-30-07 : 01-30-00 - Closing connection
-30-07 : 01-30-00 - ID 100000001 already in DB
+		add kids page was loaded
+01-08 : 23-52-54 - Starting masterPage
+01-08 : 23-53-06 - 
 
 
-30-07 : 01-30-12 - kids page was loaded
-30-07 : 01-30-12 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-30-12 - Adding parameter @parentID=123123123
-30-07 : 01-30-12 - Opened KGConnection
-30-07 : 01-30-12 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-30-12 - Returned #3 rows!!
-30-07 : 01-30-12 - Closing connection
-30-07 : 01-30-12 - Starting masterPage
-30-07 : 01-32-47 - Starting masterPage
-30-07 : 01-32-50 - kids page was loaded
-30-07 : 01-32-50 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-32-50 - Adding parameter @parentID=123123123
-30-07 : 01-32-50 - Opened KGConnection
-30-07 : 01-32-50 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-32-50 - Returned #3 rows!!
-30-07 : 01-32-50 - Closing connection
-30-07 : 01-32-50 - Starting masterPage
-30-07 : 01-33-05 - kids page was loaded
-30-07 : 01-33-05 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-33-05 - Adding parameter @parentID=123123123
-30-07 : 01-33-05 - Opened KGConnection
-30-07 : 01-33-05 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-33-05 - Returned #3 rows!!
-30-07 : 01-33-05 - Closing connection
-30-07 : 01-33-05 - Starting masterPage
-30-07 : 01-33-05 - Received instruction to run procedure findAllPublicKGbyDate
-30-07 : 01-33-05 - Adding parameter @dateOfBirth=2017-01-01
-30-07 : 01-33-05 - Opened KGConnection
-30-07 : 01-33-05 - Sending SQL Statement: findAllPublicKGbyDate with 1 parameters.
-30-07 : 01-33-05 - Returned #2 rows!!
-30-07 : 01-33-05 - Closing connection
-30-07 : 01-33-08 - kids page was loaded
-30-07 : 01-33-08 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-33-08 - Adding parameter @parentID=123123123
-30-07 : 01-33-08 - Opened KGConnection
-30-07 : 01-33-08 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-33-08 - Returned #3 rows!!
-30-07 : 01-33-08 - Closing connection
-30-07 : 01-33-08 - Starting masterPage
-30-07 : 01-33-08 - Add kid button was clicked
-30-07 : 01-33-08 - add to public button was clicked
-30-07 : 01-33-08 - Received instruction to run procedure checkIfIDExists
-30-07 : 01-33-08 - Adding parameter @parentID=100000001
-30-07 : 01-33-08 - Opened KGConnection
-30-07 : 01-33-08 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-30-07 : 01-33-08 - Returned #1 rows!!
-30-07 : 01-33-08 - Closing connection
-30-07 : 01-33-08 - ID 100000001 already in DB
+		add kids page was loaded
+01-08 : 23-53-06 - Starting masterPage
+01-08 : 23-53-06 - Received instruction to run procedure findAllPublicKGbyDate
+01-08 : 23-53-06 - Adding parameter @dateOfBirth=2016-12-31
+01-08 : 23-53-06 - Opened KGConnection
+01-08 : 23-53-06 - Sending SQL Statement: findAllPublicKGbyDate with 1 parameters.
+01-08 : 23-53-06 - Returned #2 rows!!
+01-08 : 23-53-06 - Closing connection
+01-08 : 23-53-06 - Received instruction to run procedure findAllPrivateKGbyDate
+01-08 : 23-53-06 - Adding parameter @dateOfBirth=2016-12-31
+01-08 : 23-53-06 - Opened KGConnection
+01-08 : 23-53-06 - Sending SQL Statement: findAllPrivateKGbyDate with 1 parameters.
+01-08 : 23-53-07 - Returned #2 rows!!
+01-08 : 23-53-07 - Closing connection
+01-08 : 23-53-08 - 
 
 
-30-07 : 01-33-19 - kids page was loaded
-30-07 : 01-33-19 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-33-19 - Adding parameter @parentID=123123123
-30-07 : 01-33-19 - Opened KGConnection
-30-07 : 01-33-19 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-33-19 - Returned #3 rows!!
-30-07 : 01-33-19 - Closing connection
-30-07 : 01-33-19 - Starting masterPage
-30-07 : 01-33-19 - Add kid button was clicked
-30-07 : 01-33-19 - add to public button was clicked
-30-07 : 01-33-19 - Received instruction to run procedure checkIfIDExists
-30-07 : 01-33-19 - Adding parameter @parentID=100000001
-30-07 : 01-33-19 - Opened KGConnection
-30-07 : 01-33-19 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-30-07 : 01-33-19 - Returned #1 rows!!
-30-07 : 01-33-19 - Closing connection
-30-07 : 01-33-19 - ID 100000001 already in DB
+		add kids page was loaded
+01-08 : 23-53-08 - Starting masterPage
+01-08 : 23-53-15 - 
 
 
-30-07 : 01-33-21 - kids page was loaded
-30-07 : 01-33-21 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-33-21 - Adding parameter @parentID=123123123
-30-07 : 01-33-21 - Opened KGConnection
-30-07 : 01-33-21 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-33-21 - Returned #3 rows!!
-30-07 : 01-33-21 - Closing connection
-30-07 : 01-33-21 - Starting masterPage
-30-07 : 01-37-37 - kids page was loaded
-30-07 : 01-37-37 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-37-37 - Adding parameter @parentID=
-30-07 : 01-37-37 - Opened KGConnection
-30-07 : 01-37-37 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-37-37 - Returned #0 rows!!
-30-07 : 01-37-37 - Closing connection
-30-07 : 01-37-37 - Starting masterPage
-30-07 : 01-37-42 - Login button was clicked
-30-07 : 01-37-42 - Received instruction to run procedure checkIfParentExists
-30-07 : 01-37-42 - Adding parameter @parentID=123123123
-30-07 : 01-37-42 - Opened KGConnection
-30-07 : 01-37-42 - Sending SQL Statement: checkIfParentExists with 1 parameters.
-30-07 : 01-37-42 - Returned #1 rows!!
-30-07 : 01-37-42 - Closing connection
-30-07 : 01-37-42 - Received instruction to run procedure checkLoginData
-30-07 : 01-37-42 - Adding parameter @parentID=123123123
-30-07 : 01-37-42 - Adding parameter @parentPass=qwerty
-30-07 : 01-37-42 - Opened KGConnection
-30-07 : 01-37-42 - Sending SQL Statement: checkLoginData with 2 parameters.
-30-07 : 01-37-42 - Returned #1 rows!!
-30-07 : 01-37-42 - Closing connection
-30-07 : 01-37-42 - Starting masterPage
-30-07 : 01-37-44 - kids page was loaded
-30-07 : 01-37-44 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-37-44 - Adding parameter @parentID=123123123
-30-07 : 01-37-44 - Opened KGConnection
-30-07 : 01-37-44 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-37-44 - Returned #3 rows!!
-30-07 : 01-37-44 - Closing connection
-30-07 : 01-37-44 - Starting masterPage
-30-07 : 01-38-00 - kids page was loaded
-30-07 : 01-38-00 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-38-00 - Adding parameter @parentID=123123123
-30-07 : 01-38-00 - Opened KGConnection
-30-07 : 01-38-00 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-38-00 - Returned #3 rows!!
-30-07 : 01-38-00 - Closing connection
-30-07 : 01-38-00 - Starting masterPage
-30-07 : 01-38-00 - Received instruction to run procedure findAllPublicKGbyDate
-30-07 : 01-38-00 - Adding parameter @dateOfBirth=2017-01-01
-30-07 : 01-38-00 - Opened KGConnection
-30-07 : 01-38-00 - Sending SQL Statement: findAllPublicKGbyDate with 1 parameters.
-30-07 : 01-38-00 - Returned #2 rows!!
-30-07 : 01-38-00 - Closing connection
-30-07 : 01-38-05 - kids page was loaded
-30-07 : 01-38-05 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-38-05 - Adding parameter @parentID=123123123
-30-07 : 01-38-05 - Opened KGConnection
-30-07 : 01-38-05 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-38-05 - Returned #3 rows!!
-30-07 : 01-38-05 - Closing connection
-30-07 : 01-38-05 - Starting masterPage
-30-07 : 01-38-05 - Add kid button was clicked
-30-07 : 01-38-05 - add to public button was clicked
-30-07 : 01-38-05 - Received instruction to run procedure checkIfIDExists
-30-07 : 01-38-05 - Adding parameter @parentID=100000001
-30-07 : 01-38-05 - Opened KGConnection
-30-07 : 01-38-05 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-30-07 : 01-38-05 - Returned #1 rows!!
-30-07 : 01-38-05 - Closing connection
-30-07 : 01-38-05 - ID 100000001 already in DB
+		add kids page was loaded
+01-08 : 23-53-15 - Starting masterPage
+01-08 : 23-53-15 - add to public button was clicked
+01-08 : 23-53-15 - Received instruction to run procedure checkIfIDExists
+01-08 : 23-53-15 - Adding parameter @parentID=100000001
+01-08 : 23-53-15 - Opened KGConnection
+01-08 : 23-53-15 - Sending SQL Statement: checkIfIDExists with 1 parameters.
+01-08 : 23-53-15 - Returned #1 rows!!
+01-08 : 23-53-15 - Closing connection
+01-08 : 23-53-15 - ID 100000001 already in DB
 
 
-30-07 : 01-38-09 - kids page was loaded
-30-07 : 01-38-09 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-38-09 - Adding parameter @parentID=123123123
-30-07 : 01-38-09 - Opened KGConnection
-30-07 : 01-38-09 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-38-09 - Returned #3 rows!!
-30-07 : 01-38-09 - Closing connection
-30-07 : 01-38-09 - Starting masterPage
-30-07 : 01-38-12 - kids page was loaded
-30-07 : 01-38-12 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-38-12 - Adding parameter @parentID=123123123
-30-07 : 01-38-12 - Opened KGConnection
-30-07 : 01-38-12 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-38-12 - Returned #3 rows!!
-30-07 : 01-38-12 - Closing connection
-30-07 : 01-38-12 - Starting masterPage
-30-07 : 01-38-12 - Add kid button was clicked
-30-07 : 01-38-12 - add to public button was clicked
-30-07 : 01-38-12 - Received instruction to run procedure checkIfIDExists
-30-07 : 01-38-12 - Adding parameter @parentID=100000001
-30-07 : 01-38-12 - Opened KGConnection
-30-07 : 01-38-12 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-30-07 : 01-38-12 - Returned #1 rows!!
-30-07 : 01-38-12 - Closing connection
-30-07 : 01-38-12 - ID 100000001 already in DB
+01-08 : 23-53-25 - 
 
 
-30-07 : 01-38-15 - kids page was loaded
-30-07 : 01-38-15 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-38-15 - Adding parameter @parentID=123123123
-30-07 : 01-38-15 - Opened KGConnection
-30-07 : 01-38-15 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-38-15 - Returned #3 rows!!
-30-07 : 01-38-15 - Closing connection
-30-07 : 01-38-15 - Starting masterPage
-30-07 : 01-38-20 - Starting masterPage
-30-07 : 01-38-57 - kids page was loaded
-30-07 : 01-38-57 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-38-57 - Adding parameter @parentID=123123123
-30-07 : 01-38-57 - Opened KGConnection
-30-07 : 01-38-57 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-38-57 - Returned #3 rows!!
-30-07 : 01-38-57 - Closing connection
-30-07 : 01-38-57 - Starting masterPage
-30-07 : 01-38-57 - Add kid button was clicked
-30-07 : 01-38-57 - add to public button was clicked
-30-07 : 01-38-57 - Received instruction to run procedure checkIfIDExists
-30-07 : 01-38-57 - Adding parameter @parentID=100000001
-30-07 : 01-38-57 - Opened KGConnection
-30-07 : 01-38-57 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-30-07 : 01-38-57 - Returned #1 rows!!
-30-07 : 01-38-57 - Closing connection
-30-07 : 01-38-57 - ID 100000001 already in DB
+		add kids page was loaded
+01-08 : 23-53-25 - Starting masterPage
+01-08 : 23-53-28 - Starting masterPage
+01-08 : 23-53-48 - 
 
 
-30-07 : 01-40-09 - kids page was loaded
-30-07 : 01-40-09 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-40-09 - Adding parameter @parentID=123123123
-30-07 : 01-40-09 - Opened KGConnection
-30-07 : 01-40-09 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-40-10 - Returned #3 rows!!
-30-07 : 01-40-10 - Closing connection
-30-07 : 01-40-10 - Starting masterPage
-30-07 : 01-40-10 - Add kid button was clicked
-30-07 : 01-40-10 - add to public button was clicked
-30-07 : 01-40-10 - Received instruction to run procedure checkIfIDExists
-30-07 : 01-40-10 - Adding parameter @parentID=100000001
-30-07 : 01-40-10 - Opened KGConnection
-30-07 : 01-40-10 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-30-07 : 01-40-10 - Returned #1 rows!!
-30-07 : 01-40-10 - Closing connection
-30-07 : 01-40-10 - ID 100000001 already in DB
+		add kids page was loaded
+01-08 : 23-53-48 - Starting masterPage
+02-08 : 00-03-00 - Login button was clicked
+02-08 : 00-03-00 - Received instruction to run procedure checkIfParentExists
+02-08 : 00-03-00 - Adding parameter @parentID=789789789
+02-08 : 00-03-01 - Opened KGConnection
+02-08 : 00-03-01 - Sending SQL Statement: checkIfParentExists with 1 parameters.
+02-08 : 00-03-01 - Returned #1 rows!!
+02-08 : 00-03-01 - Closing connection
+02-08 : 00-03-01 - Received instruction to run procedure checkLoginData
+02-08 : 00-03-01 - Adding parameter @parentID=789789789
+02-08 : 00-03-01 - Adding parameter @parentPass=qwerty
+02-08 : 00-03-01 - Opened KGConnection
+02-08 : 00-03-01 - Sending SQL Statement: checkLoginData with 2 parameters.
+02-08 : 00-03-01 - Returned #1 rows!!
+02-08 : 00-03-01 - Closing connection
+02-08 : 00-03-01 - Starting masterPage
+02-08 : 00-03-37 - 
 
 
-30-07 : 01-42-49 - kids page was loaded
-30-07 : 01-42-49 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-42-49 - Adding parameter @parentID=123123123
-30-07 : 01-42-49 - Opened KGConnection
-30-07 : 01-42-49 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-42-49 - Returned #3 rows!!
-30-07 : 01-42-49 - Closing connection
-30-07 : 01-42-49 - Starting masterPage
-30-07 : 01-42-49 - Add kid button was clicked
-30-07 : 01-42-49 - add to public button was clicked
-30-07 : 01-42-49 - Received instruction to run procedure checkIfIDExists
-30-07 : 01-42-49 - Adding parameter @parentID=100000001
-30-07 : 01-42-49 - Opened KGConnection
-30-07 : 01-42-49 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-30-07 : 01-42-49 - Returned #1 rows!!
-30-07 : 01-42-49 - Closing connection
-30-07 : 01-42-49 - ID 100000001 already in DB
+		add kids page was loaded
+02-08 : 00-03-37 - Starting masterPage
+02-08 : 00-04-34 - 
 
 
-30-07 : 01-43-23 - kids page was loaded
-30-07 : 01-43-23 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-43-23 - Adding parameter @parentID=123123123
-30-07 : 01-43-23 - Opened KGConnection
-30-07 : 01-43-23 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-43-23 - Returned #3 rows!!
-30-07 : 01-43-23 - Closing connection
-30-07 : 01-43-23 - Starting masterPage
-30-07 : 01-43-23 - Add kid button was clicked
-30-07 : 01-43-23 - add to public button was clicked
-30-07 : 01-43-23 - Received instruction to run procedure checkIfIDExists
-30-07 : 01-43-23 - Adding parameter @parentID=100000001
-30-07 : 01-43-23 - Opened KGConnection
-30-07 : 01-43-23 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-30-07 : 01-43-23 - Returned #1 rows!!
-30-07 : 01-43-23 - Closing connection
-30-07 : 01-43-23 - ID 100000001 already in DB
+		add kids page was loaded
+02-08 : 00-04-34 - Starting masterPage
+02-08 : 00-04-34 - Received instruction to run procedure findAllPublicKGbyDate
+02-08 : 00-04-34 - Adding parameter @dateOfBirth=2016-11-30
+02-08 : 00-04-34 - Opened KGConnection
+02-08 : 00-04-34 - Sending SQL Statement: findAllPublicKGbyDate with 1 parameters.
+02-08 : 00-04-34 - Returned #2 rows!!
+02-08 : 00-04-34 - Closing connection
+02-08 : 00-04-34 - Received instruction to run procedure findAllPrivateKGbyDate
+02-08 : 00-04-34 - Adding parameter @dateOfBirth=2016-11-30
+02-08 : 00-04-34 - Opened KGConnection
+02-08 : 00-04-34 - Sending SQL Statement: findAllPrivateKGbyDate with 1 parameters.
+02-08 : 00-04-34 - Returned #2 rows!!
+02-08 : 00-04-34 - Closing connection
+02-08 : 00-04-42 - 
 
 
-30-07 : 01-44-10 - kids page was loaded
-30-07 : 01-44-10 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-44-10 - Adding parameter @parentID=123123123
-30-07 : 01-44-10 - Opened KGConnection
-30-07 : 01-44-10 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-44-10 - Returned #3 rows!!
-30-07 : 01-44-10 - Closing connection
-30-07 : 01-44-10 - Starting masterPage
-30-07 : 01-44-10 - Add kid button was clicked
-30-07 : 01-44-10 - add to public button was clicked
-30-07 : 01-44-10 - Received instruction to run procedure checkIfIDExists
-30-07 : 01-44-10 - Adding parameter @parentID=100000001
-30-07 : 01-44-10 - Opened KGConnection
-30-07 : 01-44-10 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-30-07 : 01-44-10 - Returned #1 rows!!
-30-07 : 01-44-10 - Closing connection
-30-07 : 01-44-10 - ID 100000001 already in DB
+		add kids page was loaded
+02-08 : 00-04-42 - Starting masterPage
+02-08 : 00-04-48 - 
 
 
-30-07 : 01-44-45 - kids page was loaded
-30-07 : 01-44-45 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-44-45 - Adding parameter @parentID=123123123
-30-07 : 01-44-45 - Opened KGConnection
-30-07 : 01-44-45 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-44-46 - Returned #3 rows!!
-30-07 : 01-44-46 - Closing connection
-30-07 : 01-44-46 - Starting masterPage
-30-07 : 01-44-46 - Add kid button was clicked
-30-07 : 01-44-46 - add to public button was clicked
-30-07 : 01-44-46 - Received instruction to run procedure checkIfIDExists
-30-07 : 01-44-46 - Adding parameter @parentID=100000001
-30-07 : 01-44-46 - Opened KGConnection
-30-07 : 01-44-46 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-30-07 : 01-44-46 - Returned #1 rows!!
-30-07 : 01-44-46 - Closing connection
-30-07 : 01-44-46 - ID 100000001 already in DB
+		add kids page was loaded
+02-08 : 00-04-48 - Starting masterPage
+02-08 : 00-04-50 - 
 
 
-30-07 : 01-50-54 - kids page was loaded
-30-07 : 01-50-54 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-50-54 - Adding parameter @parentID=123123123
-30-07 : 01-50-54 - Opened KGConnection
-30-07 : 01-50-54 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-50-54 - Returned #3 rows!!
-30-07 : 01-50-54 - Closing connection
-30-07 : 01-50-54 - Starting masterPage
-30-07 : 01-50-54 - Add kid button was clicked
-30-07 : 01-50-54 - add to public button was clicked
-30-07 : 01-50-54 - Received instruction to run procedure checkIfIDExists
-30-07 : 01-50-54 - Adding parameter @parentID=100000001
-30-07 : 01-50-54 - Opened KGConnection
-30-07 : 01-50-54 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-30-07 : 01-50-54 - Returned #1 rows!!
-30-07 : 01-50-54 - Closing connection
-30-07 : 01-50-54 - ID 100000001 already in DB
+		add kids page was loaded
+02-08 : 00-04-50 - Starting masterPage
+02-08 : 00-04-58 - 
 
 
-30-07 : 01-50-59 - kids page was loaded
-30-07 : 01-50-59 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-50-59 - Adding parameter @parentID=123123123
-30-07 : 01-50-59 - Opened KGConnection
-30-07 : 01-50-59 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-50-59 - Returned #3 rows!!
-30-07 : 01-50-59 - Closing connection
-30-07 : 01-50-59 - Starting masterPage
-30-07 : 01-50-59 - Add kid button was clicked
-30-07 : 01-50-59 - add to public button was clicked
-30-07 : 01-50-59 - Received instruction to run procedure checkIfIDExists
-30-07 : 01-50-59 - Adding parameter @parentID=100000001
-30-07 : 01-50-59 - Opened KGConnection
-30-07 : 01-50-59 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-30-07 : 01-50-59 - Returned #1 rows!!
-30-07 : 01-50-59 - Closing connection
-30-07 : 01-50-59 - ID 100000001 already in DB
+		add kids page was loaded
+02-08 : 00-04-58 - Starting masterPage
+02-08 : 00-04-58 - add to private button was clicked
+02-08 : 00-04-58 - Received instruction to run procedure checkIfIDExists
+02-08 : 00-04-58 - Adding parameter @parentID=100000003
+02-08 : 00-04-58 - Opened KGConnection
+02-08 : 00-04-58 - Sending SQL Statement: checkIfIDExists with 1 parameters.
+02-08 : 00-04-58 - Returned #0 rows!!
+02-08 : 00-04-58 - Closing connection
+02-08 : 00-04-58 - Received instruction to run procedure addKid
+02-08 : 00-04-58 - Adding parameter @kidID=100000003
+02-08 : 00-04-58 - Adding parameter @firstName=Kolonka
+02-08 : 00-04-58 - Adding parameter @surName=Moshe
+02-08 : 00-04-58 - Adding parameter @dateOfBirth=2016-11-30
+02-08 : 00-04-58 - Adding parameter @street=atzmaut
+02-08 : 00-04-58 - Adding parameter @houseNumber=11
+02-08 : 00-04-58 - Adding parameter @city=haifa
+02-08 : 00-04-58 - Adding parameter @latitude=30.53082
+02-08 : 00-04-58 - Adding parameter @longitude=35.16834
+02-08 : 00-04-58 - Adding parameter @kindergardenID=13
+02-08 : 00-04-58 - Adding parameter @classNumber=1
+02-08 : 00-04-58 - Adding parameter @parentID=789789789
+02-08 : 00-04-58 - Opened KGConnection
+02-08 : 00-04-58 - Sending SQL Statement: addKid with 12 parameters.
+02-08 : 00-04-58 - Returned #1 rows!!
+02-08 : 00-04-58 - Closing connection
+02-08 : 00-04-58 - Kid 100000003 was added to parent 789789789
+02-08 : 00-05-35 - 
 
 
-30-07 : 01-54-25 - kids page was loaded
-30-07 : 01-54-25 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-54-25 - Adding parameter @parentID=123123123
-30-07 : 01-54-25 - Opened KGConnection
-30-07 : 01-54-25 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-54-25 - Returned #3 rows!!
-30-07 : 01-54-25 - Closing connection
-30-07 : 01-54-25 - Starting masterPage
-30-07 : 01-54-25 - Add kid button was clicked
-30-07 : 01-54-25 - add to public button was clicked
-30-07 : 01-54-25 - Received instruction to run procedure checkIfIDExists
-30-07 : 01-54-25 - Adding parameter @parentID=100000001
-30-07 : 01-54-25 - Opened KGConnection
-30-07 : 01-54-25 - Sending SQL Statement: checkIfIDExists with 1 parameters.
-30-07 : 01-54-25 - Returned #1 rows!!
-30-07 : 01-54-25 - Closing connection
-30-07 : 01-54-25 - ID 100000001 already in DB
+		add kids page was loaded
+02-08 : 00-05-35 - Starting masterPage
+02-08 : 00-05-35 - add to private button was clicked
+02-08 : 00-05-35 - Received instruction to run procedure checkIfIDExists
+02-08 : 00-05-35 - Adding parameter @parentID=100000003
+02-08 : 00-05-35 - Opened KGConnection
+02-08 : 00-05-35 - Sending SQL Statement: checkIfIDExists with 1 parameters.
+02-08 : 00-05-35 - Returned #1 rows!!
+02-08 : 00-05-35 - Closing connection
+02-08 : 00-05-35 - ID 100000003 already in DB
 
 
-30-07 : 01-54-29 - kids page was loaded
-30-07 : 01-54-29 - Received instruction to run procedure getAllKidsOfParent
-30-07 : 01-54-29 - Adding parameter @parentID=123123123
-30-07 : 01-54-29 - Opened KGConnection
-30-07 : 01-54-29 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-30-07 : 01-54-29 - Returned #3 rows!!
-30-07 : 01-54-29 - Closing connection
-30-07 : 01-54-29 - Starting masterPage
+02-08 : 00-05-37 - 
+
+
+		add kids page was loaded
+02-08 : 00-05-37 - Starting masterPage
+02-08 : 00-05-39 - 
+
+
+		add kids page was loaded
+02-08 : 00-05-39 - Starting masterPage
+02-08 : 00-07-23 - 
+
+
+		add kids page was loaded
+02-08 : 00-07-23 - Starting masterPage
+02-08 : 00-07-24 - 
+
+
+		add kids page was loaded
+02-08 : 00-07-24 - Starting masterPage
+02-08 : 00-07-28 - 
+
+
+		add kids page was loaded
+02-08 : 00-07-28 - Starting masterPage
+02-08 : 00-07-40 - 
+
+
+		add kids page was loaded
+02-08 : 00-07-40 - Starting masterPage
+02-08 : 00-07-42 - 
+
+
+		add kids page was loaded
+02-08 : 00-07-42 - Starting masterPage
+02-08 : 00-11-51 - 
+
+
+		add kids page was loaded
+02-08 : 00-11-51 - Starting masterPage
+02-08 : 00-13-13 - Starting masterPage
+02-08 : 00-13-18 - 
+
+
+		add kids page was loaded
+02-08 : 00-13-18 - Starting masterPage
+02-08 : 00-13-19 - Starting masterPage
+02-08 : 00-15-21 - Login button was clicked
+02-08 : 00-15-21 - Received instruction to run procedure checkIfParentExists
+02-08 : 00-15-21 - Adding parameter @parentID=Admin
+02-08 : 00-15-21 - Opened KGConnection
+02-08 : 00-15-21 - Sending SQL Statement: checkIfParentExists with 1 parameters.
+02-08 : 00-15-21 - Returned #0 rows!!
+02-08 : 00-15-21 - Closing connection
+02-08 : 00-15-25 - Login button was clicked
+02-08 : 00-15-25 - Starting masterPage
+02-08 : 00-15-45 - Login button was clicked
+02-08 : 00-15-45 - Received instruction to run procedure checkIfParentExists
+02-08 : 00-15-45 - Adding parameter @parentID=123123123
+02-08 : 00-15-45 - Opened KGConnection
+02-08 : 00-15-45 - Sending SQL Statement: checkIfParentExists with 1 parameters.
+02-08 : 00-15-45 - Returned #1 rows!!
+02-08 : 00-15-45 - Closing connection
+02-08 : 00-15-45 - Received instruction to run procedure checkLoginData
+02-08 : 00-15-45 - Adding parameter @parentID=123123123
+02-08 : 00-15-45 - Adding parameter @parentPass=qwerty
+02-08 : 00-15-45 - Opened KGConnection
+02-08 : 00-15-45 - Sending SQL Statement: checkLoginData with 2 parameters.
+02-08 : 00-15-45 - Returned #1 rows!!
+02-08 : 00-15-45 - Closing connection
+02-08 : 00-15-45 - Starting masterPage

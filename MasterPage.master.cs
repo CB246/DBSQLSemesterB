@@ -31,6 +31,11 @@ public partial class MasterPage : System.Web.UI.MasterPage
                     imgAvatar.ImageUrl = "/images/admin.png";
                     break;
             }
+            if (KGManager.userLogin.Equals("Admin"))
+            {
+                addKid.Attributes.Remove("class");
+                addKid.Attributes.Add("class", "hidden");
+            }
         }
     }
 }

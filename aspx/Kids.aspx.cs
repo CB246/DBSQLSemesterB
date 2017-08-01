@@ -17,7 +17,22 @@ public partial class aspx_Kids : System.Web.UI.Page
         KGManager.log("kids page was loaded");
         if (!KGManager.userLogin.Equals("Admin"))
         {
-            PopulateList();
+            //PopulateList();
+            addTabButton.Attributes.Remove("class");
+            addTabButton.Attributes.Add("class", "btn bg-cyan waves-effect");
+            changeTabButton.Attributes.Remove("class");
+            changeTabButton.Attributes.Add("class", "btn bg-cyan waves-effect hidden");
+            removeTabButton.Attributes.Remove("class");
+            removeTabButton.Attributes.Add("class", "btn bg-cyan waves-effect");
+        }
+        else
+        {
+            addTabButton.Attributes.Remove("class");
+            addTabButton.Attributes.Add("class", "btn bg-cyan waves-effect hidden");
+            changeTabButton.Attributes.Remove("class");
+            changeTabButton.Attributes.Add("class", "btn bg-cyan waves-effect");
+            removeTabButton.Attributes.Remove("class");
+            removeTabButton.Attributes.Add("class", "btn bg-cyan waves-effect hidden");
         }
         if (IsPostBack)
         {
@@ -54,6 +69,7 @@ public partial class aspx_Kids : System.Web.UI.Page
 
     private void setLongAndLat()
     {
+        tabType = TabType.ADD;
         Random rand = new Random();
         tbLatitude.Text = (MIN_LATITUDE + rand.NextDouble() * (MAX_LATITUDE - MIN_LATITUDE)).ToString().Substring(0, 8);
         tbLongitude.Text = (MIN_LONGITUDE + rand.NextDouble() * (MAX_LONGITUDE - MIN_LONGITUDE)).ToString().Substring(0, 8);
@@ -102,6 +118,10 @@ public partial class aspx_Kids : System.Web.UI.Page
             tbClName.Text = row["CLname"].ToString();
             tbKGStreet.Text = row["street"].ToString();
             tbKGhouseNum.Text = row["houseNumber"].ToString();
+            int current = int.Parse(row["kidsInClass"].ToString());
+            int max = int.Parse(row["maximumKids"].ToString());
+            progressBarDiv.Attributes.CssStyle.Value = "width: " + (double)current/max + "%;";
+            lblPublicProgressBar.Text = row["kidsInClass"].ToString() + "/" + row["maximumKids"].ToString() + " Kids in this class";
         }
     }
 
@@ -120,7 +140,7 @@ public partial class aspx_Kids : System.Web.UI.Page
                 if (isSuccess)
                 {
                     //Kid was added successfully to DB
-                    showMessage("Kid " + tbID.Text + " was added successfully to DataBase.", "green", 250);
+                    showMessage("Kid " + tbID.Text + " was added successfully to DataBase.", "green", 350);
                 }
                 
                 if (!alreadyIn && !isSuccess)
@@ -220,5 +240,10 @@ public partial class aspx_Kids : System.Web.UI.Page
         modalColor.Attributes.Remove("class");
         modalColor.Attributes.Add("class", "modal-content modal-col-" + color);
         modalColor.Attributes.CssStyle.Value = "width: " + width + "px; margin: auto;";
+    }
+
+    protected void btnAddKidToPrivate_Click(object sender, EventArgs e)
+    {
+        KGManager.log("ADD TO PRIVATE WAS CLICKED");
     }
 }
