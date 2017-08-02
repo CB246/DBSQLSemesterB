@@ -65,7 +65,6 @@
         <form runat="server">
             <!-- KID INFO -->
             <div class="container-fluid">
-                <!-- Tabs With Custom Animations -->
                 <div class="row clearfix">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
@@ -177,7 +176,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- #END# Tabs With Custom Animations -->
             </div>
             <!-- KG TYPE -->
             <div class="container-fluid" runat="server" id="kgType">
