@@ -1,12 +1,304 @@
-02-08 : 10-50-41 - Starting masterPage
-02-08 : 10-50-55 - Login button was clicked
-02-08 : 10-50-55 - Starting masterPage
-02-08 : 10-51-01 - Starting masterPage
-02-08 : 10-59-50 - Starting masterPage
-02-08 : 11-00-10 - Login button was clicked
-02-08 : 11-00-10 - Starting masterPage
-02-08 : 11-00-14 - Starting masterPage
-02-08 : 11-00-35 - Starting masterPage
-02-08 : 11-02-29 - Starting masterPage
-02-08 : 11-03-14 - Starting masterPage
-02-08 : 11-03-53 - Starting masterPage
+05-08 : 14-36-27 - Starting masterPage
+05-08 : 14-36-33 - Login button was clicked
+05-08 : 14-36-33 - Received instruction to run procedure checkIfParentExists
+05-08 : 14-36-33 - Adding parameter @parentID=789789789
+05-08 : 14-36-33 - Opened KGConnection
+05-08 : 14-36-33 - Sending SQL Statement: checkIfParentExists with 1 parameters.
+05-08 : 14-36-33 - Returned #1 rows!!
+05-08 : 14-36-33 - Closing connection
+05-08 : 14-36-33 - Received instruction to run procedure checkLoginData
+05-08 : 14-36-33 - Adding parameter @parentID=789789789
+05-08 : 14-36-33 - Adding parameter @parentPass=qwerty
+05-08 : 14-36-33 - Opened KGConnection
+05-08 : 14-36-33 - Sending SQL Statement: checkLoginData with 2 parameters.
+05-08 : 14-36-33 - Returned #1 rows!!
+05-08 : 14-36-33 - Closing connection
+05-08 : 14-36-33 - Starting masterPage
+05-08 : 14-36-35 - Starting masterPage
+05-08 : 14-36-36 - Starting masterPage
+05-08 : 14-36-37 - Starting masterPage
+05-08 : 14-36-37 - Starting masterPage
+05-08 : 14-36-38 - Starting masterPage
+05-08 : 14-36-40 - Starting masterPage
+05-08 : 14-51-27 - Starting masterPage
+05-08 : 14-51-32 - Login button was clicked
+05-08 : 14-51-32 - Received instruction to run procedure checkIfParentExists
+05-08 : 14-51-32 - Adding parameter @parentID=789789789
+05-08 : 14-51-32 - Opened KGConnection
+05-08 : 14-51-32 - Sending SQL Statement: checkIfParentExists with 1 parameters.
+05-08 : 14-51-32 - Returned #1 rows!!
+05-08 : 14-51-32 - Closing connection
+05-08 : 14-51-32 - Received instruction to run procedure checkLoginData
+05-08 : 14-51-32 - Adding parameter @parentID=789789789
+05-08 : 14-51-32 - Adding parameter @parentPass=qwerty
+05-08 : 14-51-32 - Opened KGConnection
+05-08 : 14-51-32 - Sending SQL Statement: checkLoginData with 2 parameters.
+05-08 : 14-51-32 - Returned #1 rows!!
+05-08 : 14-51-32 - Closing connection
+05-08 : 14-51-32 - Starting masterPage
+05-08 : 14-51-35 - Starting masterPage
+05-08 : 14-52-11 - Starting masterPage
+05-08 : 14-52-33 - Starting masterPage
+05-08 : 14-58-19 - Starting masterPage
+05-08 : 15-30-52 - Received instruction to run procedure getKgNumsInOpinion
+05-08 : 15-30-53 - Opened KGConnection
+05-08 : 15-30-53 - Sending SQL Statement: getKgNumsInOpinion with 0 parameters.
+05-08 : 15-30-53 - Returned #2 rows!!
+05-08 : 15-30-53 - Closing connection
+05-08 : 15-33-02 - Starting masterPage
+05-08 : 15-33-02 - Starting masterPage
+05-08 : 15-33-02 - Starting masterPage
+05-08 : 15-33-02 - Starting masterPage
+05-08 : 15-33-02 - Starting masterPage
+05-08 : 15-33-02 - Starting masterPage
+05-08 : 15-33-02 - Starting masterPage
+05-08 : 15-33-11 - Login button was clicked
+05-08 : 15-33-11 - Received instruction to run procedure checkIfParentExists
+05-08 : 15-33-11 - Adding parameter @parentID=789789789
+05-08 : 15-33-11 - Opened KGConnection
+05-08 : 15-33-11 - Sending SQL Statement: checkIfParentExists with 1 parameters.
+05-08 : 15-33-11 - Returned #1 rows!!
+05-08 : 15-33-11 - Closing connection
+05-08 : 15-33-11 - Received instruction to run procedure checkLoginData
+05-08 : 15-33-11 - Adding parameter @parentID=789789789
+05-08 : 15-33-11 - Adding parameter @parentPass=qwerty
+05-08 : 15-33-11 - Opened KGConnection
+05-08 : 15-33-11 - Sending SQL Statement: checkLoginData with 2 parameters.
+05-08 : 15-33-11 - Returned #1 rows!!
+05-08 : 15-33-11 - Closing connection
+05-08 : 15-33-11 - Starting masterPage
+05-08 : 15-33-13 - Received instruction to run procedure getKgNumsInOpinion
+05-08 : 15-33-13 - Opened KGConnection
+05-08 : 15-33-13 - Sending SQL Statement: getKgNumsInOpinion with 0 parameters.
+05-08 : 15-33-13 - Returned #2 rows!!
+05-08 : 15-33-13 - Closing connection
+05-08 : 15-33-13 - Received instruction to run procedure getAllOpinionsOfKg
+05-08 : 15-33-13 - Adding parameter @KgID=13
+05-08 : 15-33-13 - Opened KGConnection
+05-08 : 15-33-13 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
+05-08 : 15-33-13 - Returned #4 rows!!
+05-08 : 15-33-13 - Closing connection
+05-08 : 15-33-13 - Received instruction to run procedure getAllOpinionsOfKg
+05-08 : 15-33-13 - Adding parameter @KgID=14
+05-08 : 15-33-13 - Opened KGConnection
+05-08 : 15-33-13 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
+05-08 : 15-33-14 - Returned #1 rows!!
+05-08 : 15-33-14 - Closing connection
+05-08 : 15-33-14 - Received instruction to run procedure getActNumsInOpinion
+05-08 : 15-33-14 - Opened KGConnection
+05-08 : 15-33-14 - Sending SQL Statement: getActNumsInOpinion with 0 parameters.
+05-08 : 15-33-14 - Returned #4 rows!!
+05-08 : 15-33-14 - Closing connection
+05-08 : 15-33-14 - Received instruction to run procedure getAllOpinionsOfAct
+05-08 : 15-33-14 - Adding parameter @ActID=1
+05-08 : 15-33-14 - Opened KGConnection
+05-08 : 15-33-14 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+05-08 : 15-33-14 - Returned #2 rows!!
+05-08 : 15-33-14 - Closing connection
+05-08 : 15-33-14 - Received instruction to run procedure getAllOpinionsOfAct
+05-08 : 15-33-14 - Adding parameter @ActID=2
+05-08 : 15-33-14 - Opened KGConnection
+05-08 : 15-33-14 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+05-08 : 15-33-14 - Returned #1 rows!!
+05-08 : 15-33-14 - Closing connection
+05-08 : 15-33-14 - Received instruction to run procedure getAllOpinionsOfAct
+05-08 : 15-33-14 - Adding parameter @ActID=3
+05-08 : 15-33-14 - Opened KGConnection
+05-08 : 15-33-14 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+05-08 : 15-33-14 - Returned #1 rows!!
+05-08 : 15-33-14 - Closing connection
+05-08 : 15-33-14 - Received instruction to run procedure getAllOpinionsOfAct
+05-08 : 15-33-14 - Adding parameter @ActID=4
+05-08 : 15-33-14 - Opened KGConnection
+05-08 : 15-33-14 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+05-08 : 15-33-14 - Returned #3 rows!!
+05-08 : 15-33-14 - Closing connection
+05-08 : 15-33-14 - Starting masterPage
+05-08 : 15-35-33 - Received instruction to run procedure getKgNumsInOpinion
+05-08 : 15-35-33 - Opened KGConnection
+05-08 : 15-35-33 - Sending SQL Statement: getKgNumsInOpinion with 0 parameters.
+05-08 : 15-35-33 - Returned #2 rows!!
+05-08 : 15-35-33 - Closing connection
+05-08 : 15-35-33 - Received instruction to run procedure getAllOpinionsOfKg
+05-08 : 15-35-33 - Adding parameter @KgID=13
+05-08 : 15-35-33 - Opened KGConnection
+05-08 : 15-35-33 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
+05-08 : 15-35-33 - Returned #4 rows!!
+05-08 : 15-35-33 - Closing connection
+05-08 : 15-35-33 - Received instruction to run procedure getAllOpinionsOfKg
+05-08 : 15-35-33 - Adding parameter @KgID=14
+05-08 : 15-35-33 - Opened KGConnection
+05-08 : 15-35-33 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
+05-08 : 15-35-33 - Returned #1 rows!!
+05-08 : 15-35-33 - Closing connection
+05-08 : 15-35-33 - Received instruction to run procedure getActNumsInOpinion
+05-08 : 15-35-33 - Opened KGConnection
+05-08 : 15-35-33 - Sending SQL Statement: getActNumsInOpinion with 0 parameters.
+05-08 : 15-35-33 - Returned #4 rows!!
+05-08 : 15-35-33 - Closing connection
+05-08 : 15-35-33 - Received instruction to run procedure getAllOpinionsOfAct
+05-08 : 15-35-33 - Adding parameter @ActID=1
+05-08 : 15-35-33 - Opened KGConnection
+05-08 : 15-35-33 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+05-08 : 15-35-33 - Returned #2 rows!!
+05-08 : 15-35-33 - Closing connection
+05-08 : 15-35-33 - Received instruction to run procedure getAllOpinionsOfAct
+05-08 : 15-35-33 - Adding parameter @ActID=2
+05-08 : 15-35-33 - Opened KGConnection
+05-08 : 15-35-33 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+05-08 : 15-35-33 - Returned #1 rows!!
+05-08 : 15-35-33 - Closing connection
+05-08 : 15-35-33 - Received instruction to run procedure getAllOpinionsOfAct
+05-08 : 15-35-33 - Adding parameter @ActID=3
+05-08 : 15-35-33 - Opened KGConnection
+05-08 : 15-35-33 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+05-08 : 15-35-33 - Returned #1 rows!!
+05-08 : 15-35-33 - Closing connection
+05-08 : 15-35-33 - Received instruction to run procedure getAllOpinionsOfAct
+05-08 : 15-35-33 - Adding parameter @ActID=4
+05-08 : 15-35-33 - Opened KGConnection
+05-08 : 15-35-33 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+05-08 : 15-35-33 - Returned #3 rows!!
+05-08 : 15-35-33 - Closing connection
+05-08 : 15-35-33 - Starting masterPage
+05-08 : 15-37-01 - Received instruction to run procedure getKgNumsInOpinion
+05-08 : 15-37-01 - Opened KGConnection
+05-08 : 15-37-01 - Sending SQL Statement: getKgNumsInOpinion with 0 parameters.
+05-08 : 15-37-01 - Returned #2 rows!!
+05-08 : 15-37-01 - Closing connection
+05-08 : 15-37-01 - Received instruction to run procedure getAllOpinionsOfKg
+05-08 : 15-37-01 - Adding parameter @KgID=13
+05-08 : 15-37-01 - Opened KGConnection
+05-08 : 15-37-01 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
+05-08 : 15-37-01 - Returned #4 rows!!
+05-08 : 15-37-01 - Closing connection
+05-08 : 15-37-01 - Received instruction to run procedure getAllOpinionsOfKg
+05-08 : 15-37-01 - Adding parameter @KgID=14
+05-08 : 15-37-01 - Opened KGConnection
+05-08 : 15-37-01 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
+05-08 : 15-37-01 - Returned #1 rows!!
+05-08 : 15-37-01 - Closing connection
+05-08 : 15-37-01 - Received instruction to run procedure getActNumsInOpinion
+05-08 : 15-37-01 - Opened KGConnection
+05-08 : 15-37-01 - Sending SQL Statement: getActNumsInOpinion with 0 parameters.
+05-08 : 15-37-01 - Returned #4 rows!!
+05-08 : 15-37-01 - Closing connection
+05-08 : 15-37-01 - Received instruction to run procedure getAllOpinionsOfAct
+05-08 : 15-37-01 - Adding parameter @ActID=1
+05-08 : 15-37-01 - Opened KGConnection
+05-08 : 15-37-01 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+05-08 : 15-37-01 - Returned #2 rows!!
+05-08 : 15-37-01 - Closing connection
+05-08 : 15-37-01 - Received instruction to run procedure getAllOpinionsOfAct
+05-08 : 15-37-01 - Adding parameter @ActID=2
+05-08 : 15-37-01 - Opened KGConnection
+05-08 : 15-37-01 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+05-08 : 15-37-01 - Returned #1 rows!!
+05-08 : 15-37-01 - Closing connection
+05-08 : 15-37-01 - Received instruction to run procedure getAllOpinionsOfAct
+05-08 : 15-37-01 - Adding parameter @ActID=3
+05-08 : 15-37-01 - Opened KGConnection
+05-08 : 15-37-01 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+05-08 : 15-37-01 - Returned #1 rows!!
+05-08 : 15-37-01 - Closing connection
+05-08 : 15-37-01 - Received instruction to run procedure getAllOpinionsOfAct
+05-08 : 15-37-01 - Adding parameter @ActID=4
+05-08 : 15-37-01 - Opened KGConnection
+05-08 : 15-37-01 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+05-08 : 15-37-01 - Returned #3 rows!!
+05-08 : 15-37-01 - Closing connection
+05-08 : 15-37-01 - Starting masterPage
+05-08 : 15-38-56 - Received instruction to run procedure getKgNumsInOpinion
+05-08 : 15-38-56 - Opened KGConnection
+05-08 : 15-38-56 - Sending SQL Statement: getKgNumsInOpinion with 0 parameters.
+05-08 : 15-38-56 - Returned #2 rows!!
+05-08 : 15-38-56 - Closing connection
+05-08 : 15-38-56 - Received instruction to run procedure getAllOpinionsOfKg
+05-08 : 15-38-56 - Adding parameter @KgID=13
+05-08 : 15-38-56 - Opened KGConnection
+05-08 : 15-38-56 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
+05-08 : 15-38-56 - Returned #4 rows!!
+05-08 : 15-38-56 - Closing connection
+05-08 : 15-38-56 - Received instruction to run procedure getAllOpinionsOfKg
+05-08 : 15-38-56 - Adding parameter @KgID=14
+05-08 : 15-38-56 - Opened KGConnection
+05-08 : 15-38-56 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
+05-08 : 15-38-56 - Returned #1 rows!!
+05-08 : 15-38-56 - Closing connection
+05-08 : 15-38-56 - Received instruction to run procedure getActNumsInOpinion
+05-08 : 15-38-56 - Opened KGConnection
+05-08 : 15-38-56 - Sending SQL Statement: getActNumsInOpinion with 0 parameters.
+05-08 : 15-38-56 - Returned #4 rows!!
+05-08 : 15-38-56 - Closing connection
+05-08 : 15-38-56 - Received instruction to run procedure getAllOpinionsOfAct
+05-08 : 15-38-56 - Adding parameter @ActID=1
+05-08 : 15-38-56 - Opened KGConnection
+05-08 : 15-38-56 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+05-08 : 15-38-56 - Returned #2 rows!!
+05-08 : 15-38-56 - Closing connection
+05-08 : 15-38-56 - Received instruction to run procedure getAllOpinionsOfAct
+05-08 : 15-38-56 - Adding parameter @ActID=2
+05-08 : 15-38-56 - Opened KGConnection
+05-08 : 15-38-56 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+05-08 : 15-38-56 - Returned #1 rows!!
+05-08 : 15-38-56 - Closing connection
+05-08 : 15-38-56 - Received instruction to run procedure getAllOpinionsOfAct
+05-08 : 15-38-56 - Adding parameter @ActID=3
+05-08 : 15-38-56 - Opened KGConnection
+05-08 : 15-38-56 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+05-08 : 15-38-56 - Returned #1 rows!!
+05-08 : 15-38-56 - Closing connection
+05-08 : 15-38-56 - Received instruction to run procedure getAllOpinionsOfAct
+05-08 : 15-38-56 - Adding parameter @ActID=4
+05-08 : 15-38-56 - Opened KGConnection
+05-08 : 15-38-56 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+05-08 : 15-38-56 - Returned #3 rows!!
+05-08 : 15-38-56 - Closing connection
+05-08 : 15-38-56 - Starting masterPage
+05-08 : 15-40-14 - Received instruction to run procedure getKgNumsInOpinion
+05-08 : 15-40-14 - Opened KGConnection
+05-08 : 15-40-14 - Sending SQL Statement: getKgNumsInOpinion with 0 parameters.
+05-08 : 15-40-14 - Returned #2 rows!!
+05-08 : 15-40-14 - Closing connection
+05-08 : 15-40-14 - Received instruction to run procedure getAllOpinionsOfKg
+05-08 : 15-40-14 - Adding parameter @KgID=13
+05-08 : 15-40-14 - Opened KGConnection
+05-08 : 15-40-14 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
+05-08 : 15-40-14 - Returned #4 rows!!
+05-08 : 15-40-14 - Closing connection
+05-08 : 15-40-14 - Received instruction to run procedure getAllOpinionsOfKg
+05-08 : 15-40-14 - Adding parameter @KgID=14
+05-08 : 15-40-14 - Opened KGConnection
+05-08 : 15-40-14 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
+05-08 : 15-40-14 - Returned #1 rows!!
+05-08 : 15-40-14 - Closing connection
+05-08 : 15-40-14 - Received instruction to run procedure getActNumsInOpinion
+05-08 : 15-40-14 - Opened KGConnection
+05-08 : 15-40-14 - Sending SQL Statement: getActNumsInOpinion with 0 parameters.
+05-08 : 15-40-14 - Returned #4 rows!!
+05-08 : 15-40-14 - Closing connection
+05-08 : 15-40-14 - Received instruction to run procedure getAllOpinionsOfAct
+05-08 : 15-40-14 - Adding parameter @ActID=1
+05-08 : 15-40-14 - Opened KGConnection
+05-08 : 15-40-14 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+05-08 : 15-40-14 - Returned #2 rows!!
+05-08 : 15-40-14 - Closing connection
+05-08 : 15-40-14 - Received instruction to run procedure getAllOpinionsOfAct
+05-08 : 15-40-14 - Adding parameter @ActID=2
+05-08 : 15-40-14 - Opened KGConnection
+05-08 : 15-40-14 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+05-08 : 15-40-14 - Returned #1 rows!!
+05-08 : 15-40-14 - Closing connection
+05-08 : 15-40-14 - Received instruction to run procedure getAllOpinionsOfAct
+05-08 : 15-40-14 - Adding parameter @ActID=3
+05-08 : 15-40-14 - Opened KGConnection
+05-08 : 15-40-14 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+05-08 : 15-40-14 - Returned #1 rows!!
+05-08 : 15-40-14 - Closing connection
+05-08 : 15-40-14 - Received instruction to run procedure getAllOpinionsOfAct
+05-08 : 15-40-14 - Adding parameter @ActID=4
+05-08 : 15-40-14 - Opened KGConnection
+05-08 : 15-40-14 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+05-08 : 15-40-14 - Returned #3 rows!!
+05-08 : 15-40-14 - Closing connection
+05-08 : 15-40-14 - Starting masterPage

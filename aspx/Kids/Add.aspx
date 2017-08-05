@@ -189,8 +189,8 @@
                                 <div class="row clearfix">
                                     <div class="col-xs-12 col-lg-12" style="margin-bottom: 0px;">
                                         <div class="btn-group" role="group" style="width: 100%">
-                                            <asp:Button ID="btnPublic" runat="server" Text="Public Kindergarden" OnClick="btnPublic_Click" class="btn bg-cyan waves-effect" style="width: 50%"/>
-                                            <asp:Button ID="btnPrivate" runat="server" Text="Private Kindergargen" OnClick="btnPrivate_Click" class="btn bg-cyan waves-effect" style="width: 50%"/>
+                                            <asp:Button ID="btnPublic" runat="server" Text="Public Kindergarden" OnClick="btnPublic_Click" class="btn bg-cyan waves-effect" Style="width: 50%" />
+                                            <asp:Button ID="btnPrivate" runat="server" Text="Private Kindergargen" OnClick="btnPrivate_Click" class="btn bg-cyan waves-effect" Style="width: 50%" />
                                         </div>
                                     </div>
                                 </div>
@@ -256,6 +256,32 @@
                                             <div class="form-line">
                                                 <asp:TextBox ID="tbKGhouseNum" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
                                                 <label class="form-label">House Number</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4" style="margin-bottom: 0px;">
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
+                                                <asp:TextBox ID="tbKGPrice" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                <label class="form-label">Cost</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row clearfix">
+                                    <div class="col-sm-4" style="margin-bottom: 0px;">
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
+                                                <asp:TextBox ID="tbTeacherLastName" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                <label class="form-label">Teacher Last Name</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4" style="margin-bottom: 0px;">
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
+                                                <asp:TextBox ID="tbTeacherFirstName" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                <label class="form-label">Teacher First Name</label>
                                             </div>
                                         </div>
                                     </div>
@@ -339,6 +365,32 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-4" style="margin-bottom: 0px;">
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
+                                                <asp:TextBox ID="tbPrivKGPrice" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                <label class="form-label">Cost</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row clearfix">
+                                    <div class="col-sm-4" style="margin-bottom: 0px;">
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
+                                                <asp:TextBox ID="tbPriTeacherLastName" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                <label class="form-label">Teacher Last Name</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4" style="margin-bottom: 0px;">
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
+                                                <asp:TextBox ID="tbPrivTeacherFirstName" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                <label class="form-label">Teacher First Name</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4" style="margin-bottom: 0px;">
                                         <div class="progress p-l-0 m-b-0">
                                             <div id="divProgressPrivate" runat="server" class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" style="width: 20%"></div>
                                         </div>
@@ -365,9 +417,6 @@
             <div class="modal fade" runat="server" id="defaultModal" tabindex="-1" role="dialog" style="display: none;">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content" runat="server" id="modalColor">
-                        <div class="modal-header">
-                            <h4 class="modal-title" id="defaultModalLabel">Modal title</h4>
-                        </div>
                         <div class="modal-body align-center">
                             <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
                         </div>

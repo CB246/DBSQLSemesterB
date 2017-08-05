@@ -354,7 +354,7 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="/aspx/Opinions/Add.aspx">Add</a>
+                                <a href="/aspx/Opinions/Review.aspx">Review</a>
                             </li>
                             <li>
                                 <a href="/aspx/Opinions/Change.aspx">Change</a>

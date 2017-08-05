@@ -12,7 +12,7 @@ public partial class aspx_Kids_Add : System.Web.UI.Page
     private static bool alreadyIn = false;
     private static bool afterAction = false;
 
-    private static System.Data.DataTable privateKG;
+    private static System.Data.DataTable privateKG = new System.Data.DataTable();
     private static int currRow = 0;
 
     protected void Page_Load(object sender, EventArgs e)
@@ -142,10 +142,13 @@ public partial class aspx_Kids_Add : System.Web.UI.Page
             tbClName.Text = row["CLname"].ToString();
             tbKGStreet.Text = row["street"].ToString();
             tbKGhouseNum.Text = row["houseNumber"].ToString();
+            tbKGPrice.Text = row["price"].ToString();
             int current = int.Parse(row["kidsInClass"].ToString());
             int max = int.Parse(row["maximumKids"].ToString());
             progressBarDiv.Attributes.CssStyle.Value = "width: " + ((double)current / max) * 100 + "%;";
             lblPublicProgressBar.Text = current + "/" + max + " Kids in this class";
+            tbTeacherLastName.Text = row["surName"].ToString();
+            tbTeacherFirstName.Text = row["firstName"].ToString();
         }
     }
 
@@ -166,7 +169,7 @@ public partial class aspx_Kids_Add : System.Web.UI.Page
         if (!alreadyIn && !isSuccess)
         {
             //Kid wasn't added to DB
-            showMessage("OOPS... Something went wrong and kid " + tbID.Text + " wasn't added to DataBase.", "red", 250);
+            showMessage("OOPS... Something went wrong and kid " + tbID.Text + " wasn't added to DataBase.", "red", 450);
         }
     }
 
@@ -206,10 +209,13 @@ public partial class aspx_Kids_Add : System.Web.UI.Page
             tbClNamePriv.Text = privateKG.Rows[rowNum]["CLname"].ToString();
             tbStreetPriv.Text = privateKG.Rows[rowNum]["street"].ToString();
             tbHouseNumPriv.Text = privateKG.Rows[rowNum]["houseNumber"].ToString();
+            tbPrivKGPrice.Text = privateKG.Rows[rowNum]["price"].ToString();
             int current = int.Parse(privateKG.Rows[rowNum]["kidsInClass"].ToString());
             int max = int.Parse(privateKG.Rows[rowNum]["maximumKids"].ToString());
             divProgressPrivate.Attributes.CssStyle.Value = "width: " + ((double)current / max) * 100 + "%;";
             lblProgressPrivate.Text = current + "/" + max + " Kids in this class";
+            tbPriTeacherLastName.Text = privateKG.Rows[rowNum]["surName"].ToString();
+            tbPrivTeacherFirstName.Text = privateKG.Rows[rowNum]["firstName"].ToString();
         }
     }
 
