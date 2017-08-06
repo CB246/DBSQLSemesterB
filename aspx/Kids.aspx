@@ -329,22 +329,7 @@
                                             </div>
                                             <div role="tabpanel" class="tab-pane animated fadeInRight" id="change">
                                                 <b>Profile Content</b>
-                                                <div class="demo-radio-button">
-                                                    <input name="group5" type="radio" id="radio_31" class="with-gap radio-col-cyan">
-                                                    <label for="radio_31">PINK</label>
-                                                    <input name="group5" type="radio" id="radio_32" class="with-gap radio-col-cyan">
-                                                    <label for="radio_32">PURPLE</label>
-                                                    <input name="group5" type="radio" id="radio_33" class="with-gap radio-col-cyan">
-                                                    <label for="radio_33">DEEP PURPLE</label>
-                                                    <input name="group5" type="radio" id="radio_34" class="with-gap radio-col-cyan">
-                                                    <label for="radio_34">INDIGO</label>
-                                                    <input name="group5" type="radio" id="radio_35" class="with-gap radio-col-cyan">
-                                                    <label for="radio_35">BLUE</label>
-                                                    <input name="group5" type="radio" id="radio_36" class="with-gap radio-col-cyan">
-                                                    <label for="radio_36">LIGHT BLUE</label>
-                                                    <input name="group5" type="radio" id="radio_37" class="with-gap radio-col-cyan">
-                                                    <label for="radio_37">CYAN</label>
-                                                </div>
+                                                
                                             </div>
                                             <div role="tabpanel" class="tab-pane animated fadeInRight" id="remove">
                                                 <b>Message Content</b>

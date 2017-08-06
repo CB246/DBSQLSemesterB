@@ -11,8 +11,11 @@
     <!-- Animation Css -->
     <link href="/plugins/animate-css/animate.css" rel="stylesheet" />
 
+    <!-- Bootstrap Select Css -->
+    <link href="/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
     <!-- JQuery DataTable Css -->
-    <link href="/plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="/plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet" />
 
     <!-- Custom Css -->
     <link href="/css/style.css" rel="stylesheet">
@@ -53,6 +56,19 @@
     <!-- Demo Js -->
     <script src="/js/demo.js"></script>
 
+    <style>
+        .form-group .form-line .form-label {
+            right: 0;
+            text-align: right;
+        }
+
+        .val-err-msg {
+            color: red;
+            font-size: 12px;
+            font-weight: bold;
+        }
+    </style>
+
     <section class="content">
         <form runat="server">
             <div class="row clearfix">
@@ -78,10 +94,31 @@
                         </div>
                         <div class="body">
                             <div class="row clearfix">
-                                <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                     <b>Panel Primary</b>
                                     <div class="panel-group" id="kgOpinions" role="tablist" aria-multiselectable="true" runat="server">
-                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row clearfix" style="padding-left: 20px; position: relative;">
+                                <b>Add Opinion</b>
+                            </div>
+                            <div class="row clearfix">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 25%">
+                                        <asp:ListBox runat="server" ID="lbKG" class="btn-group bootstrap-select form-control show-tick">
+                                            <asp:ListItem>11</asp:ListItem>
+                                            <asp:ListItem>12</asp:ListItem>
+                                        </asp:ListBox>
+                                    </div>
+                                    <div class="col-sm-9" style="margin-bottom: 0px;">
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
+                                                <asp:TextBox ID="tbKgOpinion" class="form-control" runat="server"></asp:TextBox>
+                                                <label class="form-label">Your Opinion</label>
+                                            </div>
+                                            <asp:RequiredFieldValidator ID="dobReqVal" runat="server" ControlToValidate="tbKgOpinion" Display="Dynamic" ErrorMessage="Opinion is empty" ValidationGroup="kgOpinion" CssClass="val-err-msg"></asp:RequiredFieldValidator>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -111,18 +148,41 @@
                         </div>
                         <div class="body">
                             <div class="row clearfix">
-                                <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                     <b>Panel Primary</b>
                                     <div class="panel-group" id="actOpinions" role="tablist" aria-multiselectable="true" runat="server">
-                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row clearfix" style="padding-left: 20px; position: relative;">
+                                <b>Add Opinion</b>
+                            </div>
+                            <div class="row clearfix">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 25%">
+                                        <asp:ListBox runat="server" ID="lbAct" class="btn-group bootstrap-select form-control show-tick">
+                                            <asp:ListItem>11</asp:ListItem>
+                                            <asp:ListItem>12</asp:ListItem>
+                                        </asp:ListBox>
+                                    </div>
+                                    <div class="col-sm-9" style="margin-bottom: 0px;">
+                                        <div class="form-group form-float">
+                                            <div class="form-line">
+                                                <asp:TextBox ID="tbActopinion" class="form-control" runat="server"></asp:TextBox>
+                                                <label class="form-label">Your Opinion</label>
+                                            </div>
+                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="tbActopinion" Display="Dynamic" ErrorMessage="Opinion is empty" ValidationGroup="kgOpinion" CssClass="val-err-msg"></asp:RequiredFieldValidator>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- #END# ACTIVITY OPINIONS -->
             </div>
+
+            <!-- #END# ACTIVITY OPINIONS -->
+
         </form>
     </section>
 </asp:Content>
