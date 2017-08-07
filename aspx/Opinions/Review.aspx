@@ -76,51 +76,59 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>BASIC EXAMPLES
-                                <small>Extend the default collapse behavior to create an accordion with the panel component.</small>
+                            <h2>KINDERGARDENS OPINIONS
+                                <small>Here you can review all kindergardens opinions.</small>
                             </h2>
-                            <ul class="header-dropdown m-r--5">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Action</a></li>
-                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Another action</a></li>
-                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Something else here</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
                         </div>
                         <div class="body">
                             <div class="row clearfix">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <b>Panel Primary</b>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 0px;">
                                     <div class="panel-group" id="kgOpinions" role="tablist" aria-multiselectable="true" runat="server">
                                     </div>
                                 </div>
                             </div>
-                            <div class="row clearfix" style="padding-left: 20px; position: relative;">
-                                <b>Add Opinion</b>
-                            </div>
-                            <div class="row clearfix">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 25%">
-                                        <asp:ListBox runat="server" ID="lbKG" class="btn-group bootstrap-select form-control show-tick">
-                                            <asp:ListItem>11</asp:ListItem>
-                                            <asp:ListItem>12</asp:ListItem>
-                                        </asp:ListBox>
-                                    </div>
-                                    <div class="col-sm-9" style="margin-bottom: 0px;">
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <asp:TextBox ID="tbKgOpinion" class="form-control" runat="server"></asp:TextBox>
-                                                <label class="form-label">Your Opinion</label>
+                            <div runat="server" id="addKgOpinion">
+                                <div class="row clearfix align-center" style="position: relative;">
+                                    <b>Add Opinion</b>
+                                </div>
+                                <div class="row clearfix">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 25%; margin-bottom: 0px;">
+                                            <asp:ListBox runat="server" ID="lbKG" class="btn-group bootstrap-select form-control show-tick"></asp:ListBox>
+                                        </div>
+                                        <div class="col-sm-9" style="margin-bottom: 0px;">
+                                            <div class="form-group form-float" style="margin-bottom: 0px;">
+                                                <div class="form-line">
+                                                    <asp:TextBox ID="tbKgOpinion" class="form-control" runat="server"></asp:TextBox>
+                                                    <label class="form-label">Your Opinion</label>
+                                                </div>
+                                                <asp:RequiredFieldValidator ID="kgOpinionReqVal" runat="server" ControlToValidate="tbKgOpinion" Display="Dynamic" ErrorMessage="Opinion is empty" ValidationGroup="kgOpinion" CssClass="val-err-msg"></asp:RequiredFieldValidator>
                                             </div>
-                                            <asp:RequiredFieldValidator ID="dobReqVal" runat="server" ControlToValidate="tbKgOpinion" Display="Dynamic" ErrorMessage="Opinion is empty" ValidationGroup="kgOpinion" CssClass="val-err-msg"></asp:RequiredFieldValidator>
                                         </div>
                                     </div>
                                 </div>
+                                <asp:Button ID="btnAddKgOpinion" runat="server" Text="Add Opinion" ValidationGroup="kgOpinion" class="btn btn-block btn-lg bg-cyan" />
+                            </div>
+                            <div runat="server" id="removeKgOpinion">
+                                <div class="row clearfix align-center" style="position: relative;">
+                                    <b>Remove Opinion</b>
+                                </div>
+                                <div class="row clearfix">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 25%; margin-bottom: 0px;">
+                                            <asp:ListBox runat="server" ID="lbKgOpinionID" class="btn-group bootstrap-select form-control show-tick"></asp:ListBox>
+                                        </div>
+                                        <div class="col-sm-9" style="margin-bottom: 0px;">
+                                            <div class="form-group form-float" style="margin-bottom: 0px;">
+                                                <div class="form-line">
+                                                    <asp:TextBox ID="tbKgOpinionToRemove" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                    <label class="form-label">Opinion to Remove</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <asp:Button ID="btnRemoveKgOpinion" runat="server" Text="Remove Opinion" class="btn btn-block btn-lg bg-cyan" />
                             </div>
                         </div>
                     </div>
@@ -130,51 +138,59 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>BASIC EXAMPLES
-                                <small>Extend the default collapse behavior to create an accordion with the panel component.</small>
+                            <h2>ACTIVITIES OPINOINS
+                                <small>Here you can review all activities opinions.</small>
                             </h2>
-                            <ul class="header-dropdown m-r--5">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Action</a></li>
-                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Another action</a></li>
-                                        <li><a href="javascript:void(0);" class=" waves-effect waves-block">Something else here</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
                         </div>
                         <div class="body">
                             <div class="row clearfix">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <b>Panel Primary</b>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 0px;">
                                     <div class="panel-group" id="actOpinions" role="tablist" aria-multiselectable="true" runat="server">
                                     </div>
                                 </div>
                             </div>
-                            <div class="row clearfix" style="padding-left: 20px; position: relative;">
-                                <b>Add Opinion</b>
-                            </div>
-                            <div class="row clearfix">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                    <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 25%">
-                                        <asp:ListBox runat="server" ID="lbAct" class="btn-group bootstrap-select form-control show-tick">
-                                            <asp:ListItem>11</asp:ListItem>
-                                            <asp:ListItem>12</asp:ListItem>
-                                        </asp:ListBox>
-                                    </div>
-                                    <div class="col-sm-9" style="margin-bottom: 0px;">
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <asp:TextBox ID="tbActopinion" class="form-control" runat="server"></asp:TextBox>
-                                                <label class="form-label">Your Opinion</label>
+                            <div runat="server" id="addActOpinion">
+                                <div class="row clearfix align-center" style="position: relative;">
+                                    <b>Add Opinion</b>
+                                </div>
+                                <div class="row clearfix">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 25%; margin-bottom: 0px;">
+                                            <asp:ListBox runat="server" ID="lbAct" class="btn-group bootstrap-select form-control show-tick"></asp:ListBox>
+                                        </div>
+                                        <div class="col-sm-9" style="margin-bottom: 0px;">
+                                            <div class="form-group form-float" style="margin-bottom: 0px;">
+                                                <div class="form-line">
+                                                    <asp:TextBox ID="tbActopinion" class="form-control" runat="server"></asp:TextBox>
+                                                    <label class="form-label">Your Opinion</label>
+                                                </div>
+                                                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="tbActopinion" Display="Dynamic" ErrorMessage="Opinion is empty" ValidationGroup="actOpinion" CssClass="val-err-msg"></asp:RequiredFieldValidator>
                                             </div>
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="tbActopinion" Display="Dynamic" ErrorMessage="Opinion is empty" ValidationGroup="kgOpinion" CssClass="val-err-msg"></asp:RequiredFieldValidator>
                                         </div>
                                     </div>
                                 </div>
+                                <asp:Button ID="btnAddActOpinion" runat="server" ValidationGroup="actOpinion" Text="Add Opinion" class="btn btn-block btn-lg bg-cyan" />
+                            </div>
+                            <div runat="server" id="removeActOpinion">
+                                <div class="row clearfix align-center" style="position: relative;">
+                                    <b>Remove Opinion</b>
+                                </div>
+                                <div class="row clearfix">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 25%; margin-bottom: 0px;">
+                                            <asp:ListBox runat="server" ID="lbActOpinionID" class="btn-group bootstrap-select form-control show-tick"></asp:ListBox>
+                                        </div>
+                                        <div class="col-sm-9" style="margin-bottom: 0px;">
+                                            <div class="form-group form-float" style="margin-bottom: 0px;">
+                                                <div class="form-line">
+                                                    <asp:TextBox ID="tbActOpinionToRemove" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
+                                                    <label class="form-label">Opinion to Remove</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <asp:Button ID="btnRemoveActOpinion" runat="server" Text="Remove Opinion" class="btn btn-block btn-lg bg-cyan" />
                             </div>
                         </div>
                     </div>

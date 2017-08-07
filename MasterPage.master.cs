@@ -10,7 +10,6 @@ public partial class MasterPage : System.Web.UI.MasterPage
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        KGManager.log("Starting masterPage");
         if (KGManager.userLogin.Equals(""))
         {
             Response.Redirect("/aspx/Login.aspx");

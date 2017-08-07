@@ -69,7 +69,9 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="header">
-                                KID & PARENT ID
+                                <h2 class="align-center">Change Kid Information
+                                <small>Here you can change kid information</small>
+                                </h2>
                             </div>
                             <div class="body">
                                 <div class="row clearfix">
@@ -112,8 +114,7 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="header">
-                                <h2 class="align-center">Add Kid page
-                                <small>Here you can add your kid to Kindergarden</small>
+                                <h2 class="align-center">Insert new data to change
                                 </h2>
                             </div>
                             <div class="body">
@@ -212,85 +213,6 @@
                                                 <asp:Button ID="btnChangeKidInfo" runat="server" ValidationGroup="longLat" Text="Change Kid Info" class="btn btn-block btn-lg bg-cyan" />
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- KG INFO -->
-            <div class="container-fluid" runat="server" id="kgInfo">
-                <div class="row clearfix">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="card">
-                            <div class="header">
-                                public
-                            </div>
-                            <div class="body">
-                                <div class="row clearfix">
-                                    <div class="col-sm-3" style="margin-bottom: 0px;">
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <asp:TextBox ID="tbKgID" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
-                                                <label class="form-label">Kindergarden ID</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3" style="margin-bottom: 0px;">
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <asp:TextBox ID="tbKGname" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
-                                                <label class="form-label">Kindergarden Name</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3" style="margin-bottom: 0px;">
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <asp:TextBox ID="tbClNum" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
-                                                <label class="form-label">Class Number</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3" style="margin-bottom: 0px;">
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <asp:TextBox ID="tbClName" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
-                                                <label class="form-label">Class Name</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row clearfix">
-                                    <div class="col-sm-4" style="margin-bottom: 0px;">
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <asp:TextBox ID="tbKGStreet" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
-                                                <label class="form-label">Street</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4" style="margin-bottom: 0px;">
-                                        <div class="form-group form-float">
-                                            <div class="form-line">
-                                                <asp:TextBox ID="tbKGhouseNum" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
-                                                <label class="form-label">House Number</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4" style="margin-bottom: 0px;">
-                                        <div class="progress p-l-0 m-b-0">
-                                            <div id="progressBarDiv" runat="server" class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" style="width: 20%"></div>
-                                        </div>
-                                        <div class="help-info align-center" style="font-size: 12px; margin-top: 5px; color: #999;">
-                                            <asp:Label ID="lblPublicProgressBar" runat="server" Text=""></asp:Label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row clearfix">
-                                    <div class="col-sm-12" style="margin-bottom: 0px;">
-                                        <asp:Button ID="btnAddKidToPublic" runat="server" ValidationGroup="longLat" Text="Add Kid to Public Kindergarden" class="btn btn-block btn-lg bg-cyan" />
                                     </div>
                                 </div>
                             </div>

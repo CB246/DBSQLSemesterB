@@ -54,9 +54,15 @@ public partial class aspx_Opinions_Add : System.Web.UI.Page
             panelPrimary.Controls.Add(panelCollapse);
 
             if (type.Equals("Kg"))
+            {
                 kgOpinions.Controls.Add(panelPrimary);
+                lbKG.Items.Add(item["ID"].ToString());
+            }
             else
+            {
                 actOpinions.Controls.Add(panelPrimary);
+                lbAct.Items.Add(item["ID"].ToString());
+            }
         }
     }
 
@@ -69,6 +75,7 @@ public partial class aspx_Opinions_Add : System.Web.UI.Page
         wrapper.Attributes.Add("class", "dataTables_wrapper form-inline dt-bootstrap");
         HtmlGenericControl row = new HtmlGenericControl("div");
         row.Attributes.Add("class", "row col-sm-12");
+        row.Attributes.Add("style", "margin-bottom: 0px;");
         HtmlGenericControl data = new HtmlGenericControl("table");
         data.Attributes.Add("class", "table table-bordered table-striped table-hover js-basic-example dataTable");
         data.Attributes.Add("id", type + num);
@@ -84,40 +91,76 @@ public partial class aspx_Opinions_Add : System.Web.UI.Page
         th1.Attributes.Add("rowspan", "1");
         th1.Attributes.Add("colspan", "1");
         th1.Attributes.Add("aria-sort", "ascending");
-        th1.InnerText = "Opinion";
+        th1.InnerText = "ID";
         HtmlGenericControl th2 = new HtmlGenericControl("th");
         th2.Attributes.Add("class", "sorting");
         th2.Attributes.Add("tabindex", "0");
         th2.Attributes.Add("aria-controls", type + num);
         th2.Attributes.Add("rowspan", "1");
         th2.Attributes.Add("colspan", "1");
-        th2.InnerText = "grade";
+        th2.InnerText = "Opinion";
+        HtmlGenericControl th3 = new HtmlGenericControl("th");
+        th3.Attributes.Add("class", "sorting");
+        th3.Attributes.Add("tabindex", "0");
+        th3.Attributes.Add("aria-controls", type + num);
+        th3.Attributes.Add("rowspan", "1");
+        th3.Attributes.Add("colspan", "1");
+        th3.InnerText = "Grade";
         HtmlGenericControl body = new HtmlGenericControl("tbody");
         Dictionary<string, object> dict = new Dictionary<string, object>();
         dict.Add(type + "ID", num);
 
-        int i = 0;
+        int i = 0, sum = 0;
         System.Data.DataTable dt = DBConnection.runProcWithResults("getAllOpinionsOf" + type, dict);
         foreach (System.Data.DataRow item in dt.Rows)
         {
             HtmlGenericControl innerTr = new HtmlGenericControl("tr");
             innerTr.Attributes.Add("role", "row");
-            innerTr.Attributes.Add("class", ((i % 2) == 0) ? "odd" : "even");
+            innerTr.Attributes.Add("class", ((i++ % 2) == 0) ? "odd" : "even");
             HtmlGenericControl td1 = new HtmlGenericControl("td");
             td1.Attributes.Add("class", "sorting_1");
-            td1.InnerText = item["text"].ToString();
+            td1.InnerText = item["ID"].ToString();
             HtmlGenericControl td2 = new HtmlGenericControl("td");
-            td2.InnerText = item["grade"].ToString();
+            td2.InnerText = item["text"].ToString();
+            HtmlGenericControl td3 = new HtmlGenericControl("td");
+            td3.InnerText = item["grade"].ToString();
+            sum += int.Parse(item["grade"].ToString());
             innerTr.Controls.Add(td1);
             innerTr.Controls.Add(td2);
+            innerTr.Controls.Add(td3);
             body.Controls.Add(innerTr);
+            if (type.Equals("Kg"))
+                lbKgOpinionID.Items.Add(item["ID"].ToString());
+            else
+                lbActOpinionID.Items.Add(item["ID"].ToString());
         }
+
+        HtmlGenericControl foot = new HtmlGenericControl("tfoot");
+        HtmlGenericControl trFoot = new HtmlGenericControl("tr");
+        trFoot.Attributes.Add("role", "row");
+        HtmlGenericControl th4 = new HtmlGenericControl("th");
+        th4.Attributes.Add("class", "sorting");
+        th4.Attributes.Add("tabindex", "0");
+        th4.Attributes.Add("aria-controls", type + num);
+        th4.Attributes.Add("rowspan", "1");
+        th4.Attributes.Add("colspan", "1");
+        th4.InnerText = ((double)sum/i).ToString();
+        HtmlGenericControl th5 = new HtmlGenericControl("th");
+        th5.InnerText = "Average:";
+        th5.Attributes.Add("class", "align-right");
+        HtmlGenericControl th6 = new HtmlGenericControl("th");
 
         tr.Controls.Add(th1);
         tr.Controls.Add(th2);
+        tr.Controls.Add(th3);
+        trFoot.Controls.Add(th6);
+        trFoot.Controls.Add(th5);
+        trFoot.Controls.Add(th4);
+        foot.Controls.Add(trFoot);
         head.Controls.Add(tr);
         data.Controls.Add(head);
         data.Controls.Add(body);
+        data.Controls.Add(foot);
         row.Controls.Add(data);
         wrapper.Controls.Add(row);
         table.Controls.Add(wrapper);
