@@ -9,7 +9,7 @@ public partial class aspx_Admin_Activities : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        
+
     }
 
     private void populateKgList()

@@ -79,12 +79,15 @@
                             <div class="body">
                                 <div class="row clearfix">
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 50%; margin-bottom: 0px;">
+                                        <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 25%; margin-bottom: 0px;">
                                             <asp:ListBox runat="server" ID="lbKG" class="btn-group bootstrap-select form-control show-tick"></asp:ListBox>
+                                        </div>
+                                        <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 25%; margin-bottom: 0px;">
+                                            <asp:ListBox runat="server" ID="lbClNum" class="btn-group bootstrap-select form-control show-tick"></asp:ListBox>
                                         </div>
                                         <div class="col-sm-6" style="margin-bottom: 0px;">
                                             <div class="form-group form-float" style="margin-bottom: 0px;">
-                                                <asp:Button ID="btnAddKgOpinion" runat="server" Text="Add Opinion" class="btn btn-block btn-lg bg-cyan" />
+                                                <asp:Button ID="btnGetAllActivitiesOfKg" runat="server" Text="Get All Activities" class="btn btn-block btn-lg bg-cyan" />
                                             </div>
                                         </div>
                                     </div>

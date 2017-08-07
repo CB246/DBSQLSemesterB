@@ -142,18 +142,15 @@ public partial class aspx_SignedFor_Add : System.Web.UI.Page
             System.Data.DataTable dt = DBConnection.runProcWithResults("getAllActivityOpinions", data);
             foreach (System.Data.DataRow item in dt.Rows)
             {
-                for (int i = 0; i < 15; i++)
-                {
-                    System.Web.UI.HtmlControls.HtmlTableRow tr = new System.Web.UI.HtmlControls.HtmlTableRow();
-                    tr.Attributes.Add("class", int.Parse(item["grade"].ToString()) > 5 ? "success" : "danger");
-                    System.Web.UI.HtmlControls.HtmlTableCell tc = new System.Web.UI.HtmlControls.HtmlTableCell();
-                    tc.InnerText = item["talk"].ToString();
-                    tr.Controls.Add(tc);
-                    System.Web.UI.HtmlControls.HtmlTableCell tc1 = new System.Web.UI.HtmlControls.HtmlTableCell();
-                    tc1.InnerText = item["grade"].ToString();
-                    tr.Controls.Add(tc1);
-                    opinionTable.Rows.Add(tr);
-                }
+                System.Web.UI.HtmlControls.HtmlTableRow tr = new System.Web.UI.HtmlControls.HtmlTableRow();
+                tr.Attributes.Add("class", int.Parse(item["grade"].ToString()) > 5 ? "success" : "danger");
+                System.Web.UI.HtmlControls.HtmlTableCell tc = new System.Web.UI.HtmlControls.HtmlTableCell();
+                tc.InnerText = item["talk"].ToString();
+                tr.Controls.Add(tc);
+                System.Web.UI.HtmlControls.HtmlTableCell tc1 = new System.Web.UI.HtmlControls.HtmlTableCell();
+                tc1.InnerText = item["grade"].ToString();
+                tr.Controls.Add(tc1);
+                opinionTable.Rows.Add(tr);
             }
         }
     }
