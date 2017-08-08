@@ -26,7 +26,7 @@
     </style>
 </head>
 
-<body class="theme-red">
+<body class="theme-pink">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 
@@ -97,52 +97,22 @@
                         </a>
                     </li>
                     <li>
-                        <a class="menu-toggle">
+                        <a href="/aspx/Kids/Add.aspx">
                             <i class="material-icons">face</i>
                             <span>Kids</span>
                         </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="/aspx/Kids/Add.aspx" runat="server" id="addKid">Add</a>
-                            </li>
-                            <li>
-                                <a href="/aspx/Kids/Change.aspx">Change</a>
-                            </li>
-                        </ul>
                     </li>
                     <li>
-                        <a class="menu-toggle">
+                        <a href="/aspx/SignedFor/Add.aspx">
                             <i class="material-icons">assignment</i>
-                            <span>Signed For TBD</span>
+                            <span>Signed For</span>
                         </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="/aspx/SignedFor/Add.aspx">Add</a>
-                            </li>
-                            <li>
-                                <a href="/aspx/SignedFor/Change.aspx">Change</a>
-                            </li>
-                            <li>
-                                <a href="/aspx/SignedFor/Remove.aspx">Remove</a>
-                            </li>
-                        </ul>
                     </li>
                     <li>
-                        <a class="menu-toggle">
+                        <a href="/aspx/Opinions/Review.aspx">
                             <i class="material-icons">feedback</i>
-                            <span>Opinions TBD</span>
+                            <span>Opinions</span>
                         </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="/aspx/Opinions/Review.aspx">Review</a>
-                            </li>
-                            <li>
-                                <a href="/aspx/Opinions/Change.aspx">Change</a>
-                            </li>
-                            <li>
-                                <a href="/aspx/Opinions/Remove.aspx">Remove</a>
-                            </li>
-                        </ul>
                     </li>
                     <li runat="server" id="adminPanel">
                         <a class="menu-toggle">
@@ -156,13 +126,10 @@
                             <li>
                                 <a href="/aspx/Admin/Activities.aspx">Activities</a>
                             </li>
+                            <li>
+                                <a href="/aspx/Admin/Queries.aspx">Queries</a>
+                            </li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="/aspx/Kids.aspx">
-                            <i class="material-icons">face</i>
-                            <span>Kids</span>
-                        </a>
                     </li>
                     <li>
                         <a href="pages/typography.html">

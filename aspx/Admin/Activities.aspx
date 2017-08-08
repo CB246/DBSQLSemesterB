@@ -82,12 +82,17 @@
                                         <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 25%; margin-bottom: 0px;">
                                             <asp:ListBox runat="server" ID="lbKG" class="btn-group bootstrap-select form-control show-tick"></asp:ListBox>
                                         </div>
+                                        <div class="col-sm-3" style="margin-bottom: 0px;">
+                                            <div class="form-group form-float" style="margin-bottom: 0px;">
+                                                <asp:Button ID="btnGetAllClassesOfKg" runat="server" OnClick="btnGetAllClassesOfKg_Click" Text="Get All Classes" class="btn btn-block btn-lg bg-cyan" />
+                                            </div>
+                                        </div>
                                         <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 25%; margin-bottom: 0px;">
                                             <asp:ListBox runat="server" ID="lbClNum" class="btn-group bootstrap-select form-control show-tick"></asp:ListBox>
                                         </div>
-                                        <div class="col-sm-6" style="margin-bottom: 0px;">
+                                        <div class="col-sm-3" style="margin-bottom: 0px;">
                                             <div class="form-group form-float" style="margin-bottom: 0px;">
-                                                <asp:Button ID="btnGetAllActivitiesOfKg" runat="server" Text="Get All Activities" class="btn btn-block btn-lg bg-cyan" />
+                                                <asp:Button ID="btnGetAllActivitiesOfKg" runat="server" OnClick="btnGetAllActivitiesOfKg_Click" Text="Get All Activities" class="btn btn-block btn-lg bg-cyan" />
                                             </div>
                                         </div>
                                     </div>
@@ -102,111 +107,97 @@
                             </div>
                             <div class="body">
                                 <div class="table-responsive">
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                                <th style="padding: 5px 10px; width: 1%;">Hours</th>
-                                                <th style="padding: 5px 10px">Sunday</th>
-                                                <th style="padding: 5px 10px">Monday</th>
-                                                <th style="padding: 5px 10px">Tuesday</th>
-                                                <th style="padding: 5px 10px">Wednesday</th>
-                                                <th style="padding: 5px 10px">Thursday</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row" style="padding: 5px 10px">16:00</th>
-                                                <td style="padding: 5px 10px" runat="server" id="r1600c1"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1600c2"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1600c3"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1600c4"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1600c5"></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" style="padding: 5px 10px">16:30</th>
-                                                <td style="padding: 5px 10px" runat="server" id="r1630c1"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1630c2"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1630c3"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1630c4"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1630c5"></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" style="padding: 5px 10px">17:00</th>
-                                                <td style="padding: 5px 10px" runat="server" id="r1700c1"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1700c2"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1700c3"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1700c4"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1700c5"></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" style="padding: 5px 10px">17:30</th>
-                                                <td style="padding: 5px 10px" runat="server" id="r1730c1"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1730c2"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1730c3"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1730c4"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1730c5"></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" style="padding: 5px 10px">18:00</th>
-                                                <td style="padding: 5px 10px" runat="server" id="r1800c1"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1800c2"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1800c3"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1800c4"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1800c5"></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" style="padding: 5px 10px">18:30</th>
-                                                <td style="padding: 5px 10px" runat="server" id="r1830c1"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1830c2"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1830c3"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1830c4"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1830c5"></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" style="padding: 5px 10px">19:00</th>
-                                                <td style="padding: 5px 10px" runat="server" id="r1900c1"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1900c2"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1900c3"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1900c4"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1900c5"></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" style="padding: 5px 10px">19:30</th>
-                                                <td style="padding: 5px 10px" runat="server" id="r1930c1"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1930c2"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1930c3"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1930c4"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r1930c5"></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" style="padding: 5px 10px">20:00</th>
-                                                <td style="padding: 5px 10px" runat="server" id="r2000c1"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r2000c2"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r2000c3"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r2000c4"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r2000c5"></td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row" style="padding: 5px 10px">20:30</th>
-                                                <td style="padding: 5px 10px" runat="server" id="r2030c1"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r2030c2"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r2030c3"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r2030c4"></td>
-                                                <td style="padding: 5px 10px" runat="server" id="r2030c5"></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <asp:Table class="table table-bordered" runat="server" id="table1">
+                                        <asp:TableHeaderRow>
+                                                <asp:TableHeaderCell style="padding: 5px 10px; width: 1%;">Hours</asp:TableHeaderCell>
+                                                <asp:TableHeaderCell style="padding: 5px 10px">Sunday</asp:TableHeaderCell>
+                                                <asp:TableHeaderCell style="padding: 5px 10px">Monday</asp:TableHeaderCell>
+                                                <asp:TableHeaderCell style="padding: 5px 10px">Tuesday</asp:TableHeaderCell>
+                                                <asp:TableHeaderCell style="padding: 5px 10px">Wednesday</asp:TableHeaderCell>
+                                                <asp:TableHeaderCell style="padding: 5px 10px">Thursday</asp:TableHeaderCell>
+                                        </asp:TableHeaderRow>
+                                            <asp:TableRow>
+                                                <asp:TableHeaderCell scope="row" style="padding: 5px 10px">16:00</asp:TableHeaderCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r160c1"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r160c2"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r160c3"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r160c4"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r160c5"></asp:TableCell>
+                                            </asp:TableRow>
+                                            <asp:TableRow>
+                                                <asp:TableHeaderCell scope="row" style="padding: 5px 10px">16:30</asp:TableHeaderCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r165c1"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r165c2"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r165c3"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r165c4"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r165c5"></asp:TableCell>
+                                            </asp:TableRow>
+                                            <asp:TableRow>
+                                                <asp:TableHeaderCell scope="row" style="padding: 5px 10px">17:00</asp:TableHeaderCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r170c1"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r170c2"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r170c3"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r170c4"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r170c5"></asp:TableCell>
+                                            </asp:TableRow>
+                                            <asp:TableRow>
+                                                <asp:TableHeaderCell scope="row" style="padding: 5px 10px">17:30</asp:TableHeaderCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r175c1"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r175c2"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r175c3"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r175c4"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r175c5"></asp:TableCell>
+                                            </asp:TableRow>
+                                            <asp:TableRow>
+                                                <asp:TableHeaderCell scope="row" style="padding: 5px 10px">18:00</asp:TableHeaderCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r180c1"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r180c2"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r180c3"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r180c4"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r180c5"></asp:TableCell>
+                                            </asp:TableRow>
+                                            <asp:TableRow>
+                                                <asp:TableHeaderCell scope="row" style="padding: 5px 10px">18:30</asp:TableHeaderCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r185c1"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r185c2"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r185c3"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r185c4"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r185c5"></asp:TableCell>
+                                            </asp:TableRow>
+                                            <asp:TableRow>
+                                                <asp:TableHeaderCell scope="row" style="padding: 5px 10px">19:00</asp:TableHeaderCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r190c1"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r190c2"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r190c3"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r190c4"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r190c5"></asp:TableCell>
+                                            </asp:TableRow>
+                                            <asp:TableRow>
+                                                <asp:TableHeaderCell scope="row" style="padding: 5px 10px">19:30</asp:TableHeaderCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r195c1"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r195c2"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r195c3"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r195c4"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r195c5"></asp:TableCell>
+                                            </asp:TableRow>
+                                            <asp:TableRow>
+                                                <asp:TableHeaderCell scope="row" style="padding: 5px 10px">20:00</asp:TableHeaderCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r200c1"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r200c2"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r200c3"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r200c4"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r200c5"></asp:TableCell>
+                                            </asp:TableRow>
+                                            <asp:TableRow>
+                                                <asp:TableHeaderCell scope="row" style="padding: 5px 10px">20:30</asp:TableHeaderCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r205c1"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r205c2"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r205c3"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r205c4"></asp:TableCell>
+                                                <asp:TableCell style="padding: 5px 10px" runat="server" id="r205c5"></asp:TableCell>
+                                            </asp:TableRow>
+                                    </asp:Table>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- ADD ACTIVITY CARD -->
-                        <div class="card">
-                            <div class="header">
-                                <h2 class="align-center">Add Activity
-                                <small>Here you can add new activity.</small>
-                                </h2>
-                            </div>
-                            <div class="body">
                             </div>
                         </div>
                     </div>

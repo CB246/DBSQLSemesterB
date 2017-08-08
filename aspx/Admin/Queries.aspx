@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Import.aspx.cs" Inherits="aspx_Admin_Import" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Queries.aspx.cs" Inherits="aspx_Admin_Queries" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 
@@ -12,6 +12,12 @@
 
     <!-- Animation Css -->
     <link href="/plugins/animate-css/animate.css" rel="stylesheet" />
+
+    <!-- Bootstrap Select Css -->
+    <link href="/plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+    <!-- JQuery DataTable Css -->
+    <link href="/plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet" />
 
     <!-- Custom Css -->
     <link href="/css/style.css" rel="stylesheet">
@@ -48,19 +54,6 @@
 
     <!-- ============END OF SCRIPTS==============-->
 
-    <style>
-        .form-group .form-line .form-label {
-            right: 0;
-            text-align: right;
-        }
-
-        .val-err-msg {
-            color: red;
-            font-size: 12px;
-            font-weight: bold;
-        }
-    </style>
-
     <section class="content">
         <form runat="server">
             <!-- IMPORT PAGE -->
@@ -77,8 +70,19 @@
                                 <div class="row clearfix">
                                     <div class="col-xs-12 col-lg-12" style="margin-bottom: 0px;">
                                         <div class="row clearfix">
-                                            <asp:FileUpload ID="FileUpload1" runat="server" class="col-sm-6"/>
-                                            <asp:Button class="btn btn-lg bg-cyan" style="width: 50%" runat="server" ID="btnImport" OnClick="btnImport_Click" Text="Import" />
+                                            <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 50%; margin-bottom: 0px;">
+                                            <asp:ListBox runat="server" ID="lbQuery" class="btn-group bootstrap-select form-control show-tick">
+                                                <asp:ListItem>Query 2 - Query Name</asp:ListItem>
+                                                <asp:ListItem>Query 3 - Query Name</asp:ListItem>
+                                                <asp:ListItem>Query 4 - Query Name</asp:ListItem>
+                                                <asp:ListItem>Query 5 - Query Name</asp:ListItem>
+                                                <asp:ListItem>Query 6 - Query Name</asp:ListItem>
+                                                <asp:ListItem>Query 7 - Query Name</asp:ListItem>
+                                                <asp:ListItem>Query 8a - Query Name</asp:ListItem>
+                                                <asp:ListItem>Query 8b - Query Name</asp:ListItem>
+                                            </asp:ListBox>
+                                        </div>
+                                            <asp:Button class="btn btn-lg bg-cyan" style="width: 50%" runat="server" ID="btnRunQuery" OnClick="btnRunQuery_Click" Text="Run Query" />
                                         </div>
                                     </div>
                                 </div>
@@ -91,8 +95,8 @@
             <div class="modal fade" runat="server" id="defaultModal" tabindex="-1" role="dialog" style="display: none;">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content" runat="server" id="modalColor">
-                        <div class="modal-body align-center">
-                            <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
+                        <div class="modal-body align-center table-responsive">
+                            <asp:GridView ID="gvTable" runat="server" class="table table-bordered"></asp:GridView>
                         </div>
                         <div class="modal-footer align-center">
                             <asp:Button class="btn btn-link waves-effect" runat="server" ID="cancelButton" OnClick="cancelButton_Click" Text="CLOSE" />

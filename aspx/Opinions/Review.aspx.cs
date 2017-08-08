@@ -8,8 +8,57 @@ using System.Web.UI.WebControls;
 
 public partial class aspx_Opinions_Add : System.Web.UI.Page
 {
+    private static bool isSuccess = false;
+    private static bool afterAction = false;
+    private static bool isAdd = false;
+
     protected void Page_Load(object sender, EventArgs e)
     {
+        if (KGManager.userLogin.Equals("Admin"))
+        {
+            addKgOpinion.Attributes.Add("hidden", "true");
+            addActOpinion.Attributes.Add("hidden", "true");
+            removeActOpinion.Attributes.Remove("hidden");
+            removeKgOpinion.Attributes.Remove("hidden");
+        }
+        else
+        {
+            removeActOpinion.Attributes.Add("hidden", "true");
+            removeKgOpinion.Attributes.Add("hidden", "true");
+            addKgOpinion.Attributes.Remove("hidden");
+            addActOpinion.Attributes.Remove("hidden");
+        }
+
+        if (IsPostBack)
+        {
+            if (afterAction)
+            {
+                submitData();
+                isSuccess = false;
+                afterAction = false;
+                isAdd = false;
+                lbKgOpinionID.Items.Clear();
+                lbActOpinionID.Items.Clear();
+            }
+        }
+        else
+        {
+            lbAct.Items.Clear();
+            lbKG.Items.Clear();
+            // fill all KGs     -   getAllKgNum
+            foreach (System.Data.DataRow item in DBConnection.runProcWithResults("getAllKgNum", new Dictionary<string, object>()).Rows)
+            {
+                lbKG.Items.Add(item["ID"].ToString());
+            }
+
+            // fill all Acts    -   getAllActNum
+            foreach (System.Data.DataRow item in DBConnection.runProcWithResults("getAllActNum", new Dictionary<string, object>()).Rows)
+            {
+                lbAct.Items.Add(item["ID"].ToString());
+            }
+            lbKgOpinionID.Items.Clear();
+            lbActOpinionID.Items.Clear();
+        }
         fillOpinions("Kg", DBConnection.runProcWithResults("getKgNumsInOpinion", new Dictionary<string, object>()));
         fillOpinions("Act", DBConnection.runProcWithResults("getActNumsInOpinion", new Dictionary<string, object>()));
     }
@@ -34,7 +83,14 @@ public partial class aspx_Opinions_Add : System.Web.UI.Page
             button.Attributes.Add("aria-expanded", "false");
             button.Attributes.Add("aria-controls", "collapse" + type + item["ID"].ToString());
             button.Attributes.Add("class", "collapsed");
-            button.InnerText = type + " " + item["ID"].ToString();
+            if (type.Equals("Kg"))
+            {
+                button.InnerText = "Kindergarden " + item["ID"].ToString() + " - " + item["name"].ToString();
+            }
+            else
+            {
+                button.InnerText = "Activity " + item["ID"].ToString() + " - " + item["name"].ToString();
+            }
             HtmlGenericControl panelCollapse = new HtmlGenericControl("div");
             panelCollapse.Attributes.Add("id", "collapse" + type + item["ID"].ToString());
             panelCollapse.Attributes.Add("class", "panel-collapse collapse");
@@ -56,12 +112,10 @@ public partial class aspx_Opinions_Add : System.Web.UI.Page
             if (type.Equals("Kg"))
             {
                 kgOpinions.Controls.Add(panelPrimary);
-                lbKG.Items.Add(item["ID"].ToString());
             }
             else
             {
                 actOpinions.Controls.Add(panelPrimary);
-                lbAct.Items.Add(item["ID"].ToString());
             }
         }
     }
@@ -166,5 +220,114 @@ public partial class aspx_Opinions_Add : System.Web.UI.Page
         table.Controls.Add(wrapper);
 
         return table;
+    }
+
+    protected void cancelButton_Click(object sender, EventArgs e)
+    {
+        closeMessage();
+    }
+
+    private void closeMessage()
+    {
+        lblMessage.Text = "";
+        defaultModal.Attributes.CssStyle.Value = "display: none;";
+        defaultModal.Attributes.Remove("class");
+        defaultModal.Attributes.Add("class", "modal fade");
+        modalColor.Attributes.Remove("class");
+        modalColor.Attributes.Add("class", "modal-content");
+        lbKG.SelectedIndex = 0;
+        tbKgOpinion.Text = "";
+        lbKgGrade.SelectedIndex = 0;
+        lbKgOpinionID.SelectedIndex = 0;
+        lbAct.SelectedIndex = 0;
+        tbActopinion.Text = "";
+        lbActGrade.SelectedIndex = 0;
+        lbActOpinionID.SelectedIndex = 0;
+    }
+
+    private void showMessage(string text, string color, int width)
+    {
+        lblMessage.Text = text;
+        defaultModal.Attributes.CssStyle.Value = "display: block; margin-top: 15%;";
+        defaultModal.Attributes.Remove("class");
+        defaultModal.Attributes.Add("class", "modal fade in");
+        modalColor.Attributes.Remove("class");
+        modalColor.Attributes.Add("class", "modal-content modal-col-" + color);
+        modalColor.Attributes.CssStyle.Value = "width: " + width + "px; margin: auto;";
+    }
+
+    protected void btnAddKgOpinion_Click(object sender, EventArgs e)
+    {
+        addOpinion("Kg", lbKG.SelectedValue, tbKgOpinion.Text, lbKgGrade.SelectedValue);
+    }
+
+    protected void btnAddActOpinion_Click(object sender, EventArgs e)
+    {
+        addOpinion("Act", lbAct.SelectedValue, tbActopinion.Text, lbActGrade.SelectedValue);
+    }
+
+    private void addOpinion(string type, string id, string text, string grade)
+    {
+        afterAction = true;
+        isAdd = true;
+
+        Dictionary<string, object> data = new Dictionary<string, object>();
+        data.Add("id", id);
+        data.Add("text", text);
+        data.Add("grade", grade);
+
+        System.Data.DataTable dt = DBConnection.runProcWithResults("addOpinionTo" + type, data);
+        isSuccess = dt.Rows.Count != 0;
+        submitData();
+    }
+
+    protected void submitData()
+    {
+        if (isAdd && !isSuccess)
+        {
+            //ID already in DB - can't add new kid
+            showMessage("Your opinion wasn't added.", "red", 250);
+        }
+
+        if (isAdd && isSuccess)
+        {
+            //Kid was added successfully to DB
+            showMessage("Your opinion was added successfully.", "green", 300);
+        }
+
+        if (!isAdd && !isSuccess)
+        {
+            //Kid wasn't added to DB
+            showMessage("Chosen opinion wasn't removed.", "red", 300);
+        }
+
+        if (!isAdd && isSuccess)
+        {
+            //Kid wasn't added to DB
+            showMessage("Chosen opinion was removed successfully.", "green", 350);
+        }
+    }
+
+    protected void btnRemoveKgOpinion_Click(object sender, EventArgs e)
+    {
+        removeOpinion(lbKgOpinionID.SelectedValue);
+    }
+
+    protected void btnRemoveActOpinion_Click(object sender, EventArgs e)
+    {
+        removeOpinion(lbActOpinionID.SelectedValue);
+    }
+
+    private void removeOpinion(string id)
+    {
+        afterAction = true;
+        isAdd = false;
+
+        Dictionary<string, object> data = new Dictionary<string, object>();
+        data.Add("id", id);
+
+        System.Data.DataTable dt = DBConnection.runProcWithResults("removeOpinion", data);
+        isSuccess = dt.Rows.Count == 0;
+        submitData();
     }
 }

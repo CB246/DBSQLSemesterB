@@ -96,7 +96,7 @@
                                         <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 25%; margin-bottom: 0px;">
                                             <asp:ListBox runat="server" ID="lbKG" class="btn-group bootstrap-select form-control show-tick"></asp:ListBox>
                                         </div>
-                                        <div class="col-sm-9" style="margin-bottom: 0px;">
+                                        <div class="col-sm-6" style="margin-bottom: 0px;">
                                             <div class="form-group form-float" style="margin-bottom: 0px;">
                                                 <div class="form-line">
                                                     <asp:TextBox ID="tbKgOpinion" class="form-control" runat="server"></asp:TextBox>
@@ -105,9 +105,23 @@
                                                 <asp:RequiredFieldValidator ID="kgOpinionReqVal" runat="server" ControlToValidate="tbKgOpinion" Display="Dynamic" ErrorMessage="Opinion is empty" ValidationGroup="kgOpinion" CssClass="val-err-msg"></asp:RequiredFieldValidator>
                                             </div>
                                         </div>
+                                        <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 25%; margin-bottom: 0px;">
+                                            <asp:ListBox runat="server" ID="lbKgGrade" class="btn-group bootstrap-select form-control show-tick">
+                                                <asp:ListItem>1</asp:ListItem>
+                                                <asp:ListItem>2</asp:ListItem>
+                                                <asp:ListItem>3</asp:ListItem>
+                                                <asp:ListItem>4</asp:ListItem>
+                                                <asp:ListItem>5</asp:ListItem>
+                                                <asp:ListItem>6</asp:ListItem>
+                                                <asp:ListItem>7</asp:ListItem>
+                                                <asp:ListItem>8</asp:ListItem>
+                                                <asp:ListItem>9</asp:ListItem>
+                                                <asp:ListItem>10</asp:ListItem>
+                                            </asp:ListBox>
+                                        </div>
                                     </div>
                                 </div>
-                                <asp:Button ID="btnAddKgOpinion" runat="server" Text="Add Opinion" ValidationGroup="kgOpinion" class="btn btn-block btn-lg bg-cyan" />
+                                <asp:Button ID="btnAddKgOpinion" runat="server" OnClick="btnAddKgOpinion_Click" Text="Add Opinion" ValidationGroup="kgOpinion" class="btn btn-block btn-lg bg-cyan" />
                             </div>
                             <div runat="server" id="removeKgOpinion">
                                 <div class="row clearfix align-center" style="position: relative;">
@@ -115,20 +129,14 @@
                                 </div>
                                 <div class="row clearfix">
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 25%; margin-bottom: 0px;">
+                                        <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 50%; margin-bottom: 0px;">
                                             <asp:ListBox runat="server" ID="lbKgOpinionID" class="btn-group bootstrap-select form-control show-tick"></asp:ListBox>
                                         </div>
-                                        <div class="col-sm-9" style="margin-bottom: 0px;">
-                                            <div class="form-group form-float" style="margin-bottom: 0px;">
-                                                <div class="form-line">
-                                                    <asp:TextBox ID="tbKgOpinionToRemove" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
-                                                    <label class="form-label">Opinion to Remove</label>
-                                                </div>
-                                            </div>
+                                        <div class="col-sm-6" style="margin-bottom: 0px;">
+                                            <asp:Button ID="btnRemoveKgOpinion" runat="server" OnClick="btnRemoveKgOpinion_Click" Text="Remove Opinion" class="btn btn-block btn-lg bg-cyan" />
                                         </div>
                                     </div>
                                 </div>
-                                <asp:Button ID="btnRemoveKgOpinion" runat="server" Text="Remove Opinion" class="btn btn-block btn-lg bg-cyan" />
                             </div>
                         </div>
                     </div>
@@ -158,7 +166,7 @@
                                         <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 25%; margin-bottom: 0px;">
                                             <asp:ListBox runat="server" ID="lbAct" class="btn-group bootstrap-select form-control show-tick"></asp:ListBox>
                                         </div>
-                                        <div class="col-sm-9" style="margin-bottom: 0px;">
+                                        <div class="col-sm-6" style="margin-bottom: 0px;">
                                             <div class="form-group form-float" style="margin-bottom: 0px;">
                                                 <div class="form-line">
                                                     <asp:TextBox ID="tbActopinion" class="form-control" runat="server"></asp:TextBox>
@@ -167,9 +175,23 @@
                                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="tbActopinion" Display="Dynamic" ErrorMessage="Opinion is empty" ValidationGroup="actOpinion" CssClass="val-err-msg"></asp:RequiredFieldValidator>
                                             </div>
                                         </div>
+                                        <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 25%; margin-bottom: 0px;">
+                                            <asp:ListBox runat="server" ID="lbActGrade" class="btn-group bootstrap-select form-control show-tick">
+                                                <asp:ListItem>1</asp:ListItem>
+                                                <asp:ListItem>2</asp:ListItem>
+                                                <asp:ListItem>3</asp:ListItem>
+                                                <asp:ListItem>4</asp:ListItem>
+                                                <asp:ListItem>5</asp:ListItem>
+                                                <asp:ListItem>6</asp:ListItem>
+                                                <asp:ListItem>7</asp:ListItem>
+                                                <asp:ListItem>8</asp:ListItem>
+                                                <asp:ListItem>9</asp:ListItem>
+                                                <asp:ListItem>10</asp:ListItem>
+                                            </asp:ListBox>
+                                        </div>
                                     </div>
                                 </div>
-                                <asp:Button ID="btnAddActOpinion" runat="server" ValidationGroup="actOpinion" Text="Add Opinion" class="btn btn-block btn-lg bg-cyan" />
+                                <asp:Button ID="btnAddActOpinion" runat="server" OnClick="btnAddActOpinion_Click" ValidationGroup="actOpinion" Text="Add Opinion" class="btn btn-block btn-lg bg-cyan" />
                             </div>
                             <div runat="server" id="removeActOpinion">
                                 <div class="row clearfix align-center" style="position: relative;">
@@ -177,28 +199,33 @@
                                 </div>
                                 <div class="row clearfix">
                                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                        <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 25%; margin-bottom: 0px;">
+                                        <div class="col-xs-12 ol-sm-12 col-md-12 col-lg-12" style="width: 50%; margin-bottom: 0px;">
                                             <asp:ListBox runat="server" ID="lbActOpinionID" class="btn-group bootstrap-select form-control show-tick"></asp:ListBox>
                                         </div>
-                                        <div class="col-sm-9" style="margin-bottom: 0px;">
-                                            <div class="form-group form-float" style="margin-bottom: 0px;">
-                                                <div class="form-line">
-                                                    <asp:TextBox ID="tbActOpinionToRemove" class="form-control" ReadOnly="true" runat="server"></asp:TextBox>
-                                                    <label class="form-label">Opinion to Remove</label>
-                                                </div>
-                                            </div>
+                                        <div class="col-sm-6" style="margin-bottom: 0px;">
+                                            <asp:Button ID="btnRemoveActOpinion" runat="server" OnClick="btnRemoveActOpinion_Click" Text="Remove Opinion" class="btn btn-block btn-lg bg-cyan" />
                                         </div>
                                     </div>
                                 </div>
-                                <asp:Button ID="btnRemoveActOpinion" runat="server" Text="Remove Opinion" class="btn btn-block btn-lg bg-cyan" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <!-- #END# ACTIVITY OPINIONS -->
-
+            <!-- Default Size -->
+            <div class="modal fade" runat="server" id="defaultModal" tabindex="-1" role="dialog" style="display: none;">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content" runat="server" id="modalColor">
+                        <div class="modal-body align-center">
+                            <asp:Label ID="lblMessage" runat="server" Text=""></asp:Label>
+                        </div>
+                        <div class="modal-footer align-center">
+                            <asp:Button class="btn btn-link waves-effect" runat="server" ID="cancelButton" OnClick="cancelButton_Click" Text="CLOSE" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </form>
     </section>
 </asp:Content>

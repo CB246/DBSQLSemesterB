@@ -12,12 +12,12 @@ public partial class aspx_Kids_Add : System.Web.UI.Page
     private static bool alreadyIn = false;
     private static bool afterAction = false;
 
+    private static System.Data.DataRow closestKG = null;
     private static System.Data.DataTable privateKG = new System.Data.DataTable();
     private static int currRow = 0;
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        KGManager.log("\n\n\n\t\tadd kids page was loaded");
         if (IsPostBack)
         {
             if (afterAction)
@@ -33,6 +33,7 @@ public partial class aspx_Kids_Add : System.Web.UI.Page
         {
             clearAllFields();
         }
+        fillChart();
     }
 
     protected void btnAddKidToPublic_Click(object sender, EventArgs e)
@@ -105,7 +106,7 @@ public partial class aspx_Kids_Add : System.Web.UI.Page
         Dictionary<string, object> data = new Dictionary<string, object>();
         data.Add("dateOfBirth", tbDOB.Text);
         System.Data.DataTable dt = DBConnection.runProcWithResults("findAllPublicKGbyDate", data);
-        System.Data.DataRow closestKG = null;
+        
         double distance = double.MaxValue;
         foreach (System.Data.DataRow row in dt.Rows)
         {
@@ -120,11 +121,9 @@ public partial class aspx_Kids_Add : System.Web.UI.Page
                 distance = dist;
             }
         }
-        fillKGInfo(closestKG);
 
         //populate private KG
         privateKG = DBConnection.runProcWithResults("findAllPrivateKGbyDate", data);
-        fillPrivateKGInfo(currRow);
     }
 
     private double checkDist(double longitude, double latitude)
@@ -132,23 +131,24 @@ public partial class aspx_Kids_Add : System.Web.UI.Page
         return Math.Sqrt(Math.Pow(longitude - double.Parse(tbLongitude.Text), 2) + Math.Pow(latitude - double.Parse(tbLatitude.Text), 2));
     }
 
-    private void fillKGInfo(System.Data.DataRow row)
+    private void fillKGInfo()
     {
-        if (row != null)
+        if (closestKG != null)
         {
-            tbKgID.Text = row["ID"].ToString();
-            tbKGname.Text = row["KGname"].ToString();
-            tbClNum.Text = row["number"].ToString();
-            tbClName.Text = row["CLname"].ToString();
-            tbKGStreet.Text = row["street"].ToString();
-            tbKGhouseNum.Text = row["houseNumber"].ToString();
-            tbKGPrice.Text = row["price"].ToString();
-            int current = int.Parse(row["kidsInClass"].ToString());
-            int max = int.Parse(row["maximumKids"].ToString());
+            tbKgID.Text = closestKG["ID"].ToString();
+            tbKGname.Text = closestKG["KGname"].ToString();
+            tbClNum.Text = closestKG["number"].ToString();
+            tbClName.Text = closestKG["CLname"].ToString();
+            tbKGStreet.Text = closestKG["street"].ToString();
+            tbKGhouseNum.Text = closestKG["houseNumber"].ToString();
+            tbKGPrice.Text = closestKG["price"].ToString();
+            int current = int.Parse(closestKG["kidsInClass"].ToString());
+            int max = int.Parse(closestKG["maximumKids"].ToString());
             progressBarDiv.Attributes.CssStyle.Value = "width: " + ((double)current / max) * 100 + "%;";
             lblPublicProgressBar.Text = current + "/" + max + " Kids in this class";
-            tbTeacherLastName.Text = row["surName"].ToString();
-            tbTeacherFirstName.Text = row["firstName"].ToString();
+            tbTeacherLastName.Text = closestKG["surName"].ToString();
+            tbTeacherFirstName.Text = closestKG["firstName"].ToString();
+            fillOpinion(closestKG["ID"].ToString());
         }
     }
 
@@ -216,6 +216,7 @@ public partial class aspx_Kids_Add : System.Web.UI.Page
             lblProgressPrivate.Text = current + "/" + max + " Kids in this class";
             tbPriTeacherLastName.Text = privateKG.Rows[rowNum]["surName"].ToString();
             tbPrivTeacherFirstName.Text = privateKG.Rows[rowNum]["firstName"].ToString();
+            fillOpinion(privateKG.Rows[rowNum]["ID"].ToString());
         }
     }
 
@@ -304,18 +305,28 @@ public partial class aspx_Kids_Add : System.Web.UI.Page
 
     protected void btnPublic_Click(object sender, EventArgs e)
     {
+        fillKGInfo();
         privKG.Attributes.Remove("class");
         privKG.Attributes.Add("class", "container-fluid hidden");
         pubKG.Attributes.Remove("class");
         pubKG.Attributes.Add("class", "container-fluid");
+        charts.Attributes.Remove("class");
+        charts.Attributes.Add("class", "container-fluid col-lg-8");
+        opinions.Attributes.Remove("class");
+        opinions.Attributes.Add("class", "container-fluid col-lg-4");
     }
 
     protected void btnPrivate_Click(object sender, EventArgs e)
     {
+        fillPrivateKGInfo(currRow);
         pubKG.Attributes.Remove("class");
         pubKG.Attributes.Add("class", "container-fluid hidden");
         privKG.Attributes.Remove("class");
         privKG.Attributes.Add("class", "container-fluid");
+        charts.Attributes.Remove("class");
+        charts.Attributes.Add("class", "container-fluid col-lg-8");
+        opinions.Attributes.Remove("class");
+        opinions.Attributes.Add("class", "container-fluid col-lg-4");
     }
 
     private void clearAllFields()
@@ -326,6 +337,10 @@ public partial class aspx_Kids_Add : System.Web.UI.Page
         pubKG.Attributes.Add("class", "container-fluid hidden");
         privKG.Attributes.Remove("class");
         privKG.Attributes.Add("class", "container-fluid hidden");
+        charts.Attributes.Remove("class");
+        charts.Attributes.Add("class", "container-fluid col-lg-8 hidden");
+        opinions.Attributes.Remove("class");
+        opinions.Attributes.Add("class", "container-fluid col-lg-4 hidden");
         privateKG = new System.Data.DataTable();
         tbID.Text = "";
         tbLastName.Text = "";
@@ -336,5 +351,48 @@ public partial class aspx_Kids_Add : System.Web.UI.Page
         tbHouseNumber.Text = "";
         tbLongitude.Text = "";
         tbLatitude.Text = "";
+    }
+
+    private void fillOpinion(string kgNum)
+    {
+        Dictionary<string, object> data = new Dictionary<string, object>();
+        data.Add("kgID", kgNum);
+
+        System.Data.DataTable dt = DBConnection.runProcWithResults("getAllKgOpinions", data);
+        foreach (System.Data.DataRow item in dt.Rows)
+        {
+            System.Web.UI.HtmlControls.HtmlTableRow tr = new System.Web.UI.HtmlControls.HtmlTableRow();
+            tr.Attributes.Add("class", int.Parse(item["grade"].ToString()) > 5 ? "success" : "danger");
+            System.Web.UI.HtmlControls.HtmlTableCell tc = new System.Web.UI.HtmlControls.HtmlTableCell();
+            tc.InnerText = item["talk"].ToString();
+            tr.Controls.Add(tc);
+            System.Web.UI.HtmlControls.HtmlTableCell tc1 = new System.Web.UI.HtmlControls.HtmlTableCell();
+            tc1.InnerText = item["grade"].ToString();
+            tr.Controls.Add(tc1);
+            opinionTable.Rows.Add(tr);
+        }
+    }
+
+    private void fillChart()
+    {
+        //  getKgInfoForChart
+        System.Data.DataTable dt = DBConnection.runProcWithResults("getKgInfoForChart", new Dictionary<string, object>());
+
+        string names = "[";
+        string avers = "[";
+        string totals = "[";
+
+        foreach (System.Data.DataRow item in dt.Rows)
+        {
+            names += "\"" + item["name"].ToString() + "\",";
+            avers += item["aver"].ToString() + ",";
+            totals += item["total"].ToString() + ",";
+        }
+
+        names = names.Substring(0, names.Length - 1) + "]";
+        avers = avers.Substring(0, avers.Length - 1) + "]";
+        totals = totals.Substring(0, totals.Length - 1) + "]";
+
+        Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", "fillCharts(" + names + ", " + avers + ", " + totals + ")", true);
     }
 }

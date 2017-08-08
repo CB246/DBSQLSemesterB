@@ -32,8 +32,8 @@ public partial class MasterPage : System.Web.UI.MasterPage
             }
             if (KGManager.userLogin.Equals("Admin"))
             {
-                addKid.Attributes.Remove("class");
-                addKid.Attributes.Add("class", "hidden");
+                //addKid.Attributes.Remove("class");
+                //addKid.Attributes.Add("class", "hidden");
             }
         }
     }

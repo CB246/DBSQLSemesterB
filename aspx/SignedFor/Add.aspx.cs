@@ -31,6 +31,7 @@ public partial class aspx_SignedFor_Add : System.Web.UI.Page
             }
             clearAllCard();
         }
+        fillChart();
     }
 
     private void PopulateList()
@@ -105,6 +106,7 @@ public partial class aspx_SignedFor_Add : System.Web.UI.Page
         defaultModal.Attributes.Add("class", "modal fade");
         modalColor.Attributes.Remove("class");
         modalColor.Attributes.Add("class", "modal-content");
+        clearAllCard();
     }
 
     private void showMessage(string text, string color, int width)
@@ -251,4 +253,26 @@ public partial class aspx_SignedFor_Add : System.Web.UI.Page
         clearAllCard();
     }
 
+    private void fillChart()
+    {
+        //  getActInfoForChart
+        System.Data.DataTable dt = DBConnection.runProcWithResults("getActInfoForChart", new Dictionary<string, object>());
+
+        string names = "[";
+        string avers = "[";
+        string totals = "[";
+
+        foreach (System.Data.DataRow item in dt.Rows)
+        {
+            names += "\"" + item["name"].ToString() + "\",";
+            avers += item["aver"].ToString() + ",";
+            totals += item["total"].ToString() + ",";
+        }
+
+        names = names.Substring(0, names.Length - 1) + "]";
+        avers = avers.Substring(0, avers.Length - 1) + "]";
+        totals = totals.Substring(0, totals.Length - 1) + "]";
+
+        Page.ClientScript.RegisterStartupScript(this.GetType(), "CallMyFunction", "fillCharts(" + names + ", " + avers + ", " + totals + ")", true);
+    }
 }

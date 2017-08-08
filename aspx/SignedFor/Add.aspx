@@ -39,6 +39,9 @@
     <!-- Waves Effect Plugin Js -->
     <script src="/plugins/node-waves/waves.js"></script>
 
+    <!-- Chart Plugins Js -->
+    <script src="/plugins/chartjs/Chart.bundle.js"></script>
+
     <!-- Custom Js -->
     <script src="/js/admin.js"></script>
     <script src="/js/pages/ui/dialogs.js"></script>
@@ -61,6 +64,46 @@
         }
     </style>
 
+    <script>
+        function fillCharts(a, b, c) {
+            new Chart(document.getElementById("bar_chart").getContext("2d"), getChartJs('bar', a, b, c));
+        }
+
+        function getChartJs(type, a, b, c) {
+            var config = null;
+
+            if (type === 'bar') {
+                config = {
+                    type: 'bar',
+                    data: {
+                        labels: a,
+                        datasets: [{
+                            label: "Average opinion",
+                            data: b,
+                            backgroundColor: 'rgba(0, 188, 212, 0.8)'
+                        }, {
+                            label: "Num of kids signed for",
+                            data: c,
+                            backgroundColor: 'rgba(233, 30, 99, 0.8)'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        legend: false,
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
+                        }
+                    }
+                }
+            }
+            return config;
+        }
+    </script>
+
     <section class="content">
         <form runat="server">
             <!-- CHOOSE A KID -->
@@ -69,8 +112,8 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="header">
-                                <h2 class="align-center">Add Kid page
-                                <small>Here you can add your kid to Kindergarden</small>
+                                <h2 class="align-center">Signed For page
+                                <small>Here you can add your kid to activity</small>
                                 </h2>
                             </div>
                             <div class="body">
@@ -87,8 +130,7 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="header">
-                                <h2 class="align-center">Add Kid page
-                                <small>Here you can add your kid to Activity</small>
+                                <h2 class="align-center">Available Activities
                                 </h2>
                             </div>
                             <div class="body">
@@ -180,13 +222,11 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="header">
-                                <h2 class="align-center">Add Kid page
-                                <small>Here you can rewiev all charts</small>
+                                <h2 class="align-center">Charts
                                 </h2>
                             </div>
                             <div class="body">
-                                <iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
-                                <canvas id="bar_chart" height="228" width="457" style="display: block; width: 457px; height: 228px;"></canvas>
+                                <canvas id="bar_chart"></canvas>
                             </div>
                         </div>
                     </div>
@@ -198,8 +238,7 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="header">
-                                <h2 class="align-center">Add Kid page
-                                <small>Here you can rewiev all opinions</small>
+                                <h2 class="align-center">Opinions
                                 </h2>
                             </div>
                             <div class="body">

@@ -39,6 +39,9 @@
     <!-- Waves Effect Plugin Js -->
     <script src="/plugins/node-waves/waves.js"></script>
 
+    <!-- Chart Plugins Js -->
+    <script src="/plugins/chartjs/Chart.bundle.js"></script>
+
     <!-- Custom Js -->
     <script src="/js/admin.js"></script>
     <script src="/js/pages/ui/dialogs.js"></script>
@@ -60,6 +63,46 @@
             font-weight: bold;
         }
     </style>
+
+    <script>
+        function fillCharts(a, b, c) {
+            new Chart(document.getElementById("bar_chart").getContext("2d"), getChartJs('bar', a, b, c));
+        }
+
+        function getChartJs(type, a, b, c) {
+            var config = null;
+
+            if (type === 'bar') {
+                config = {
+                    type: 'bar',
+                    data: {
+                        labels: a,
+                        datasets: [{
+                            label: "Average opinion",
+                            data: b,
+                            backgroundColor: 'rgba(0, 188, 212, 0.8)'
+                        }, {
+                            label: "Num of kids in kindergarden",
+                            data: c,
+                            backgroundColor: 'rgba(233, 30, 99, 0.8)'
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        legend: false,
+                        scales: {
+                            yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
+                        }
+                    }
+                }
+            }
+            return config;
+        }
+    </script>
 
     <section class="content">
         <form runat="server">
@@ -183,7 +226,9 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="header">
-                                kg types
+                                <h2 class="align-center">
+                                    Choose Kindergarden Type
+                                </h2>
                             </div>
                             <div class="body">
                                 <div class="row clearfix">
@@ -205,7 +250,9 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="header">
-                                public
+                                <h2 class="align-center">
+                                    Public Kindergarden Information
+                                </h2>
                             </div>
                             <div class="body">
                                 <div class="row clearfix">
@@ -310,7 +357,9 @@
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="header">
-                                private
+                                <h2 class="align-center">
+                                    Private Kindergarden Information
+                                </h2>
                             </div>
                             <div class="body">
                                 <div class="row clearfix">
@@ -407,6 +456,43 @@
                                     <div class="col-sm-12" style="margin-bottom: 0px;">
                                         <asp:Button ID="btnAddKidToPrivate" runat="server" OnClick="btnAddKidToPrivate_Click" ValidationGroup="longLat" Text="Add Kid to Private Kindergarden" class="btn btn-block btn-lg bg-cyan" />
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CHARTS -->
+            <div class="container-fluid col-lg-8" runat="server" id="charts">
+                <div class="row clearfix">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2 class="align-center">Charts
+                                </h2>
+                            </div>
+                            <div class="body">
+                                <canvas id="bar_chart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- OPINIONS -->
+            <div class="container-fluid col-lg-4" runat="server" id="opinions">
+                <div class="row clearfix">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="card">
+                            <div class="header">
+                                <h2 class="align-center">Opinions
+                                </h2>
+                            </div>
+                            <div class="body">
+                                <div class="table-responsive">
+                                    <table class="table table-condensed" runat="server" id="opinionTable">
+                                        <tbody>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
