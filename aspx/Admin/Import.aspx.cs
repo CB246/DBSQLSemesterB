@@ -117,12 +117,12 @@ public partial class aspx_Admin_Import : System.Web.UI.Page
 
     private void showMessage()
     {
-        if (addedT > 0) lblMessage.Text += addedT + " rows was added to Traing Table<br/>";
-        if (updatedT > 0) lblMessage.Text += updatedT + " rows was updated in Traing Table<br/>";
-        if (failedT > 0) lblMessage.Text += failedT + " rows wasn't added to Traing Table<br/>";
-        if (addedTFA > 0) lblMessage.Text += addedTFA + " rows was added to TraingForAssistant Table<br/>";
-        if (updatedTFA > 0) lblMessage.Text += updatedTFA + " rows was updated in TraingForAssistant Table<br/>";
-        if (failedTFA > 0) lblMessage.Text += failedTFA + " rows wasn't added to TraingForAssistant Table<br/>";
+        if (addedT > 0) lblMessage.Text += addedT + " rows was added to Training Table<br/>";
+        if (updatedT > 0) lblMessage.Text += updatedT + " rows was updated in Training Table<br/>";
+        if (failedT > 0) lblMessage.Text += failedT + " rows wasn't added to Training Table<br/>";
+        if (addedTFA > 0) lblMessage.Text += addedTFA + " rows was added to TrainingForAssistant Table<br/>";
+        if (updatedTFA > 0) lblMessage.Text += updatedTFA + " rows was updated in TrainingForAssistant Table<br/>";
+        if (failedTFA > 0) lblMessage.Text += failedTFA + " rows wasn't added to TrainingForAssistant Table<br/>";
         defaultModal.Attributes.CssStyle.Value = "display: block; margin-top: 15%;";
         defaultModal.Attributes.Remove("class");
         defaultModal.Attributes.Add("class", "modal fade in");

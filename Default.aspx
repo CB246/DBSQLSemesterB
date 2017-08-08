@@ -97,55 +97,6 @@
                 <div class="block-header">
                     <h2>DASHBOARD</h2>
                 </div>
-
-                <!-- Widgets -->
-                <div class="row clearfix">
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box bg-pink hover-expand-effect">
-                            <div class="icon">
-                                <i class="material-icons">playlist_add_check</i>
-                            </div>
-                            <div class="content">
-                                <div class="text">NEW TASKS</div>
-                                <div class="number count-to" data-from="0" data-to="125" data-speed="15" data-fresh-interval="20"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box bg-cyan hover-expand-effect">
-                            <div class="icon">
-                                <i class="material-icons">help</i>
-                            </div>
-                            <div class="content">
-                                <div class="text">NEW TICKETS</div>
-                                <div class="number count-to" data-from="0" data-to="257" data-speed="1000" data-fresh-interval="20"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box bg-light-green hover-expand-effect">
-                            <div class="icon">
-                                <i class="material-icons">forum</i>
-                            </div>
-                            <div class="content">
-                                <div class="text">NEW COMMENTS</div>
-                                <div class="number count-to" data-from="0" data-to="243" data-speed="1000" data-fresh-interval="20"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                        <div class="info-box bg-orange hover-expand-effect">
-                            <div class="icon">
-                                <i class="material-icons">person_add</i>
-                            </div>
-                            <div class="content">
-                                <div class="text">NEW VISITORS</div>
-                                <div class="number count-to" data-from="0" data-to="1225" data-speed="1000" data-fresh-interval="20"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- #END# Widgets -->
                 <div class="container-fluid col-lg-6" runat="server" id="charts">
                     <div class="row clearfix">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -172,6 +123,52 @@
                                 <div class="body">
                                     <canvas id="bar_chart_act"></canvas>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- TABS -->
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card bg-cyan">
+                        <div class="header align-center">
+                            <h2>LATEST NEWS</h2>
+                        </div>
+                        <div class="body">
+                            <div id="carousel-example-generic_2" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic_2" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic_2" data-slide-to="1" class=""></li>
+                                    <li data-target="#carousel-example-generic_2" data-slide-to="2" class=""></li>
+                                </ol>
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <div class="align-center">
+                                            עוסקים בתחום ההוראה? רוצים להיות מדריכי חוגים? אנחנו המקום בשבילכם!
+                                            מחפשים עובדים. פרטים נוספים במזכירות הגנים
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="align-center">
+                                            המדריך מוטי לוכים המוערך שלנו מעביר חוגי קראטה בכלל הגנים! מהרו להירשם!
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="align-center">
+                                            הגננת מור אזולאי זכתה בפרס גננת השנה! כלל מערכת גני הילדים מוסרת לה ברכות והמשך עשייה משובחת!
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#carousel-example-generic_2" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic_2" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
                             </div>
                         </div>
                     </div>

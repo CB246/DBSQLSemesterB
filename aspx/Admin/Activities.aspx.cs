@@ -60,6 +60,8 @@ public partial class aspx_Admin_Activities : System.Web.UI.Page
 
     protected void btnGetAllActivitiesOfKg_Click(object sender, EventArgs e)
     {
+        clearTable();
+
         //  getAllActivitiesInChosenClass
         Dictionary<string, object> data = new Dictionary<string, object>();
         data.Add("kgID", lbKG.SelectedValue.Split(' ')[0]);
@@ -77,6 +79,22 @@ public partial class aspx_Admin_Activities : System.Web.UI.Page
                 TableCell tc = (TableCell)table1.FindControl("r" + startTime + "c" + item["dayInWeek"].ToString());
                 tc.BackColor = System.Drawing.Color.Cyan;
                 tc.Text = item["name"].ToString();
+            }
+        }
+    }
+
+    private void clearTable()
+    {
+        bool firstRow = true;
+        foreach (TableRow row in table1.Rows)
+        {
+            if (firstRow) { firstRow = false; continue; }
+            bool firstCell = true;
+            foreach (TableCell cell in row.Cells)
+            {
+                if (firstCell) { firstCell = false; continue; }
+                cell.BackColor = System.Drawing.Color.Transparent;
+                cell.Text = "";
             }
         }
     }

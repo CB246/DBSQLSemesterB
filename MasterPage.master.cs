@@ -32,8 +32,26 @@ public partial class MasterPage : System.Web.UI.MasterPage
             }
             if (KGManager.userLogin.Equals("Admin"))
             {
-                //addKid.Attributes.Remove("class");
-                //addKid.Attributes.Add("class", "hidden");
+                kids.Attributes.Remove("class");
+                kids.Attributes.Add("class", "hidden");
+                signedFor.Attributes.Remove("class");
+                signedFor.Attributes.Add("class", "hidden");
+
+                import.Attributes.Remove("class");
+                activities.Attributes.Remove("class");
+                queries.Attributes.Remove("class");
+            }
+            else
+            {
+                kids.Attributes.Remove("class");
+                signedFor.Attributes.Remove("class");
+
+                import.Attributes.Remove("class");
+                import.Attributes.Add("class", "hidden");
+                activities.Attributes.Remove("class");
+                activities.Attributes.Add("class", "hidden");
+                queries.Attributes.Remove("class");
+                queries.Attributes.Add("class", "hidden");
             }
         }
     }
