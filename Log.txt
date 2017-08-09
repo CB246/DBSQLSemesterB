@@ -1,306 +1,716 @@
-08-08 : 18-57-24 - Received instruction to run procedure getKgInfoForChart
-08-08 : 18-57-25 - Opened KGConnection
-08-08 : 18-57-25 - Sending SQL Statement: getKgInfoForChart with 0 parameters.
-08-08 : 18-57-25 - Returned #4 rows!!
-08-08 : 18-57-25 - Closing connection
-08-08 : 18-57-25 - Received instruction to run procedure getActInfoForChart
-08-08 : 18-57-25 - Opened KGConnection
-08-08 : 18-57-25 - Sending SQL Statement: getActInfoForChart with 0 parameters.
-08-08 : 18-57-25 - Returned #4 rows!!
-08-08 : 18-57-25 - Closing connection
-08-08 : 18-57-30 - Login button was clicked
-08-08 : 18-57-30 - Received instruction to run procedure getKgInfoForChart
-08-08 : 18-57-30 - Opened KGConnection
-08-08 : 18-57-30 - Sending SQL Statement: getKgInfoForChart with 0 parameters.
-08-08 : 18-57-30 - Returned #4 rows!!
-08-08 : 18-57-30 - Closing connection
-08-08 : 18-57-30 - Received instruction to run procedure getActInfoForChart
-08-08 : 18-57-30 - Opened KGConnection
-08-08 : 18-57-30 - Sending SQL Statement: getActInfoForChart with 0 parameters.
-08-08 : 18-57-30 - Returned #4 rows!!
-08-08 : 18-57-30 - Closing connection
-08-08 : 18-57-38 - Received instruction to run procedure getAllKgAndName
-08-08 : 18-57-38 - Opened KGConnection
-08-08 : 18-57-38 - Sending SQL Statement: getAllKgAndName with 0 parameters.
-08-08 : 18-57-38 - Returned #4 rows!!
-08-08 : 18-57-38 - Closing connection
-08-08 : 18-57-42 - Received instruction to run procedure getAllKgAndName
-08-08 : 18-57-42 - Opened KGConnection
-08-08 : 18-57-42 - Sending SQL Statement: getAllKgAndName with 0 parameters.
-08-08 : 18-57-42 - Returned #4 rows!!
-08-08 : 18-57-42 - Closing connection
-08-08 : 18-59-35 - Received instruction to run procedure getAllKgAndName
-08-08 : 18-59-35 - Opened KGConnection
-08-08 : 18-59-35 - Sending SQL Statement: getAllKgAndName with 0 parameters.
-08-08 : 18-59-35 - Returned #4 rows!!
-08-08 : 18-59-35 - Closing connection
-08-08 : 19-03-51 - Received instruction to run procedure getKgInfoForChart
-08-08 : 19-03-52 - Opened KGConnection
-08-08 : 19-03-52 - Sending SQL Statement: getKgInfoForChart with 0 parameters.
-08-08 : 19-03-52 - Returned #4 rows!!
-08-08 : 19-03-52 - Closing connection
-08-08 : 19-03-52 - Received instruction to run procedure getActInfoForChart
-08-08 : 19-03-52 - Opened KGConnection
-08-08 : 19-03-52 - Sending SQL Statement: getActInfoForChart with 0 parameters.
-08-08 : 19-03-52 - Returned #4 rows!!
-08-08 : 19-03-52 - Closing connection
-08-08 : 19-03-57 - Login button was clicked
-08-08 : 19-03-57 - Received instruction to run procedure getKgInfoForChart
-08-08 : 19-03-57 - Opened KGConnection
-08-08 : 19-03-57 - Sending SQL Statement: getKgInfoForChart with 0 parameters.
-08-08 : 19-03-57 - Returned #4 rows!!
-08-08 : 19-03-57 - Closing connection
-08-08 : 19-03-57 - Received instruction to run procedure getActInfoForChart
-08-08 : 19-03-57 - Opened KGConnection
-08-08 : 19-03-57 - Sending SQL Statement: getActInfoForChart with 0 parameters.
-08-08 : 19-03-57 - Returned #4 rows!!
-08-08 : 19-03-57 - Closing connection
-08-08 : 19-04-01 - Received instruction to run procedure getAllKgNum
-08-08 : 19-04-01 - Opened KGConnection
-08-08 : 19-04-01 - Sending SQL Statement: getAllKgNum with 0 parameters.
-08-08 : 19-04-01 - Returned #4 rows!!
-08-08 : 19-04-01 - Closing connection
-08-08 : 19-04-01 - Received instruction to run procedure getAllActNum
-08-08 : 19-04-01 - Opened KGConnection
-08-08 : 19-04-01 - Sending SQL Statement: getAllActNum with 0 parameters.
-08-08 : 19-04-01 - Returned #4 rows!!
-08-08 : 19-04-01 - Closing connection
-08-08 : 19-04-01 - Received instruction to run procedure getKgNumsInOpinion
-08-08 : 19-04-01 - Opened KGConnection
-08-08 : 19-04-01 - Sending SQL Statement: getKgNumsInOpinion with 0 parameters.
-08-08 : 19-04-01 - Returned #4 rows!!
-08-08 : 19-04-01 - Closing connection
-08-08 : 19-04-01 - Received instruction to run procedure getAllOpinionsOfKg
-08-08 : 19-04-01 - Adding parameter @KgID=13
-08-08 : 19-04-01 - Opened KGConnection
-08-08 : 19-04-01 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
-08-08 : 19-04-01 - Returned #4 rows!!
-08-08 : 19-04-01 - Closing connection
-08-08 : 19-04-01 - Received instruction to run procedure getAllOpinionsOfKg
-08-08 : 19-04-01 - Adding parameter @KgID=14
-08-08 : 19-04-01 - Opened KGConnection
-08-08 : 19-04-01 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
-08-08 : 19-04-01 - Returned #1 rows!!
-08-08 : 19-04-01 - Closing connection
-08-08 : 19-04-01 - Received instruction to run procedure getAllOpinionsOfKg
-08-08 : 19-04-01 - Adding parameter @KgID=16
-08-08 : 19-04-01 - Opened KGConnection
-08-08 : 19-04-01 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
-08-08 : 19-04-01 - Returned #1 rows!!
-08-08 : 19-04-01 - Closing connection
-08-08 : 19-04-01 - Received instruction to run procedure getAllOpinionsOfKg
-08-08 : 19-04-01 - Adding parameter @KgID=17
-08-08 : 19-04-01 - Opened KGConnection
-08-08 : 19-04-01 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
-08-08 : 19-04-01 - Returned #1 rows!!
-08-08 : 19-04-01 - Closing connection
-08-08 : 19-04-01 - Received instruction to run procedure getActNumsInOpinion
-08-08 : 19-04-01 - Opened KGConnection
-08-08 : 19-04-01 - Sending SQL Statement: getActNumsInOpinion with 0 parameters.
-08-08 : 19-04-02 - Returned #4 rows!!
-08-08 : 19-04-02 - Closing connection
-08-08 : 19-04-02 - Received instruction to run procedure getAllOpinionsOfAct
-08-08 : 19-04-02 - Adding parameter @ActID=1
-08-08 : 19-04-02 - Opened KGConnection
-08-08 : 19-04-02 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
-08-08 : 19-04-02 - Returned #2 rows!!
-08-08 : 19-04-02 - Closing connection
-08-08 : 19-04-02 - Received instruction to run procedure getAllOpinionsOfAct
-08-08 : 19-04-02 - Adding parameter @ActID=2
-08-08 : 19-04-02 - Opened KGConnection
-08-08 : 19-04-02 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
-08-08 : 19-04-02 - Returned #2 rows!!
-08-08 : 19-04-02 - Closing connection
-08-08 : 19-04-02 - Received instruction to run procedure getAllOpinionsOfAct
-08-08 : 19-04-02 - Adding parameter @ActID=3
-08-08 : 19-04-02 - Opened KGConnection
-08-08 : 19-04-02 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
-08-08 : 19-04-02 - Returned #1 rows!!
-08-08 : 19-04-02 - Closing connection
-08-08 : 19-04-02 - Received instruction to run procedure getAllOpinionsOfAct
-08-08 : 19-04-02 - Adding parameter @ActID=4
-08-08 : 19-04-02 - Opened KGConnection
-08-08 : 19-04-02 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
-08-08 : 19-04-02 - Returned #3 rows!!
-08-08 : 19-04-02 - Closing connection
-08-08 : 19-04-05 - Received instruction to run procedure getAllKgNum
-08-08 : 19-04-05 - Opened KGConnection
-08-08 : 19-04-05 - Sending SQL Statement: getAllKgNum with 0 parameters.
-08-08 : 19-04-05 - Returned #4 rows!!
-08-08 : 19-04-05 - Closing connection
-08-08 : 19-04-05 - Received instruction to run procedure getAllActNum
-08-08 : 19-04-05 - Opened KGConnection
-08-08 : 19-04-05 - Sending SQL Statement: getAllActNum with 0 parameters.
-08-08 : 19-04-05 - Returned #4 rows!!
-08-08 : 19-04-05 - Closing connection
-08-08 : 19-04-05 - Received instruction to run procedure getKgNumsInOpinion
-08-08 : 19-04-05 - Opened KGConnection
-08-08 : 19-04-05 - Sending SQL Statement: getKgNumsInOpinion with 0 parameters.
-08-08 : 19-04-05 - Returned #4 rows!!
-08-08 : 19-04-05 - Closing connection
-08-08 : 19-04-05 - Received instruction to run procedure getAllOpinionsOfKg
-08-08 : 19-04-05 - Adding parameter @KgID=13
-08-08 : 19-04-05 - Opened KGConnection
-08-08 : 19-04-05 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
-08-08 : 19-04-05 - Returned #4 rows!!
-08-08 : 19-04-05 - Closing connection
-08-08 : 19-04-05 - Received instruction to run procedure getAllOpinionsOfKg
-08-08 : 19-04-05 - Adding parameter @KgID=14
-08-08 : 19-04-05 - Opened KGConnection
-08-08 : 19-04-05 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
-08-08 : 19-04-05 - Returned #1 rows!!
-08-08 : 19-04-05 - Closing connection
-08-08 : 19-04-05 - Received instruction to run procedure getAllOpinionsOfKg
-08-08 : 19-04-05 - Adding parameter @KgID=16
-08-08 : 19-04-05 - Opened KGConnection
-08-08 : 19-04-05 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
-08-08 : 19-04-05 - Returned #1 rows!!
-08-08 : 19-04-05 - Closing connection
-08-08 : 19-04-05 - Received instruction to run procedure getAllOpinionsOfKg
-08-08 : 19-04-05 - Adding parameter @KgID=17
-08-08 : 19-04-05 - Opened KGConnection
-08-08 : 19-04-05 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
-08-08 : 19-04-05 - Returned #1 rows!!
-08-08 : 19-04-05 - Closing connection
-08-08 : 19-04-05 - Received instruction to run procedure getActNumsInOpinion
-08-08 : 19-04-05 - Opened KGConnection
-08-08 : 19-04-05 - Sending SQL Statement: getActNumsInOpinion with 0 parameters.
-08-08 : 19-04-05 - Returned #4 rows!!
-08-08 : 19-04-05 - Closing connection
-08-08 : 19-04-05 - Received instruction to run procedure getAllOpinionsOfAct
-08-08 : 19-04-05 - Adding parameter @ActID=1
-08-08 : 19-04-05 - Opened KGConnection
-08-08 : 19-04-05 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
-08-08 : 19-04-05 - Returned #2 rows!!
-08-08 : 19-04-05 - Closing connection
-08-08 : 19-04-05 - Received instruction to run procedure getAllOpinionsOfAct
-08-08 : 19-04-05 - Adding parameter @ActID=2
-08-08 : 19-04-05 - Opened KGConnection
-08-08 : 19-04-05 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
-08-08 : 19-04-06 - Returned #2 rows!!
-08-08 : 19-04-06 - Closing connection
-08-08 : 19-04-06 - Received instruction to run procedure getAllOpinionsOfAct
-08-08 : 19-04-06 - Adding parameter @ActID=3
-08-08 : 19-04-06 - Opened KGConnection
-08-08 : 19-04-06 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
-08-08 : 19-04-06 - Returned #1 rows!!
-08-08 : 19-04-06 - Closing connection
-08-08 : 19-04-06 - Received instruction to run procedure getAllOpinionsOfAct
-08-08 : 19-04-06 - Adding parameter @ActID=4
-08-08 : 19-04-06 - Opened KGConnection
-08-08 : 19-04-06 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
-08-08 : 19-04-06 - Returned #3 rows!!
-08-08 : 19-04-06 - Closing connection
-08-08 : 19-04-07 - Received instruction to run procedure getAllKgAndName
-08-08 : 19-04-07 - Opened KGConnection
-08-08 : 19-04-07 - Sending SQL Statement: getAllKgAndName with 0 parameters.
-08-08 : 19-04-07 - Returned #4 rows!!
-08-08 : 19-04-07 - Closing connection
-08-08 : 19-04-17 - Login button was clicked
-08-08 : 19-04-17 - Received instruction to run procedure checkIfParentExists
-08-08 : 19-04-17 - Adding parameter @parentID=123123123
-08-08 : 19-04-17 - Opened KGConnection
-08-08 : 19-04-17 - Sending SQL Statement: checkIfParentExists with 1 parameters.
-08-08 : 19-04-18 - Returned #1 rows!!
-08-08 : 19-04-18 - Closing connection
-08-08 : 19-04-18 - Received instruction to run procedure checkLoginData
-08-08 : 19-04-18 - Adding parameter @parentID=123123123
-08-08 : 19-04-18 - Adding parameter @parentPass=qwerty
-08-08 : 19-04-18 - Opened KGConnection
-08-08 : 19-04-18 - Sending SQL Statement: checkLoginData with 2 parameters.
-08-08 : 19-04-18 - Returned #1 rows!!
-08-08 : 19-04-18 - Closing connection
-08-08 : 19-04-18 - Received instruction to run procedure getKgInfoForChart
-08-08 : 19-04-18 - Opened KGConnection
-08-08 : 19-04-18 - Sending SQL Statement: getKgInfoForChart with 0 parameters.
-08-08 : 19-04-18 - Returned #4 rows!!
-08-08 : 19-04-18 - Closing connection
-08-08 : 19-04-18 - Received instruction to run procedure getActInfoForChart
-08-08 : 19-04-18 - Opened KGConnection
-08-08 : 19-04-18 - Sending SQL Statement: getActInfoForChart with 0 parameters.
-08-08 : 19-04-18 - Returned #4 rows!!
-08-08 : 19-04-18 - Closing connection
-08-08 : 19-04-20 - Received instruction to run procedure getKgInfoForChart
-08-08 : 19-04-20 - Opened KGConnection
-08-08 : 19-04-20 - Sending SQL Statement: getKgInfoForChart with 0 parameters.
-08-08 : 19-04-20 - Returned #4 rows!!
-08-08 : 19-04-20 - Closing connection
-08-08 : 19-04-22 - Received instruction to run procedure getAllKidsOfParent
-08-08 : 19-04-22 - Adding parameter @parentID=123123123
-08-08 : 19-04-22 - Opened KGConnection
-08-08 : 19-04-22 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
-08-08 : 19-04-22 - Returned #3 rows!!
-08-08 : 19-04-22 - Closing connection
-08-08 : 19-04-22 - Received instruction to run procedure getActInfoForChart
-08-08 : 19-04-22 - Opened KGConnection
-08-08 : 19-04-22 - Sending SQL Statement: getActInfoForChart with 0 parameters.
-08-08 : 19-04-22 - Returned #4 rows!!
-08-08 : 19-04-22 - Closing connection
-08-08 : 19-04-24 - Received instruction to run procedure getAllKgNum
-08-08 : 19-04-24 - Opened KGConnection
-08-08 : 19-04-24 - Sending SQL Statement: getAllKgNum with 0 parameters.
-08-08 : 19-04-24 - Returned #4 rows!!
-08-08 : 19-04-24 - Closing connection
-08-08 : 19-04-24 - Received instruction to run procedure getAllActNum
-08-08 : 19-04-24 - Opened KGConnection
-08-08 : 19-04-24 - Sending SQL Statement: getAllActNum with 0 parameters.
-08-08 : 19-04-24 - Returned #4 rows!!
-08-08 : 19-04-24 - Closing connection
-08-08 : 19-04-24 - Received instruction to run procedure getKgNumsInOpinion
-08-08 : 19-04-24 - Opened KGConnection
-08-08 : 19-04-24 - Sending SQL Statement: getKgNumsInOpinion with 0 parameters.
-08-08 : 19-04-24 - Returned #4 rows!!
-08-08 : 19-04-24 - Closing connection
-08-08 : 19-04-24 - Received instruction to run procedure getAllOpinionsOfKg
-08-08 : 19-04-24 - Adding parameter @KgID=13
-08-08 : 19-04-24 - Opened KGConnection
-08-08 : 19-04-24 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
-08-08 : 19-04-24 - Returned #4 rows!!
-08-08 : 19-04-24 - Closing connection
-08-08 : 19-04-24 - Received instruction to run procedure getAllOpinionsOfKg
-08-08 : 19-04-24 - Adding parameter @KgID=14
-08-08 : 19-04-24 - Opened KGConnection
-08-08 : 19-04-24 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
-08-08 : 19-04-25 - Returned #1 rows!!
-08-08 : 19-04-25 - Closing connection
-08-08 : 19-04-25 - Received instruction to run procedure getAllOpinionsOfKg
-08-08 : 19-04-25 - Adding parameter @KgID=16
-08-08 : 19-04-25 - Opened KGConnection
-08-08 : 19-04-25 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
-08-08 : 19-04-25 - Returned #1 rows!!
-08-08 : 19-04-25 - Closing connection
-08-08 : 19-04-25 - Received instruction to run procedure getAllOpinionsOfKg
-08-08 : 19-04-25 - Adding parameter @KgID=17
-08-08 : 19-04-25 - Opened KGConnection
-08-08 : 19-04-25 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
-08-08 : 19-04-25 - Returned #1 rows!!
-08-08 : 19-04-25 - Closing connection
-08-08 : 19-04-25 - Received instruction to run procedure getActNumsInOpinion
-08-08 : 19-04-25 - Opened KGConnection
-08-08 : 19-04-25 - Sending SQL Statement: getActNumsInOpinion with 0 parameters.
-08-08 : 19-04-25 - Returned #4 rows!!
-08-08 : 19-04-25 - Closing connection
-08-08 : 19-04-25 - Received instruction to run procedure getAllOpinionsOfAct
-08-08 : 19-04-25 - Adding parameter @ActID=1
-08-08 : 19-04-25 - Opened KGConnection
-08-08 : 19-04-25 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
-08-08 : 19-04-25 - Returned #2 rows!!
-08-08 : 19-04-25 - Closing connection
-08-08 : 19-04-25 - Received instruction to run procedure getAllOpinionsOfAct
-08-08 : 19-04-25 - Adding parameter @ActID=2
-08-08 : 19-04-25 - Opened KGConnection
-08-08 : 19-04-25 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
-08-08 : 19-04-25 - Returned #2 rows!!
-08-08 : 19-04-25 - Closing connection
-08-08 : 19-04-25 - Received instruction to run procedure getAllOpinionsOfAct
-08-08 : 19-04-25 - Adding parameter @ActID=3
-08-08 : 19-04-25 - Opened KGConnection
-08-08 : 19-04-25 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
-08-08 : 19-04-25 - Returned #1 rows!!
-08-08 : 19-04-25 - Closing connection
-08-08 : 19-04-25 - Received instruction to run procedure getAllOpinionsOfAct
-08-08 : 19-04-25 - Adding parameter @ActID=4
-08-08 : 19-04-25 - Opened KGConnection
-08-08 : 19-04-25 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
-08-08 : 19-04-25 - Returned #3 rows!!
-08-08 : 19-04-25 - Closing connection
+09-08 : 08-30-00 - Received instruction to run procedure getKgInfoForChart
+09-08 : 08-30-01 - Opened KGConnection
+09-08 : 08-30-01 - Sending SQL Statement: getKgInfoForChart with 0 parameters.
+09-08 : 08-30-02 - Returned #4 rows!!
+09-08 : 08-30-02 - Closing connection
+09-08 : 08-30-02 - Received instruction to run procedure getActInfoForChart
+09-08 : 08-30-02 - Opened KGConnection
+09-08 : 08-30-02 - Sending SQL Statement: getActInfoForChart with 0 parameters.
+09-08 : 08-30-02 - Returned #4 rows!!
+09-08 : 08-30-02 - Closing connection
+09-08 : 08-34-04 - Login button was clicked
+09-08 : 08-34-04 - Received instruction to run procedure checkIfParentExists
+09-08 : 08-34-04 - Adding parameter @parentID=307944736
+09-08 : 08-34-04 - Opened KGConnection
+09-08 : 08-34-04 - Sending SQL Statement: checkIfParentExists with 1 parameters.
+09-08 : 08-34-04 - Returned #1 rows!!
+09-08 : 08-34-04 - Closing connection
+09-08 : 08-34-04 - Received instruction to run procedure checkLoginData
+09-08 : 08-34-04 - Adding parameter @parentID=307944736
+09-08 : 08-34-04 - Adding parameter @parentPass=qweqwe
+09-08 : 08-34-04 - Opened KGConnection
+09-08 : 08-34-04 - Sending SQL Statement: checkLoginData with 2 parameters.
+09-08 : 08-34-05 - Returned #1 rows!!
+09-08 : 08-34-05 - Closing connection
+09-08 : 08-34-05 - Received instruction to run procedure getKgInfoForChart
+09-08 : 08-34-05 - Opened KGConnection
+09-08 : 08-34-05 - Sending SQL Statement: getKgInfoForChart with 0 parameters.
+09-08 : 08-34-05 - Returned #4 rows!!
+09-08 : 08-34-05 - Closing connection
+09-08 : 08-34-05 - Received instruction to run procedure getActInfoForChart
+09-08 : 08-34-05 - Opened KGConnection
+09-08 : 08-34-05 - Sending SQL Statement: getActInfoForChart with 0 parameters.
+09-08 : 08-34-05 - Returned #4 rows!!
+09-08 : 08-34-05 - Closing connection
+09-08 : 08-35-23 - Received instruction to run procedure getKgInfoForChart
+09-08 : 08-35-23 - Opened KGConnection
+09-08 : 08-35-23 - Sending SQL Statement: getKgInfoForChart with 0 parameters.
+09-08 : 08-35-23 - Returned #4 rows!!
+09-08 : 08-35-23 - Closing connection
+09-08 : 08-37-51 - Received instruction to run procedure getKgInfoForChart
+09-08 : 08-37-51 - Opened KGConnection
+09-08 : 08-37-51 - Sending SQL Statement: getKgInfoForChart with 0 parameters.
+09-08 : 08-37-52 - Returned #4 rows!!
+09-08 : 08-37-52 - Closing connection
+09-08 : 08-37-52 - Received instruction to run procedure findAllPublicKGbyDate
+09-08 : 08-37-52 - Adding parameter @dateOfBirth=2013-02-02
+09-08 : 08-37-52 - Opened KGConnection
+09-08 : 08-37-52 - Sending SQL Statement: findAllPublicKGbyDate with 1 parameters.
+09-08 : 08-37-52 - Returned #2 rows!!
+09-08 : 08-37-52 - Closing connection
+09-08 : 08-37-52 - Received instruction to run procedure findAllPrivateKGbyDate
+09-08 : 08-37-52 - Adding parameter @dateOfBirth=2013-02-02
+09-08 : 08-37-52 - Opened KGConnection
+09-08 : 08-37-52 - Sending SQL Statement: findAllPrivateKGbyDate with 1 parameters.
+09-08 : 08-37-52 - Returned #2 rows!!
+09-08 : 08-37-52 - Closing connection
+09-08 : 08-38-04 - Received instruction to run procedure getKgInfoForChart
+09-08 : 08-38-04 - Opened KGConnection
+09-08 : 08-38-04 - Sending SQL Statement: getKgInfoForChart with 0 parameters.
+09-08 : 08-38-04 - Returned #4 rows!!
+09-08 : 08-38-04 - Closing connection
+09-08 : 08-38-04 - Received instruction to run procedure getAllKgOpinions
+09-08 : 08-38-04 - Adding parameter @kgID=13
+09-08 : 08-38-04 - Opened KGConnection
+09-08 : 08-38-04 - Sending SQL Statement: getAllKgOpinions with 1 parameters.
+09-08 : 08-38-04 - Returned #4 rows!!
+09-08 : 08-38-04 - Closing connection
+09-08 : 08-38-18 - Received instruction to run procedure getKgInfoForChart
+09-08 : 08-38-18 - Opened KGConnection
+09-08 : 08-38-18 - Sending SQL Statement: getKgInfoForChart with 0 parameters.
+09-08 : 08-38-18 - Returned #4 rows!!
+09-08 : 08-38-18 - Closing connection
+09-08 : 08-38-18 - Received instruction to run procedure getAllKgOpinions
+09-08 : 08-38-18 - Adding parameter @kgID=16
+09-08 : 08-38-18 - Opened KGConnection
+09-08 : 08-38-18 - Sending SQL Statement: getAllKgOpinions with 1 parameters.
+09-08 : 08-38-18 - Returned #1 rows!!
+09-08 : 08-38-18 - Closing connection
+09-08 : 08-38-48 - Received instruction to run procedure getKgInfoForChart
+09-08 : 08-38-48 - Opened KGConnection
+09-08 : 08-38-48 - Sending SQL Statement: getKgInfoForChart with 0 parameters.
+09-08 : 08-38-49 - Returned #4 rows!!
+09-08 : 08-38-49 - Closing connection
+09-08 : 08-38-49 - PREV BUTTON WAS CLICKED: CURR ROW -> 1 TOTAL NUM OF ROWS -> 2
+09-08 : 08-38-49 - Received instruction to run procedure getAllKgOpinions
+09-08 : 08-38-49 - Adding parameter @kgID=13
+09-08 : 08-38-49 - Opened KGConnection
+09-08 : 08-38-49 - Sending SQL Statement: getAllKgOpinions with 1 parameters.
+09-08 : 08-38-49 - Returned #4 rows!!
+09-08 : 08-38-49 - Closing connection
+09-08 : 08-38-49 - ==================: CURR ROW -> 0 TOTAL NUM OF ROWS -> 2
+09-08 : 08-39-30 - Received instruction to run procedure getKgInfoForChart
+09-08 : 08-39-30 - Opened KGConnection
+09-08 : 08-39-30 - Sending SQL Statement: getKgInfoForChart with 0 parameters.
+09-08 : 08-39-30 - Returned #4 rows!!
+09-08 : 08-39-30 - Closing connection
+09-08 : 08-39-30 - Received instruction to run procedure getAllKgOpinions
+09-08 : 08-39-30 - Adding parameter @kgID=17
+09-08 : 08-39-30 - Opened KGConnection
+09-08 : 08-39-30 - Sending SQL Statement: getAllKgOpinions with 1 parameters.
+09-08 : 08-39-30 - Returned #1 rows!!
+09-08 : 08-39-30 - Closing connection
+09-08 : 08-39-49 - Received instruction to run procedure getKgInfoForChart
+09-08 : 08-39-49 - Opened KGConnection
+09-08 : 08-39-49 - Sending SQL Statement: getKgInfoForChart with 0 parameters.
+09-08 : 08-39-49 - Returned #4 rows!!
+09-08 : 08-39-49 - Closing connection
+09-08 : 08-39-49 - add to public button was clicked
+09-08 : 08-39-49 - Received instruction to run procedure checkIfIDExists
+09-08 : 08-39-49 - Adding parameter @parentID=999999999
+09-08 : 08-39-49 - Opened KGConnection
+09-08 : 08-39-49 - Sending SQL Statement: checkIfIDExists with 1 parameters.
+09-08 : 08-39-49 - Returned #0 rows!!
+09-08 : 08-39-49 - Closing connection
+09-08 : 08-39-49 - Received instruction to run procedure addKid
+09-08 : 08-39-49 - Adding parameter @kidID=999999999
+09-08 : 08-39-49 - Adding parameter @firstName=anotherSon
+09-08 : 08-39-49 - Adding parameter @surName=kirshman
+09-08 : 08-39-49 - Adding parameter @dateOfBirth=2013-02-02
+09-08 : 08-39-49 - Adding parameter @street=dolchin
+09-08 : 08-39-49 - Adding parameter @houseNumber=99
+09-08 : 08-39-49 - Adding parameter @city=haifa
+09-08 : 08-39-49 - Adding parameter @latitude=31.69654
+09-08 : 08-39-49 - Adding parameter @longitude=34.68127
+09-08 : 08-39-49 - Adding parameter @kindergardenID=17
+09-08 : 08-39-49 - Adding parameter @classNumber=4
+09-08 : 08-39-49 - Adding parameter @parentID=307944736
+09-08 : 08-39-49 - Opened KGConnection
+09-08 : 08-39-49 - Sending SQL Statement: addKid with 12 parameters.
+09-08 : 08-39-50 - Returned #1 rows!!
+09-08 : 08-39-50 - Closing connection
+09-08 : 08-39-50 - Kid 999999999 was added to parent 307944736
+09-08 : 08-39-56 - Received instruction to run procedure getKgInfoForChart
+09-08 : 08-39-56 - Opened KGConnection
+09-08 : 08-39-56 - Sending SQL Statement: getKgInfoForChart with 0 parameters.
+09-08 : 08-39-56 - Returned #4 rows!!
+09-08 : 08-39-56 - Closing connection
+09-08 : 08-40-01 - Received instruction to run procedure getAllKidsOfParent
+09-08 : 08-40-01 - Adding parameter @parentID=307944736
+09-08 : 08-40-01 - Opened KGConnection
+09-08 : 08-40-01 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
+09-08 : 08-40-01 - Returned #2 rows!!
+09-08 : 08-40-01 - Closing connection
+09-08 : 08-40-01 - Received instruction to run procedure getActInfoForChart
+09-08 : 08-40-01 - Opened KGConnection
+09-08 : 08-40-01 - Sending SQL Statement: getActInfoForChart with 0 parameters.
+09-08 : 08-40-01 - Returned #4 rows!!
+09-08 : 08-40-01 - Closing connection
+09-08 : 08-40-15 - Received instruction to run procedure getActInfoForChart
+09-08 : 08-40-15 - Opened KGConnection
+09-08 : 08-40-15 - Sending SQL Statement: getActInfoForChart with 0 parameters.
+09-08 : 08-40-16 - Returned #4 rows!!
+09-08 : 08-40-16 - Closing connection
+09-08 : 08-40-16 - Received instruction to run procedure getAllActivitiesInKidsClass
+09-08 : 08-40-16 - Adding parameter @kidID=999999999
+09-08 : 08-40-16 - Opened KGConnection
+09-08 : 08-40-16 - Sending SQL Statement: getAllActivitiesInKidsClass with 1 parameters.
+09-08 : 08-40-16 - Returned #0 rows!!
+09-08 : 08-40-16 - Closing connection
+09-08 : 08-40-21 - Received instruction to run procedure getActInfoForChart
+09-08 : 08-40-21 - Opened KGConnection
+09-08 : 08-40-21 - Sending SQL Statement: getActInfoForChart with 0 parameters.
+09-08 : 08-40-22 - Returned #4 rows!!
+09-08 : 08-40-22 - Closing connection
+09-08 : 08-40-23 - Received instruction to run procedure getActInfoForChart
+09-08 : 08-40-23 - Opened KGConnection
+09-08 : 08-40-23 - Sending SQL Statement: getActInfoForChart with 0 parameters.
+09-08 : 08-40-23 - Returned #4 rows!!
+09-08 : 08-40-23 - Closing connection
+09-08 : 08-40-23 - Received instruction to run procedure getAllActivitiesInKidsClass
+09-08 : 08-40-23 - Adding parameter @kidID=123412341
+09-08 : 08-40-23 - Opened KGConnection
+09-08 : 08-40-23 - Sending SQL Statement: getAllActivitiesInKidsClass with 1 parameters.
+09-08 : 08-40-24 - Returned #0 rows!!
+09-08 : 08-40-24 - Closing connection
+09-08 : 08-40-25 - Received instruction to run procedure getActInfoForChart
+09-08 : 08-40-25 - Opened KGConnection
+09-08 : 08-40-25 - Sending SQL Statement: getActInfoForChart with 0 parameters.
+09-08 : 08-40-25 - Returned #4 rows!!
+09-08 : 08-40-25 - Closing connection
+09-08 : 08-40-27 - Received instruction to run procedure getAllKgNum
+09-08 : 08-40-27 - Opened KGConnection
+09-08 : 08-40-27 - Sending SQL Statement: getAllKgNum with 0 parameters.
+09-08 : 08-40-27 - Returned #4 rows!!
+09-08 : 08-40-27 - Closing connection
+09-08 : 08-40-27 - Received instruction to run procedure getAllActNum
+09-08 : 08-40-27 - Opened KGConnection
+09-08 : 08-40-27 - Sending SQL Statement: getAllActNum with 0 parameters.
+09-08 : 08-40-27 - Returned #4 rows!!
+09-08 : 08-40-27 - Closing connection
+09-08 : 08-40-27 - Received instruction to run procedure getKgNumsInOpinion
+09-08 : 08-40-27 - Opened KGConnection
+09-08 : 08-40-27 - Sending SQL Statement: getKgNumsInOpinion with 0 parameters.
+09-08 : 08-40-27 - Returned #4 rows!!
+09-08 : 08-40-27 - Closing connection
+09-08 : 08-40-27 - Received instruction to run procedure getAllOpinionsOfKg
+09-08 : 08-40-27 - Adding parameter @KgID=13
+09-08 : 08-40-27 - Opened KGConnection
+09-08 : 08-40-27 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
+09-08 : 08-40-27 - Returned #4 rows!!
+09-08 : 08-40-27 - Closing connection
+09-08 : 08-40-27 - Received instruction to run procedure getAllOpinionsOfKg
+09-08 : 08-40-27 - Adding parameter @KgID=14
+09-08 : 08-40-27 - Opened KGConnection
+09-08 : 08-40-27 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
+09-08 : 08-40-28 - Returned #1 rows!!
+09-08 : 08-40-28 - Closing connection
+09-08 : 08-40-28 - Received instruction to run procedure getAllOpinionsOfKg
+09-08 : 08-40-28 - Adding parameter @KgID=16
+09-08 : 08-40-28 - Opened KGConnection
+09-08 : 08-40-28 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
+09-08 : 08-40-28 - Returned #1 rows!!
+09-08 : 08-40-28 - Closing connection
+09-08 : 08-40-28 - Received instruction to run procedure getAllOpinionsOfKg
+09-08 : 08-40-28 - Adding parameter @KgID=17
+09-08 : 08-40-28 - Opened KGConnection
+09-08 : 08-40-28 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
+09-08 : 08-40-28 - Returned #1 rows!!
+09-08 : 08-40-28 - Closing connection
+09-08 : 08-40-28 - Received instruction to run procedure getActNumsInOpinion
+09-08 : 08-40-28 - Opened KGConnection
+09-08 : 08-40-28 - Sending SQL Statement: getActNumsInOpinion with 0 parameters.
+09-08 : 08-40-28 - Returned #4 rows!!
+09-08 : 08-40-28 - Closing connection
+09-08 : 08-40-28 - Received instruction to run procedure getAllOpinionsOfAct
+09-08 : 08-40-28 - Adding parameter @ActID=1
+09-08 : 08-40-28 - Opened KGConnection
+09-08 : 08-40-28 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+09-08 : 08-40-28 - Returned #2 rows!!
+09-08 : 08-40-28 - Closing connection
+09-08 : 08-40-28 - Received instruction to run procedure getAllOpinionsOfAct
+09-08 : 08-40-28 - Adding parameter @ActID=2
+09-08 : 08-40-28 - Opened KGConnection
+09-08 : 08-40-28 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+09-08 : 08-40-28 - Returned #2 rows!!
+09-08 : 08-40-28 - Closing connection
+09-08 : 08-40-28 - Received instruction to run procedure getAllOpinionsOfAct
+09-08 : 08-40-28 - Adding parameter @ActID=3
+09-08 : 08-40-28 - Opened KGConnection
+09-08 : 08-40-28 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+09-08 : 08-40-28 - Returned #1 rows!!
+09-08 : 08-40-28 - Closing connection
+09-08 : 08-40-28 - Received instruction to run procedure getAllOpinionsOfAct
+09-08 : 08-40-28 - Adding parameter @ActID=4
+09-08 : 08-40-28 - Opened KGConnection
+09-08 : 08-40-28 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+09-08 : 08-40-29 - Returned #3 rows!!
+09-08 : 08-40-29 - Closing connection
+09-08 : 08-43-23 - Received instruction to run procedure getAllKidsOfParent
+09-08 : 08-43-23 - Adding parameter @parentID=307944736
+09-08 : 08-43-23 - Opened KGConnection
+09-08 : 08-43-23 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
+09-08 : 08-43-23 - Returned #2 rows!!
+09-08 : 08-43-23 - Closing connection
+09-08 : 08-43-23 - Received instruction to run procedure getActInfoForChart
+09-08 : 08-43-23 - Opened KGConnection
+09-08 : 08-43-23 - Sending SQL Statement: getActInfoForChart with 0 parameters.
+09-08 : 08-43-23 - Returned #4 rows!!
+09-08 : 08-43-23 - Closing connection
+09-08 : 08-43-34 - Login button was clicked
+09-08 : 08-43-34 - Received instruction to run procedure checkIfParentExists
+09-08 : 08-43-34 - Adding parameter @parentID=123123123
+09-08 : 08-43-34 - Opened KGConnection
+09-08 : 08-43-34 - Sending SQL Statement: checkIfParentExists with 1 parameters.
+09-08 : 08-43-35 - Returned #1 rows!!
+09-08 : 08-43-35 - Closing connection
+09-08 : 08-43-35 - Received instruction to run procedure checkLoginData
+09-08 : 08-43-35 - Adding parameter @parentID=123123123
+09-08 : 08-43-35 - Adding parameter @parentPass=qwerty
+09-08 : 08-43-35 - Opened KGConnection
+09-08 : 08-43-35 - Sending SQL Statement: checkLoginData with 2 parameters.
+09-08 : 08-43-35 - Returned #1 rows!!
+09-08 : 08-43-35 - Closing connection
+09-08 : 08-43-35 - Received instruction to run procedure getKgInfoForChart
+09-08 : 08-43-35 - Opened KGConnection
+09-08 : 08-43-35 - Sending SQL Statement: getKgInfoForChart with 0 parameters.
+09-08 : 08-43-35 - Returned #4 rows!!
+09-08 : 08-43-35 - Closing connection
+09-08 : 08-43-35 - Received instruction to run procedure getActInfoForChart
+09-08 : 08-43-35 - Opened KGConnection
+09-08 : 08-43-35 - Sending SQL Statement: getActInfoForChart with 0 parameters.
+09-08 : 08-43-35 - Returned #4 rows!!
+09-08 : 08-43-35 - Closing connection
+09-08 : 08-43-37 - Received instruction to run procedure getAllKidsOfParent
+09-08 : 08-43-37 - Adding parameter @parentID=123123123
+09-08 : 08-43-37 - Opened KGConnection
+09-08 : 08-43-37 - Sending SQL Statement: getAllKidsOfParent with 1 parameters.
+09-08 : 08-43-37 - Returned #3 rows!!
+09-08 : 08-43-37 - Closing connection
+09-08 : 08-43-37 - Received instruction to run procedure getActInfoForChart
+09-08 : 08-43-37 - Opened KGConnection
+09-08 : 08-43-37 - Sending SQL Statement: getActInfoForChart with 0 parameters.
+09-08 : 08-43-38 - Returned #4 rows!!
+09-08 : 08-43-38 - Closing connection
+09-08 : 08-43-41 - Received instruction to run procedure getActInfoForChart
+09-08 : 08-43-41 - Opened KGConnection
+09-08 : 08-43-41 - Sending SQL Statement: getActInfoForChart with 0 parameters.
+09-08 : 08-43-41 - Returned #4 rows!!
+09-08 : 08-43-41 - Closing connection
+09-08 : 08-43-41 - Received instruction to run procedure getAllActivitiesInKidsClass
+09-08 : 08-43-41 - Adding parameter @kidID=100002500
+09-08 : 08-43-41 - Opened KGConnection
+09-08 : 08-43-41 - Sending SQL Statement: getAllActivitiesInKidsClass with 1 parameters.
+09-08 : 08-43-41 - Returned #2 rows!!
+09-08 : 08-43-41 - Closing connection
+09-08 : 08-43-41 - Received instruction to run procedure getAllActivityOpinions
+09-08 : 08-43-41 - Adding parameter @activityID=1
+09-08 : 08-43-41 - Opened KGConnection
+09-08 : 08-43-41 - Sending SQL Statement: getAllActivityOpinions with 1 parameters.
+09-08 : 08-43-41 - Returned #2 rows!!
+09-08 : 08-43-41 - Closing connection
+09-08 : 08-44-27 - Received instruction to run procedure getActInfoForChart
+09-08 : 08-44-27 - Opened KGConnection
+09-08 : 08-44-27 - Sending SQL Statement: getActInfoForChart with 0 parameters.
+09-08 : 08-44-28 - Returned #4 rows!!
+09-08 : 08-44-28 - Closing connection
+09-08 : 08-44-28 - Received instruction to run procedure getAllActivityOpinions
+09-08 : 08-44-28 - Adding parameter @activityID=2
+09-08 : 08-44-28 - Opened KGConnection
+09-08 : 08-44-28 - Sending SQL Statement: getAllActivityOpinions with 1 parameters.
+09-08 : 08-44-28 - Returned #2 rows!!
+09-08 : 08-44-28 - Closing connection
+09-08 : 08-44-34 - Received instruction to run procedure getActInfoForChart
+09-08 : 08-44-34 - Opened KGConnection
+09-08 : 08-44-34 - Sending SQL Statement: getActInfoForChart with 0 parameters.
+09-08 : 08-44-34 - Returned #4 rows!!
+09-08 : 08-44-34 - Closing connection
+09-08 : 08-44-34 - Received instruction to run procedure getAllActivityOpinions
+09-08 : 08-44-34 - Adding parameter @activityID=1
+09-08 : 08-44-34 - Opened KGConnection
+09-08 : 08-44-34 - Sending SQL Statement: getAllActivityOpinions with 1 parameters.
+09-08 : 08-44-34 - Returned #2 rows!!
+09-08 : 08-44-34 - Closing connection
+09-08 : 08-44-36 - Received instruction to run procedure getActInfoForChart
+09-08 : 08-44-36 - Opened KGConnection
+09-08 : 08-44-36 - Sending SQL Statement: getActInfoForChart with 0 parameters.
+09-08 : 08-44-36 - Returned #4 rows!!
+09-08 : 08-44-36 - Closing connection
+09-08 : 08-44-36 - Received instruction to run procedure getAllActivityOpinions
+09-08 : 08-44-36 - Adding parameter @activityID=2
+09-08 : 08-44-36 - Opened KGConnection
+09-08 : 08-44-36 - Sending SQL Statement: getAllActivityOpinions with 1 parameters.
+09-08 : 08-44-36 - Returned #2 rows!!
+09-08 : 08-44-36 - Closing connection
+09-08 : 08-44-41 - Received instruction to run procedure getActInfoForChart
+09-08 : 08-44-41 - Opened KGConnection
+09-08 : 08-44-41 - Sending SQL Statement: getActInfoForChart with 0 parameters.
+09-08 : 08-44-41 - Returned #4 rows!!
+09-08 : 08-44-41 - Closing connection
+09-08 : 08-44-41 - add to activity button was clicked
+09-08 : 08-44-41 - Received instruction to run procedure checkIfKidAlreadyInActivity
+09-08 : 08-44-41 - Adding parameter @kidID=100002500
+09-08 : 08-44-41 - Adding parameter @activityID=2
+09-08 : 08-44-41 - Opened KGConnection
+09-08 : 08-44-41 - Sending SQL Statement: checkIfKidAlreadyInActivity with 2 parameters.
+09-08 : 08-44-42 - Returned #0 rows!!
+09-08 : 08-44-42 - Closing connection
+09-08 : 08-44-42 - Received instruction to run procedure addKidToActivity
+09-08 : 08-44-42 - Adding parameter @kidID=100002500
+09-08 : 08-44-42 - Adding parameter @activityID=2
+09-08 : 08-44-42 - Opened KGConnection
+09-08 : 08-44-42 - Sending SQL Statement: addKidToActivity with 2 parameters.
+09-08 : 08-44-42 - Returned #1 rows!!
+09-08 : 08-44-42 - Closing connection
+09-08 : 08-44-42 - Kid 100002500 was added to activity 2
+09-08 : 08-44-45 - Received instruction to run procedure getActInfoForChart
+09-08 : 08-44-45 - Opened KGConnection
+09-08 : 08-44-45 - Sending SQL Statement: getActInfoForChart with 0 parameters.
+09-08 : 08-44-45 - Returned #4 rows!!
+09-08 : 08-44-45 - Closing connection
+09-08 : 08-44-57 - Login button was clicked
+09-08 : 08-44-57 - Received instruction to run procedure getKgInfoForChart
+09-08 : 08-44-57 - Opened KGConnection
+09-08 : 08-44-57 - Sending SQL Statement: getKgInfoForChart with 0 parameters.
+09-08 : 08-44-58 - Returned #4 rows!!
+09-08 : 08-44-58 - Closing connection
+09-08 : 08-44-58 - Received instruction to run procedure getActInfoForChart
+09-08 : 08-44-58 - Opened KGConnection
+09-08 : 08-44-58 - Sending SQL Statement: getActInfoForChart with 0 parameters.
+09-08 : 08-44-58 - Returned #4 rows!!
+09-08 : 08-44-58 - Closing connection
+09-08 : 08-45-01 - Received instruction to run procedure getAllKgNum
+09-08 : 08-45-01 - Opened KGConnection
+09-08 : 08-45-01 - Sending SQL Statement: getAllKgNum with 0 parameters.
+09-08 : 08-45-01 - Returned #4 rows!!
+09-08 : 08-45-01 - Closing connection
+09-08 : 08-45-01 - Received instruction to run procedure getAllActNum
+09-08 : 08-45-01 - Opened KGConnection
+09-08 : 08-45-01 - Sending SQL Statement: getAllActNum with 0 parameters.
+09-08 : 08-45-02 - Returned #4 rows!!
+09-08 : 08-45-02 - Closing connection
+09-08 : 08-45-02 - Received instruction to run procedure getKgNumsInOpinion
+09-08 : 08-45-02 - Opened KGConnection
+09-08 : 08-45-02 - Sending SQL Statement: getKgNumsInOpinion with 0 parameters.
+09-08 : 08-45-02 - Returned #4 rows!!
+09-08 : 08-45-02 - Closing connection
+09-08 : 08-45-02 - Received instruction to run procedure getAllOpinionsOfKg
+09-08 : 08-45-02 - Adding parameter @KgID=13
+09-08 : 08-45-02 - Opened KGConnection
+09-08 : 08-45-02 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
+09-08 : 08-45-02 - Returned #4 rows!!
+09-08 : 08-45-02 - Closing connection
+09-08 : 08-45-02 - Received instruction to run procedure getAllOpinionsOfKg
+09-08 : 08-45-02 - Adding parameter @KgID=14
+09-08 : 08-45-02 - Opened KGConnection
+09-08 : 08-45-02 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
+09-08 : 08-45-02 - Returned #1 rows!!
+09-08 : 08-45-02 - Closing connection
+09-08 : 08-45-02 - Received instruction to run procedure getAllOpinionsOfKg
+09-08 : 08-45-02 - Adding parameter @KgID=16
+09-08 : 08-45-02 - Opened KGConnection
+09-08 : 08-45-02 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
+09-08 : 08-45-02 - Returned #1 rows!!
+09-08 : 08-45-02 - Closing connection
+09-08 : 08-45-02 - Received instruction to run procedure getAllOpinionsOfKg
+09-08 : 08-45-02 - Adding parameter @KgID=17
+09-08 : 08-45-02 - Opened KGConnection
+09-08 : 08-45-02 - Sending SQL Statement: getAllOpinionsOfKg with 1 parameters.
+09-08 : 08-45-02 - Returned #1 rows!!
+09-08 : 08-45-02 - Closing connection
+09-08 : 08-45-02 - Received instruction to run procedure getActNumsInOpinion
+09-08 : 08-45-02 - Opened KGConnection
+09-08 : 08-45-02 - Sending SQL Statement: getActNumsInOpinion with 0 parameters.
+09-08 : 08-45-03 - Returned #4 rows!!
+09-08 : 08-45-03 - Closing connection
+09-08 : 08-45-03 - Received instruction to run procedure getAllOpinionsOfAct
+09-08 : 08-45-03 - Adding parameter @ActID=1
+09-08 : 08-45-03 - Opened KGConnection
+09-08 : 08-45-03 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+09-08 : 08-45-03 - Returned #2 rows!!
+09-08 : 08-45-03 - Closing connection
+09-08 : 08-45-03 - Received instruction to run procedure getAllOpinionsOfAct
+09-08 : 08-45-03 - Adding parameter @ActID=2
+09-08 : 08-45-03 - Opened KGConnection
+09-08 : 08-45-03 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+09-08 : 08-45-03 - Returned #2 rows!!
+09-08 : 08-45-03 - Closing connection
+09-08 : 08-45-03 - Received instruction to run procedure getAllOpinionsOfAct
+09-08 : 08-45-03 - Adding parameter @ActID=3
+09-08 : 08-45-03 - Opened KGConnection
+09-08 : 08-45-03 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+09-08 : 08-45-03 - Returned #1 rows!!
+09-08 : 08-45-03 - Closing connection
+09-08 : 08-45-03 - Received instruction to run procedure getAllOpinionsOfAct
+09-08 : 08-45-03 - Adding parameter @ActID=4
+09-08 : 08-45-03 - Opened KGConnection
+09-08 : 08-45-03 - Sending SQL Statement: getAllOpinionsOfAct with 1 parameters.
+09-08 : 08-45-03 - Returned #3 rows!!
+09-08 : 08-45-03 - Closing connection
+09-08 : 08-45-32 - Received instruction to run procedure insertUpdateT
+09-08 : 08-45-32 - Adding parameter @1=1
+09-08 : 08-45-32 - Adding parameter @2=AB
+09-08 : 08-45-32 - Opened KGConnection
+09-08 : 08-45-32 - Sending SQL Statement: insertUpdateT with 2 parameters.
+09-08 : 08-45-32 - Returned #1 rows!!
+09-08 : 08-45-32 - Closing connection
+09-08 : 08-45-32 - Received instruction to run procedure insertUpdateT
+09-08 : 08-45-32 - Adding parameter @1=2
+09-08 : 08-45-32 - Adding parameter @2=AC
+09-08 : 08-45-32 - Opened KGConnection
+09-08 : 08-45-32 - Sending SQL Statement: insertUpdateT with 2 parameters.
+09-08 : 08-45-32 - Returned #1 rows!!
+09-08 : 08-45-32 - Closing connection
+09-08 : 08-45-32 - Received instruction to run procedure insertUpdateT
+09-08 : 08-45-32 - Adding parameter @1=3
+09-08 : 08-45-32 - Adding parameter @2=AD
+09-08 : 08-45-32 - Opened KGConnection
+09-08 : 08-45-32 - Sending SQL Statement: insertUpdateT with 2 parameters.
+09-08 : 08-45-32 - Returned #1 rows!!
+09-08 : 08-45-32 - Closing connection
+09-08 : 08-45-32 - Received instruction to run procedure insertUpdateT
+09-08 : 08-45-32 - Adding parameter @1=4
+09-08 : 08-45-32 - Adding parameter @2=BA
+09-08 : 08-45-32 - Opened KGConnection
+09-08 : 08-45-32 - Sending SQL Statement: insertUpdateT with 2 parameters.
+09-08 : 08-45-32 - Returned #1 rows!!
+09-08 : 08-45-32 - Closing connection
+09-08 : 08-45-32 - Received instruction to run procedure insertUpdateT
+09-08 : 08-45-32 - Adding parameter @1=5
+09-08 : 08-45-32 - Adding parameter @2=BC
+09-08 : 08-45-32 - Opened KGConnection
+09-08 : 08-45-32 - Sending SQL Statement: insertUpdateT with 2 parameters.
+09-08 : 08-45-33 - Returned #1 rows!!
+09-08 : 08-45-33 - Closing connection
+09-08 : 08-45-33 - Received instruction to run procedure insertUpdateT
+09-08 : 08-45-33 - Adding parameter @1=6
+09-08 : 08-45-33 - Adding parameter @2=BD
+09-08 : 08-45-33 - Opened KGConnection
+09-08 : 08-45-33 - Sending SQL Statement: insertUpdateT with 2 parameters.
+09-08 : 08-45-33 - Returned #1 rows!!
+09-08 : 08-45-33 - Closing connection
+09-08 : 08-45-33 - Received instruction to run procedure insertUpdateT
+09-08 : 08-45-33 - Adding parameter @1=7
+09-08 : 08-45-33 - Adding parameter @2=CA
+09-08 : 08-45-33 - Opened KGConnection
+09-08 : 08-45-33 - Sending SQL Statement: insertUpdateT with 2 parameters.
+09-08 : 08-45-33 - Returned #1 rows!!
+09-08 : 08-45-33 - Closing connection
+09-08 : 08-45-33 - Received instruction to run procedure insertUpdateT
+09-08 : 08-45-33 - Adding parameter @1=8
+09-08 : 08-45-33 - Adding parameter @2=CB
+09-08 : 08-45-33 - Opened KGConnection
+09-08 : 08-45-33 - Sending SQL Statement: insertUpdateT with 2 parameters.
+09-08 : 08-45-33 - Returned #1 rows!!
+09-08 : 08-45-33 - Closing connection
+09-08 : 08-45-33 - Received instruction to run procedure insertUpdateT
+09-08 : 08-45-33 - Adding parameter @1=9
+09-08 : 08-45-33 - Adding parameter @2=CD
+09-08 : 08-45-33 - Opened KGConnection
+09-08 : 08-45-33 - Sending SQL Statement: insertUpdateT with 2 parameters.
+09-08 : 08-45-33 - Returned #1 rows!!
+09-08 : 08-45-33 - Closing connection
+09-08 : 08-45-33 - Received instruction to run procedure insertUpdateT
+09-08 : 08-45-33 - Adding parameter @1=10
+09-08 : 08-45-33 - Adding parameter @2=DA
+09-08 : 08-45-33 - Opened KGConnection
+09-08 : 08-45-33 - Sending SQL Statement: insertUpdateT with 2 parameters.
+09-08 : 08-45-33 - Returned #1 rows!!
+09-08 : 08-45-33 - Closing connection
+09-08 : 08-45-33 - Received instruction to run procedure insertUpdateT
+09-08 : 08-45-33 - Adding parameter @1=11
+09-08 : 08-45-33 - Adding parameter @2=DB
+09-08 : 08-45-33 - Opened KGConnection
+09-08 : 08-45-33 - Sending SQL Statement: insertUpdateT with 2 parameters.
+09-08 : 08-45-33 - Returned #1 rows!!
+09-08 : 08-45-33 - Closing connection
+09-08 : 08-45-33 - Received instruction to run procedure insertUpdateT
+09-08 : 08-45-33 - Adding parameter @1=12
+09-08 : 08-45-33 - Adding parameter @2=DC
+09-08 : 08-45-33 - Opened KGConnection
+09-08 : 08-45-33 - Sending SQL Statement: insertUpdateT with 2 parameters.
+09-08 : 08-45-34 - Returned #1 rows!!
+09-08 : 08-45-34 - Closing connection
+09-08 : 08-45-34 - Received instruction to run procedure insertUpdateTFA
+09-08 : 08-45-34 - Adding parameter @1=100000000
+09-08 : 08-45-34 - Adding parameter @2=1
+09-08 : 08-45-34 - Adding parameter @3=2017-04-10
+09-08 : 08-45-34 - Opened KGConnection
+09-08 : 08-45-34 - Sending SQL Statement: insertUpdateTFA with 3 parameters.
+09-08 : 08-45-34 - Returned #1 rows!!
+09-08 : 08-45-34 - Closing connection
+09-08 : 08-45-34 - Received instruction to run procedure insertUpdateTFA
+09-08 : 08-45-34 - Adding parameter @1=100000000
+09-08 : 08-45-34 - Adding parameter @2=2
+09-08 : 08-45-34 - Adding parameter @3=2017-04-11
+09-08 : 08-45-34 - Opened KGConnection
+09-08 : 08-45-34 - Sending SQL Statement: insertUpdateTFA with 3 parameters.
+09-08 : 08-45-34 - Returned #1 rows!!
+09-08 : 08-45-34 - Closing connection
+09-08 : 08-45-34 - Received instruction to run procedure insertUpdateTFA
+09-08 : 08-45-34 - Adding parameter @1=100000000
+09-08 : 08-45-34 - Adding parameter @2=3
+09-08 : 08-45-34 - Adding parameter @3=2017-04-12
+09-08 : 08-45-34 - Opened KGConnection
+09-08 : 08-45-34 - Sending SQL Statement: insertUpdateTFA with 3 parameters.
+09-08 : 08-45-34 - Returned #1 rows!!
+09-08 : 08-45-34 - Closing connection
+09-08 : 08-45-34 - Received instruction to run procedure insertUpdateTFA
+09-08 : 08-45-34 - Adding parameter @1=100000000
+09-08 : 08-45-34 - Adding parameter @2=4
+09-08 : 08-45-34 - Adding parameter @3=2017-04-13
+09-08 : 08-45-34 - Opened KGConnection
+09-08 : 08-45-34 - Sending SQL Statement: insertUpdateTFA with 3 parameters.
+09-08 : 08-45-34 - Returned #1 rows!!
+09-08 : 08-45-34 - Closing connection
+09-08 : 08-45-34 - Received instruction to run procedure insertUpdateTFA
+09-08 : 08-45-34 - Adding parameter @1=100000000
+09-08 : 08-45-34 - Adding parameter @2=5
+09-08 : 08-45-34 - Adding parameter @3=2017-04-14
+09-08 : 08-45-34 - Opened KGConnection
+09-08 : 08-45-34 - Sending SQL Statement: insertUpdateTFA with 3 parameters.
+09-08 : 08-45-34 - Returned #1 rows!!
+09-08 : 08-45-34 - Closing connection
+09-08 : 08-45-34 - Received instruction to run procedure insertUpdateTFA
+09-08 : 08-45-34 - Adding parameter @1=100000000
+09-08 : 08-45-34 - Adding parameter @2=6
+09-08 : 08-45-34 - Adding parameter @3=2017-04-15
+09-08 : 08-45-34 - Opened KGConnection
+09-08 : 08-45-34 - Sending SQL Statement: insertUpdateTFA with 3 parameters.
+09-08 : 08-45-35 - Returned #1 rows!!
+09-08 : 08-45-35 - Closing connection
+09-08 : 08-45-35 - Received instruction to run procedure insertUpdateTFA
+09-08 : 08-45-35 - Adding parameter @1=100000000
+09-08 : 08-45-35 - Adding parameter @2=7
+09-08 : 08-45-35 - Adding parameter @3=2017-04-16
+09-08 : 08-45-35 - Opened KGConnection
+09-08 : 08-45-35 - Sending SQL Statement: insertUpdateTFA with 3 parameters.
+09-08 : 08-45-35 - Returned #1 rows!!
+09-08 : 08-45-35 - Closing connection
+09-08 : 08-45-35 - Received instruction to run procedure insertUpdateTFA
+09-08 : 08-45-35 - Adding parameter @1=100000000
+09-08 : 08-45-35 - Adding parameter @2=8
+09-08 : 08-45-35 - Adding parameter @3=2017-04-17
+09-08 : 08-45-35 - Opened KGConnection
+09-08 : 08-45-35 - Sending SQL Statement: insertUpdateTFA with 3 parameters.
+09-08 : 08-45-35 - Returned #1 rows!!
+09-08 : 08-45-35 - Closing connection
+09-08 : 08-45-35 - Received instruction to run procedure insertUpdateTFA
+09-08 : 08-45-35 - Adding parameter @1=100000000
+09-08 : 08-45-35 - Adding parameter @2=9
+09-08 : 08-45-35 - Adding parameter @3=2017-04-18
+09-08 : 08-45-35 - Opened KGConnection
+09-08 : 08-45-35 - Sending SQL Statement: insertUpdateTFA with 3 parameters.
+09-08 : 08-45-35 - Returned #1 rows!!
+09-08 : 08-45-35 - Closing connection
+09-08 : 08-45-35 - Received instruction to run procedure insertUpdateTFA
+09-08 : 08-45-35 - Adding parameter @1=100000000
+09-08 : 08-45-35 - Adding parameter @2=10
+09-08 : 08-45-35 - Adding parameter @3=2017-04-19
+09-08 : 08-45-35 - Opened KGConnection
+09-08 : 08-45-35 - Sending SQL Statement: insertUpdateTFA with 3 parameters.
+09-08 : 08-45-35 - Returned #1 rows!!
+09-08 : 08-45-35 - Closing connection
+09-08 : 08-45-35 - Received instruction to run procedure insertUpdateTFA
+09-08 : 08-45-35 - Adding parameter @1=100000000
+09-08 : 08-45-35 - Adding parameter @2=11
+09-08 : 08-45-35 - Adding parameter @3=2017-04-20
+09-08 : 08-45-35 - Opened KGConnection
+09-08 : 08-45-35 - Sending SQL Statement: insertUpdateTFA with 3 parameters.
+09-08 : 08-45-36 - Returned #1 rows!!
+09-08 : 08-45-36 - Closing connection
+09-08 : 08-45-36 - Received instruction to run procedure insertUpdateTFA
+09-08 : 08-45-36 - Adding parameter @1=100000500
+09-08 : 08-45-36 - Adding parameter @2=1
+09-08 : 08-45-36 - Adding parameter @3=2017-04-21
+09-08 : 08-45-36 - Opened KGConnection
+09-08 : 08-45-36 - Sending SQL Statement: insertUpdateTFA with 3 parameters.
+09-08 : 08-45-36 - Returned #1 rows!!
+09-08 : 08-45-36 - Closing connection
+09-08 : 08-45-36 - Received instruction to run procedure insertUpdateTFA
+09-08 : 08-45-36 - Adding parameter @1=100000500
+09-08 : 08-45-36 - Adding parameter @2=2
+09-08 : 08-45-36 - Adding parameter @3=2017-04-22
+09-08 : 08-45-36 - Opened KGConnection
+09-08 : 08-45-36 - Sending SQL Statement: insertUpdateTFA with 3 parameters.
+09-08 : 08-45-36 - Returned #1 rows!!
+09-08 : 08-45-36 - Closing connection
+09-08 : 08-45-36 - Received instruction to run procedure insertUpdateTFA
+09-08 : 08-45-36 - Adding parameter @1=100000500
+09-08 : 08-45-36 - Adding parameter @2=3
+09-08 : 08-45-36 - Adding parameter @3=2017-04-23
+09-08 : 08-45-36 - Opened KGConnection
+09-08 : 08-45-36 - Sending SQL Statement: insertUpdateTFA with 3 parameters.
+09-08 : 08-45-36 - Returned #1 rows!!
+09-08 : 08-45-36 - Closing connection
+09-08 : 08-45-36 - Received instruction to run procedure insertUpdateTFA
+09-08 : 08-45-36 - Adding parameter @1=100000500
+09-08 : 08-45-36 - Adding parameter @2=4
+09-08 : 08-45-36 - Adding parameter @3=2017-04-24
+09-08 : 08-45-36 - Opened KGConnection
+09-08 : 08-45-36 - Sending SQL Statement: insertUpdateTFA with 3 parameters.
+09-08 : 08-45-36 - Returned #1 rows!!
+09-08 : 08-45-36 - Closing connection
+09-08 : 08-45-54 - Received instruction to run procedure getAllKgAndName
+09-08 : 08-45-54 - Opened KGConnection
+09-08 : 08-45-54 - Sending SQL Statement: getAllKgAndName with 0 parameters.
+09-08 : 08-45-55 - Returned #4 rows!!
+09-08 : 08-45-55 - Closing connection
+09-08 : 08-46-00 - Received instruction to run procedure getAllClassesOfKg
+09-08 : 08-46-00 - Adding parameter @kgID=13
+09-08 : 08-46-00 - Opened KGConnection
+09-08 : 08-46-00 - Sending SQL Statement: getAllClassesOfKg with 1 parameters.
+09-08 : 08-46-00 - Returned #5 rows!!
+09-08 : 08-46-00 - Closing connection
+09-08 : 08-46-03 - Received instruction to run procedure getAllActivitiesInChosenClass
+09-08 : 08-46-03 - Adding parameter @kgID=13
+09-08 : 08-46-03 - Adding parameter @clNum=1
+09-08 : 08-46-03 - Opened KGConnection
+09-08 : 08-46-03 - Sending SQL Statement: getAllActivitiesInChosenClass with 2 parameters.
+09-08 : 08-46-03 - Returned #2 rows!!
+09-08 : 08-46-03 - Closing connection
+09-08 : 08-46-22 - Received instruction to run procedure getAllActivitiesInChosenClass
+09-08 : 08-46-22 - Adding parameter @kgID=13
+09-08 : 08-46-22 - Adding parameter @clNum=2
+09-08 : 08-46-22 - Opened KGConnection
+09-08 : 08-46-22 - Sending SQL Statement: getAllActivitiesInChosenClass with 2 parameters.
+09-08 : 08-46-22 - Returned #1 rows!!
+09-08 : 08-46-22 - Closing connection
+09-08 : 08-46-31 - Received instruction to run procedure getAllKgAndName
+09-08 : 08-46-31 - Opened KGConnection
+09-08 : 08-46-31 - Sending SQL Statement: getAllKgAndName with 0 parameters.
+09-08 : 08-46-31 - Returned #4 rows!!
+09-08 : 08-46-31 - Closing connection
+09-08 : 08-46-58 - Received instruction to run procedure query2
+09-08 : 08-46-58 - Opened KGConnection
+09-08 : 08-46-58 - Sending SQL Statement: query2 with 0 parameters.
+09-08 : 08-46-58 - Returned #5 rows!!
+09-08 : 08-46-58 - Closing connection
+09-08 : 08-47-06 - Received instruction to run procedure query7
+09-08 : 08-47-06 - Opened KGConnection
+09-08 : 08-47-06 - Sending SQL Statement: query7 with 0 parameters.
+09-08 : 08-47-07 - Received instruction to run procedure query7
+09-08 : 08-47-07 - Returned #4 rows!!
+09-08 : 08-47-07 - Closing connection
+09-08 : 08-47-33 - !!!Exception Occured!!!
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at DBConnection.runProcWithResults(String procName, Dictionary`2 valMap) in c:\Users\aPaXuC\Documents\GitHub\DBBonus\App_Code\DBConnection.cs:line 35
+09-08 : 08-47-33 - Closing connection
+09-08 : 08-47-44 - Received instruction to run procedure query7
+09-08 : 08-47-46 - Opened KGConnection
+09-08 : 08-47-46 - Sending SQL Statement: query7 with 0 parameters.
+09-08 : 08-47-46 - Returned #4 rows!!
+09-08 : 08-47-46 - Closing connection
